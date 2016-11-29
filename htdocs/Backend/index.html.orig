@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing</Title>
+		<script src="Chart.js"></script>
+	</head>
+	<body>
+		<h1>Test</h1>
+		<p><a href = "test.php"><p>php test</a></p>
+		<p><a href = "quexf-1.18.1">queXF</a></p>
+		<h2><a href = "quexf-1.18.1/upload/import.php">Upload a file</a></h2>
+		<p><a href = "chart.html">Sample chart</a></p>
+		<p><a href = "data.php">Create JSON data</a></p>
+		<p><a href = "data.json">JSON data</a></p>
+		<p><a href = "table.php">Results table</a></p>
+		<p><a href = "datachart.html">Data chart</a></p>
+		<p><a href = "limesurvey/index.php">Create a Survey in Lime</a></p>
+	</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing</Title>
+		<script src="Chart.js"></script>
+	</head>
+	<body>
+		<h1>Test</h1>
+		<p><a href = "test.php"><p>php test</a></p>
+		<p><a href = "quexf-1.18.1">queXF</a></p>
+		<h2><a href = "quexf-1.18.1/upload/import.php">Upload a file</a></h2>
+		<p><a href = "chart.html">Sample chart</a></p>
+		<p><a href = "data.php">Create JSON data</a></p>
+		<p><a href = "data.json">JSON data</a></p>
+		<p><a href = "table.php">Results table</a></p>
+		<p><a href = "datachart.html">Data chart</a></p>
+	</body>
+</html>
+>>>>>>> 5666dee7b6db67a7d1b9c83f8260fee1ad24e3a0
