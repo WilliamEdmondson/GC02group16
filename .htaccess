@@ -1,0 +1,4 @@
+AuthUserFile htdocs/passwrd/passwords
+AuthName "restricted access"
+AuthType Basic
+Require valid-user
