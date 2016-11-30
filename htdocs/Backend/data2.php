@@ -16,7 +16,11 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT label, COUNT(f.bid) AS total FROM boxes b JOIN formboxverifychar f ON b.bid = f.bid WHERE f.bid=1 OR f.bid=2 OR f.bid=3 OR f.bid=4 OR f.bid=5 GROUP BY label");
+$query = sprintf("SELECT label, COUNT(f.bid) AS total
+FROM boxes b LEFT JOIN formboxverifychar f ON b.bid = f.bid
+WHERE b.bid=1 OR b.bid=2 OR b.bid=3 OR b.bid=4 OR b.bid=5
+GROUP BY label
+ORDER BY b.bid");
 
 //execute query
 $result = $mysqli->query($query);
