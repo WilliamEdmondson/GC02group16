@@ -16,8 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$q1 = 224;
-$query = sprintf("SELECT label, COUNT(f.bid) AS total FROM boxes b JOIN formboxverifychar f ON b.bid = f.bid WHERE f.bid=$q1 OR f.bid=225 GROUP BY label");
+$query = sprintf("SELECT label, COUNT(f.bid) AS total FROM boxes b JOIN formboxverifychar f ON b.bid = f.bid WHERE f.bid=1 OR f.bid=2 OR f.bid=3 OR f.bid=4 OR f.bid=5 GROUP BY label");
 
 //execute query
 $result = $mysqli->query($query);
@@ -30,10 +29,12 @@ foreach ($result as $row) {
 
 //write to json file
 //$filename = tempnam('/tmp', 'cre');
-//$fp = fopen('data.json', 'w');
+$fp = fopen('data2.json', 'w');
 //$fp = fopen($filename, 'w');
-//fwrite($fp, json_encode($data));
-//fclose($fp);
+fwrite($fp, json_encode($data));
+fclose($fp);
+
+$json_data = json_encode($data);
 
 //free memory associated with result
 $result->close();
