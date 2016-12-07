@@ -8,7 +8,7 @@ session_start();
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.fix.js"></script>
 <title>Login</title>
 </head>
 <body>
@@ -96,7 +96,7 @@ session_start();
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal"
-                                    aria-hidden="true">×
+                                    aria-hidden="true">
                             </button>
                             <?php
                             $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
