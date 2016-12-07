@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <title>Login</title>
