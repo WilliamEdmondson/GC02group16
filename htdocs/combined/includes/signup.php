@@ -2,30 +2,26 @@
 session_start();
 include '../db/dbh.php';
 
-$first = $_POST['first'];
-$last = $_POST['last'];
+$email = $_POST['email'];
 $uid = $_POST['uid'];
 $pwd = $_POST['pwd'];
 $pwd2 = $_POST['pwd2'];
+$admin = $_POST['admin'];
 
 if ($pwd !== $pwd2) {
     header("Location: ../index.php?error=notsame");
     exit();
 	}
-if (empty($first)){
-    header("Location: ../index.php?error=empty");
-    exit();
-}
-if (empty($last)){
-    header("Location: ../index.php?error=empty");
+if (empty($email)){
+    header("Location: ../index.php?error=emailempty");
     exit();
 }
 if (empty($uid)){
-    header("Location: ../index.php?error=empty");
+    header("Location: ../index.php?error=usernameempty");
     exit();
 }
 if (empty($pwd)){
-    header("Location: ../index.php?error=empty");
+    header("Location: ../index.php?error=passwordempty");
     exit();
 }
 else {
@@ -39,7 +35,7 @@ else {
         exit();
 
     }else{
-        $sql = "INSERT INTO users (first, last, uid, pwd) VALUES ('$first', '$last', '$uid', '$pwd')";
+        $sql = "INSERT INTO users (email, uid, pwd) VALUES ('$email', '$uid', '$pwd')";
 
         $result = mysqli_query($conn, $sql);
 

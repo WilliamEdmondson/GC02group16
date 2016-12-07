@@ -116,13 +116,14 @@ session_start();
                         </div>
                         <div class="modal-body">
                             <form action="includes/signup.php" method="POST">
-                                <input type="text" name="first" placeholder="Firstname"><br>
-                                <input type="text" name="last" placeholder="Lastname"><br>
                                 <input type="text" name="uid" placeholder="Username"><br>
+                                <input type="text" name="email" placeholder="Email"><br>
                                 <input type="password" name="pwd" placeholder="Password"><br>
-                                <input type="password" name="pwd2" placeholder="Confirm Password"><br><br><br>
+                                <input type="password" name="pwd2" placeholder="Confirm Password"><br>
+                                <a href="includes/adminrequest.php">Request Administrator Access</a><br><br><br>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
                                 <button type="submit" class="btn btn-primary">Sign up</button>
+
                             </form>
                         </div>
                     </div><!-- /.modal-content -->

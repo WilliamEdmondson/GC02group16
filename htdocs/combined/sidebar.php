@@ -1,3 +1,4 @@
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,12 +38,16 @@
             </li>
 
             </li>
-            <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                <ul id="menu-academico-sub" >
-                    <li> <a href="#"><i class="fa fa-user-plus"></i>Profile</a> </li>
-                    <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
-                </ul>
-            </li>
+            <?php
+                if($_SESSION['admin']==1){ ?>
+                    <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                      <ul id="menu-academico-sub" >
+                        <li> <a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a> </li>
+                        <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
+                     </ul>
+                    </li>";
+           <?php }?>
+
         </ul>
     </div>
 </div>
