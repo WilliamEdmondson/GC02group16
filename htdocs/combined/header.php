@@ -11,7 +11,7 @@
             <div class="header-main">
                 <div class="header-left">
                     <div class="logo-name">
-                        <a href="dashboard.php"> <h1 style="color:#65bdff; width:500px; margin-top: 16px;">ATG Feedback Scanning App</i></h1></a>
+                        <a href="dashboard.php"> <h1 style="color:#65bdff; width:500px; margin-top: 16px;">ATG Class Student OCR Feedback Scanning App</i></h1></a>
                     </div>
 
                     <div class="clearfix" > </div>
@@ -22,9 +22,9 @@
 								   margin-right: 50px;">Welcome, <?php
                                 echo $_SESSION['uid'];
                             if($_SESSION['admin'] == 1) {
-                                echo "<p style='color:#65bdff;font-size:14px;font-weight:regular; text-align:right;margin-top:5px; margin-right:50px;'>Administator</p>";
+                                echo "  Administator";
                             }
-                            ?> </i> </p>
+                            ?>! </i> </p>
                     </div>
                     <div class="clearfix">
                         <p style="color:#65bdff;font-size:15px; text-align:right;margin-top: 20px;
