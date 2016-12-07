@@ -10,7 +10,6 @@
     <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/skycons.js"></script>
 </head>
 <body>
 
@@ -60,7 +59,7 @@
 
 <script type="text/javascript"  src="js/bootstrap.js"> </script>
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script>
     $(document).ready(function() {
         var id = '#dialog';
