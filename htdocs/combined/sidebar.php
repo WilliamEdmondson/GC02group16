@@ -53,8 +53,8 @@
 <div class="clearfix"> </div>
 </div>
 <!--scrolling js-->
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/script.js"></script>
 <!--//scrolling js-->
 
 <script type="text/javascript"  src="js/bootstrap.js"> </script>

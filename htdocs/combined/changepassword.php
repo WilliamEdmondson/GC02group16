@@ -22,7 +22,7 @@ session_start();
     <p><a href="dashboard.php">Back</a></p>
 </form>
 <script type="text/javascript">
-    document.getElementById("username").value="<?php echo "${_SESSION["username"]}";?>"
+    document.getElementById("username").value="<?php echo "${_SESSION["uid"]}";?>"
 </script>
 
 <script type="text/javascript">
