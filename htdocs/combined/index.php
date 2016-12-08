@@ -95,9 +95,7 @@ session_start();
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"
-                                    aria-hidden="true">×
-                            </button>
+                            <button type="button" class="close" data-dismiss="modal aria-hidden="true"></button>
                             <?php
                             $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
                             if (strpos($url,'error=empty') !==false){
@@ -123,7 +121,6 @@ session_start();
                                 <a href="includes/adminrequest.php">Request Administrator Access</a><br><br><br>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
                                 <button type="submit" class="btn btn-primary">Sign up</button>
-
                             </form>
                         </div>
                     </div><!-- /.modal-content -->

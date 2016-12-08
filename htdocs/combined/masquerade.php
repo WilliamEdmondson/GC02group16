@@ -41,15 +41,13 @@ include 'db/dbh.php';
                 <div class="row-fluid">
                     <div class="span12">
                         <?php
-
                         $sql ="SELECT uid FROM users";
                         $result = $conn->query($sql);
-
-
                         ?>
-
                         <form action="masquerade-process.php" method="POST" style="color:#65bdff; width:500px; margin-top: 16px;">
-                          <p>Which User?
+                          <p>As an administrator you may view the previous work of any of the other users.
+                              Please select the users work you would like to view below.</p><br>
+                            <p>User:
                             <select name="users" onchange="this.form.submit()">
                               <option value="" >--Select--</option>
                               <?php

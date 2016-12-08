@@ -7,6 +7,7 @@ session_start();
 </div>
 
 
+
 <script>
     $(document).ready(function() {
         var navoffeset=$(".sidebar-menu").offset().top;
@@ -62,15 +63,19 @@ session_start();
                         </div>
                     </div>
                     <div class="span4">
-                        <form role="form"><h3>Upload a new form</h3>
-                            <br><br>
-                            <div class="form-group">
-                                <label for="exampleInputFile">File input</label><input type="file" id="exampleInputFile" />
-                                <p class="help-block">
-                                    Press browse to select a file. Press submit when done.
-                                </p>
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                        <form enctype="multipart/form-data" action="upload.php" method="post">
+                            <h3>Upload a new form</h3><br><br>
+                            <label for="filepicker" style="color: #65bdff;
+                                    border-radius : 12px;
+                                    border: 1px solid #ccc;
+                                    display: inline-block;
+                                    padding: 6px 12px;
+                                    cursor: pointer;
+                                    font-family: 'Carrois Gothic', sans-serif;">Upload</label>
+                            <input type="file"  id="filepicker" name="fileList[]" webkitdirectory multiple style="" />
+                            <input type="submit"> </input>
+                            <ul id="listing" class="listed-files"></ul>
+
                         </form>
                     </div>
                 </div>
