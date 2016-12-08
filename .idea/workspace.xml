@@ -2,190 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/combined/js/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/combined/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gsdll32.dll" afterPath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gsdll32.dll" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gsdll32.lib" afterPath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gsdll32.lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gswin32.exe" afterPath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gswin32.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gswin32c.exe" afterPath="$PROJECT_DIR$/htdocs/Backend/gs9.20/bin/gswin32c.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/UCL1.gif" afterPath="$PROJECT_DIR$/htdocs/combined/img/UCL1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/a.jpg" afterPath="$PROJECT_DIR$/htdocs/combined/img/a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/loginlogo1.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/loginlogo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/loginucl1.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/loginucl1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/loginucl2.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/loginucl2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/loginucl3.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/loginucl3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/maintest1.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/maintest1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/test1.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/test1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/img/ucl-logo.png" afterPath="$PROJECT_DIR$/htdocs/combined/img/ucl-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/UCL1.gif" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/UCL1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/a.jpg" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/loginlogo1.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/loginlogo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl1.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl2.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl3.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/loginucl3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/maintest1.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/maintest1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/piechart.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/piechart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/rawdata.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/rawdata.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/img/test1.png" afterPath="$PROJECT_DIR$/htdocs/dist/dist/img/test1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/font/Elephant.ttf" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/font/Elephant.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/UCL1.gif" afterPath="$PROJECT_DIR$/htdocs/dist/img/UCL1.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/a.jpg" afterPath="$PROJECT_DIR$/htdocs/dist/img/a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/loginlogo1.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/loginlogo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/loginucl1.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/loginucl1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/loginucl2.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/loginucl2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/loginucl3.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/loginucl3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/maintest1.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/maintest1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/piechart.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/piechart.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/rawdata.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/rawdata.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/img/test1.png" afterPath="$PROJECT_DIR$/htdocs/dist/img/test1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/font/Elephant.ttf" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/font/Elephant.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/site.iml" afterPath="$PROJECT_DIR$/.idea/site.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/UCL1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/loginlogo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/loginucl1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/loginucl2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/loginucl3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/maintest1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/test1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/img/ucl-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/uploads/file1.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/uploads/file6.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/band.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/bandajax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/clientquestionnaire.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/clients.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/databasestrings.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/icrassign.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/icrkb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/icrmonitor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/icrtrain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/import.directory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/importbandingxml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/limesurvey.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/listduplicates.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/listfiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/listforms.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/listpagenotes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/missingpages.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/moveimagestofiles.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/ocrtrain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/operators.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/output.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/outputunverified.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/pagesetup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/pagesmissing.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/pagetest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/performance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/processicr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/progress.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/reorder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/testconfig.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/touchup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/verifierquestionnaire.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/changepassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/css/bootstrap-combined.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/dashboard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/db/dbh.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/includes/adminrequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/includes/alterpassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/includes/loginverify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/includes/logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/includes/signup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/jquery.nicescroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/masquerade-process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/masquerade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/sampleprevious.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combined/upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/domxml-php4-to-php5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.barcode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.boxdetection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.database.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.import.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.ocr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.output.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/functions.xhtml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions/php5-output.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/combined/data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/combined/js/Chart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/combined/js/bootstrap.fix.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/htdocs/combined/chart.php" afterPath="$PROJECT_DIR$/combined/chart.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/htdocs/combined/table.php" afterPath="$PROJECT_DIR$/combined/table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/chart.html" afterPath="$PROJECT_DIR$/htdocs/Backend/chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart.js" afterPath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart2.js" afterPath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart3.js" afterPath="$PROJECT_DIR$/htdocs/Backend/chartjs/data_chart3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/data.php" afterPath="$PROJECT_DIR$/htdocs/Backend/data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/data2.php" afterPath="$PROJECT_DIR$/htdocs/Backend/data2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/data3.php" afterPath="$PROJECT_DIR$/htdocs/Backend/data3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/datachart.html" afterPath="$PROJECT_DIR$/htdocs/Backend/datachart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/datachart2.html" afterPath="$PROJECT_DIR$/htdocs/Backend/datachart2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/datachart3.html" afterPath="$PROJECT_DIR$/htdocs/Backend/datachart3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/index.html" afterPath="$PROJECT_DIR$/htdocs/Backend/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/table.php" afterPath="$PROJECT_DIR$/htdocs/Backend/table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/table2.php" afterPath="$PROJECT_DIR$/htdocs/Backend/table2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/table3.php" afterPath="$PROJECT_DIR$/htdocs/Backend/table3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/Backend/test.php" afterPath="$PROJECT_DIR$/htdocs/Backend/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/README.md" afterPath="$PROJECT_DIR$/htdocs/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/changepassword.php" afterPath="$PROJECT_DIR$/htdocs/combined/changepassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/chart.php" afterPath="$PROJECT_DIR$/htdocs/combined/chart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/css/bootstrap-combined.min.css" afterPath="$PROJECT_DIR$/htdocs/combined/css/bootstrap-combined.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/css/bootstrap.css" afterPath="$PROJECT_DIR$/htdocs/combined/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/css/font-awesome.css" afterPath="$PROJECT_DIR$/htdocs/combined/css/font-awesome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/css/style.css" afterPath="$PROJECT_DIR$/htdocs/combined/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/dashboard.php" afterPath="$PROJECT_DIR$/htdocs/combined/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/db/dbh.php" afterPath="$PROJECT_DIR$/htdocs/combined/db/dbh.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/header.php" afterPath="$PROJECT_DIR$/htdocs/combined/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/includes/adminrequest.php" afterPath="$PROJECT_DIR$/htdocs/combined/includes/adminrequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/includes/alterpassword.php" afterPath="$PROJECT_DIR$/htdocs/combined/includes/alterpassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/includes/loginverify.php" afterPath="$PROJECT_DIR$/htdocs/combined/includes/loginverify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/includes/logout.php" afterPath="$PROJECT_DIR$/htdocs/combined/includes/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/includes/signup.php" afterPath="$PROJECT_DIR$/htdocs/combined/includes/signup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/index.php" afterPath="$PROJECT_DIR$/htdocs/combined/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/bootstrap.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/jquery-3.1.1.min.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/jquery-3.1.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/jquery-ui.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/jquery-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/jquery.nicescroll.min.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/jquery.nicescroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/js/script.js" afterPath="$PROJECT_DIR$/htdocs/combined/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/masquerade-process.php" afterPath="$PROJECT_DIR$/htdocs/combined/masquerade-process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/masquerade.php" afterPath="$PROJECT_DIR$/htdocs/combined/masquerade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/sampleprevious.php" afterPath="$PROJECT_DIR$/htdocs/combined/sampleprevious.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/sidebar.php" afterPath="$PROJECT_DIR$/htdocs/combined/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/combined/table.php" afterPath="$PROJECT_DIR$/htdocs/combined/table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/Signup.php" afterPath="$PROJECT_DIR$/htdocs/dist/Signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/Test1.php" afterPath="$PROJECT_DIR$/htdocs/dist/Test1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/changepassword.php" afterPath="$PROJECT_DIR$/htdocs/dist/changepassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/componenttest.php" afterPath="$PROJECT_DIR$/htdocs/dist/componenttest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/htdocs/dist/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dbh.php" afterPath="$PROJECT_DIR$/htdocs/dist/dbh.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/Signup.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/Signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/Test1.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/Test1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/changepassword.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/changepassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/componenttest.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/componenttest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/htdocs/dist/dist/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/dbh.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/dbh.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/htdocs/dist/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/includes/Signup1.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/includes/Signup1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/includes/alter_password.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/includes/alter_password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/includes/loginverify.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/includes/loginverify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/includes/logout.inc.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/includes/logout.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/htdocs/dist/dist/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/htdocs/dist/dist/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/js/npm.js" afterPath="$PROJECT_DIR$/htdocs/dist/dist/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/login page1.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/login page1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/1.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/check.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/login.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/login1.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/login1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/mysql.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/loginTest3/mysql.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/LinkDatabase.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/LinkDatabase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/SecondView.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/SecondView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/ValidateCode.class.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/ValidateCode.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/captcha.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/captcha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest/sessionValidate.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest/sessionValidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/login.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/login.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/logincheck.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/logincheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/regcheck.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/regcheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/register.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/logintest2/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/other/Test1.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/other/Test1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/other/login page.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/other/login page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/other/logintest2.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/other/logintest2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/other/logintest3.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/other/logintest3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/other/password.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/other/password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/pre_chart.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/pre_chart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/pre_upload.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/pre_upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/test2.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/test2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/test222.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/test222.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/test4/log.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/test4/log.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/test4/login.html" afterPath="$PROJECT_DIR$/htdocs/dist/dist/test4/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/dist/upload.php" afterPath="$PROJECT_DIR$/htdocs/dist/dist/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/htdocs/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/includes/Signup1.php" afterPath="$PROJECT_DIR$/htdocs/dist/includes/Signup1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/includes/alter_password.php" afterPath="$PROJECT_DIR$/htdocs/dist/includes/alter_password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/includes/loginverify.php" afterPath="$PROJECT_DIR$/htdocs/dist/includes/loginverify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/includes/logout.inc.php" afterPath="$PROJECT_DIR$/htdocs/dist/includes/logout.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/htdocs/dist/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/htdocs/dist/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/js/npm.js" afterPath="$PROJECT_DIR$/htdocs/dist/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/login page1.php" afterPath="$PROJECT_DIR$/htdocs/dist/login page1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/loginTest3/1.html" afterPath="$PROJECT_DIR$/htdocs/dist/loginTest3/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/loginTest3/check.php" afterPath="$PROJECT_DIR$/htdocs/dist/loginTest3/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/loginTest3/login.php" afterPath="$PROJECT_DIR$/htdocs/dist/loginTest3/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/loginTest3/login1.php" afterPath="$PROJECT_DIR$/htdocs/dist/loginTest3/login1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/loginTest3/mysql.php" afterPath="$PROJECT_DIR$/htdocs/dist/loginTest3/mysql.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/LinkDatabase.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/LinkDatabase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/SecondView.html" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/SecondView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/ValidateCode.class.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/ValidateCode.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/captcha.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/captcha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest/sessionValidate.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest/sessionValidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest2/login.html" afterPath="$PROJECT_DIR$/htdocs/dist/logintest2/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest2/login.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest2/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest2/logincheck.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest2/logincheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest2/regcheck.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest2/regcheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/logintest2/register.php" afterPath="$PROJECT_DIR$/htdocs/dist/logintest2/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/other/Test1.html" afterPath="$PROJECT_DIR$/htdocs/dist/other/Test1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/other/login page.html" afterPath="$PROJECT_DIR$/htdocs/dist/other/login page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/other/logintest2.html" afterPath="$PROJECT_DIR$/htdocs/dist/other/logintest2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/other/logintest3.html" afterPath="$PROJECT_DIR$/htdocs/dist/other/logintest3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/other/password.html" afterPath="$PROJECT_DIR$/htdocs/dist/other/password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/pre_chart.php" afterPath="$PROJECT_DIR$/htdocs/dist/pre_chart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/pre_upload.php" afterPath="$PROJECT_DIR$/htdocs/dist/pre_upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/test2.php" afterPath="$PROJECT_DIR$/htdocs/dist/test2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/test222.php" afterPath="$PROJECT_DIR$/htdocs/dist/test222.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/test4/log.php" afterPath="$PROJECT_DIR$/htdocs/dist/test4/log.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/test4/login.html" afterPath="$PROJECT_DIR$/htdocs/dist/test4/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/dist/upload.php" afterPath="$PROJECT_DIR$/htdocs/dist/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -310,11 +224,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/verifyjs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="181" column="5" lean-forward="false" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="200" column="17" lean-forward="false" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
               <folding>
                 <marker date="1481206182000" expanded="true" signature="1203:1478" ph="SELECT MIN(b... boxes" />
                 <marker date="1481206182000" expanded="true" signature="1525:1662" ph="SELECT offx,... formpages" />
@@ -360,11 +274,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1480532365000" expanded="true" signature="1266:1566" ph="SELECT f.ass... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htdocs/combined/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="import.directory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/admin/import.directory.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -374,17 +310,7 @@
         <entry file="file://$PROJECT_DIR$/htdocs/combined/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="491">
-              <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/combined/js/jquery-ui.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="76" column="71" lean-forward="false" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -394,7 +320,7 @@
         <entry file="file://$PROJECT_DIR$/htdocs/combined/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -791,12 +717,12 @@
       <option name="presentableId" value="Default" />
       <updated>1481103375944</updated>
       <workItem from="1481103392437" duration="22426000" />
-      <workItem from="1481197213389" duration="7215000" />
+      <workItem from="1481197213389" duration="7558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29641000" />
+    <option name="totallyTimeSpent" value="29984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -978,7 +904,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1137,16 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/combined/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
-          <folding>
-            <element signature="e#6434#6499#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/admin/verifierquestionnaire.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1183,7 +1099,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1199,7 +1115,7 @@
     <entry file="file://$PROJECT_DIR$/htdocs/combined/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1207,7 +1123,7 @@
     <entry file="file://$PROJECT_DIR$/htdocs/combined/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
-          <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+          <caret line="76" column="71" lean-forward="false" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -1294,7 +1210,7 @@
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/admin/import.directory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1341,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/verifyjs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="181" column="5" lean-forward="false" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="200" column="17" lean-forward="false" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="17" />
           <folding>
             <marker date="1481206182000" expanded="true" signature="1203:1478" ph="SELECT MIN(b... boxes" />
             <marker date="1481206182000" expanded="true" signature="1525:1662" ph="SELECT offx,... formpages" />
@@ -1384,6 +1300,24 @@
             <marker date="1481206182000" expanded="true" signature="33885:33903" ph="..." />
             <marker date="1481206182000" expanded="true" signature="33962:33997" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480532365000" expanded="true" signature="1266:1566" ph="SELECT f.ass... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/combined/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="112" column="39" lean-forward="false" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

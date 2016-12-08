@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<div id =sidebar class="visible">
+    <?php include("sidebar.php"); ?>
+
+</div>
 <head>
     <meta charset="UTF-8">
     <title>change password</title>
@@ -10,16 +14,53 @@
     </style>
 </head>
 <body>
-<?php
-session_start();
-?>
+
+<div class="page-container">
+    <div class="left-content">
+        <div class="mother-grid-inner">
+            <!--header start here-->
+            <?php include("header.php"); ?>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+
+
 <form  action="includes/alterpassword.php" method="post" onsubmit="return alter()">
-    Username: <input type="text" name="username" id ="username" /><br/>
-    Original password: <input type="password" name="oldpassword" id ="oldpassword"/><br/>
-    New password: <input type="password" name="newpassword" id="newpassword"/><br/>
-	Confirm new password: <input type="password" name="assertpassword" id="assertpassword"/><br/>
-    <input type="submit" value="Change password" onclick="return alter()">
-    <p><a href="dashboard.php">Back</a></p>
+
+
+    <div class="control-group">
+        <label class="control-label" for="username">Username:
+        <div class="controls">
+            <input type="text" name="username" id ="username" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPassword">Original password:</label>
+        <div class="controls">
+            <input type="password" name="oldpassword" id ="oldpassword"/><br>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPassword">New password:</label>
+        <div class="controls">
+            <input type="password" name="newpassword" id="newpassword"/><br>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPassword">Confirm new password:</label>
+        <div class="controls">
+            <input type="password" name="assertpassword" id="assertpassword"/><br>
+        </div>
+    </div>
+
+
+
+    <button class="btn btn-primary btn-lg" onclick="return alter()" type="submit" value="Change password">
+        Change password
+    </button>
+    <br><br>
+      <button><a href="dashboard.php">Back</a></button>
 </form>
 <script type="text/javascript">
     document.getElementById("username").value="<?php echo "${_SESSION["username"]}";?>"

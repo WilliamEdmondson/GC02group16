@@ -1,3 +1,4 @@
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -31,36 +32,67 @@
                 <ul id="menu-comunicacao-sub" >
                     <li id="menu-arquivos" ><a href="changepassword.php"><i class="fa fa-refresh"></i>Change password</a></li>
                     <li id="menu-arquivos" ><a href="#"><i class="fa fa-table"></i>Manage</a></li>
-                    <li id="menu-arquivos" ><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
+                    <li id="menu-arquivos" ><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
                 </ul>
             </li>
 
             </li>
-            <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                <ul id="menu-academico-sub" >
-                    <li> <a href="#"><i class="fa fa-user-plus"></i>Profile</a> </li>
-                    <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
-                </ul>
-            </li>
+            <?php
+                if($_SESSION['admin']==1){ ?>
+                    <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                      <ul id="menu-academico-sub" >
+                        <li> <a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a> </li>
+                        <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
+                     </ul>
+                    </li>";
+           <?php }?>
+
         </ul>
     </div>
-
 </div>
+<div class="clearfix"> </div>
+</div>
+<!--scrolling js-->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!--//scrolling js-->
 
+<script type="text/javascript"  src="js/bootstrap.js"> </script>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script>
     $(document).ready(function() {
-        var navoffeset=$(".sidebar").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar").addClass("fixed");
-            }else{
-                $(".sidebar").removeClass("fixed");
-            }
+        var id = '#dialog';
+//Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+        var mask = $('#mask');
+//Set heigth and width to mask to fill up the whole screen
+        mask.css({'width':maskWidth,'height':maskHeight});
+//transition effect
+        mask.fadeIn(500);
+        mask.fadeTo("slow",0.9);
+//Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+//Set the popup window to center
+        $(id).css('top',  winH/2-$(id).height()/2);
+        $(id).css('left', winW/2-$(id).width()/2);
+//transition effect
+        $(id).fadeIn(2000);
+//if close button is clicked
+        $('.window .close').click(function (e) {
+//Cancel the link behavior
+            e.preventDefault();
+            $('#mask').hide();
+            $('.window').hide();
+        });
+//if mask is clicked
+        mask.click(function () {
+            $(this).hide();
+            $('.window').hide();
         });
     });
-
 </script>
-
 
 </body>

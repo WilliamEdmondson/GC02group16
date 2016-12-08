@@ -2,7 +2,7 @@
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/query-ui.js"></script>
 </head>
 <body>
 <div class="page-container">
@@ -19,7 +19,12 @@
                 <div class="header-right">
                     <div class="clearfix">
                         <p style="color:#65bdff;font-size:20px;font-weight:bold; text-align:right;margin-top: 5px;
-								   margin-right: 50px;">Welcome, <?php echo $_SESSION['uid'];?>! </i> </p>
+								   margin-right: 50px;">Welcome, <?php
+                                echo $_SESSION['uid'];
+                            if($_SESSION['admin'] == 1) {
+                                echo "  Administator";
+                            }
+                            ?>! </i> </p>
                     </div>
                     <div class="clearfix">
                         <p style="color:#65bdff;font-size:15px; text-align:right;margin-top: 20px;
@@ -30,6 +35,19 @@
                 <div class="clearfix"> </div>
             </div>
 
-            <!--heder end here-->
-
+            <!--header ends here-->
             <!-- script-for sticky-nav -->
+            <script>
+                $(document).ready(function() {
+                    var navoffeset=$(".header-main").offset().top;
+                    $(window).scroll(function(){
+                        var scrollpos=$(window).scrollTop();
+                        if(scrollpos >=navoffeset){
+                            $(".header-main").addClass("fixed");
+                        }else{
+                            $(".header-main").removeClass("fixed");
+                        }
+                    });
+
+                });
+            </script>
