@@ -19,7 +19,7 @@
                 <div class="header-right">
                     <div class="clearfix">
                         <p style="color:#65bdff;font-size:20px;font-weight:bold; text-align:right;margin-top: 5px;
-								   margin-right: 50px;">Welcome, <?php echo $_SESSION['id'];?>! </i> </p>
+								   margin-right: 50px;">Welcome, <?php echo $_SESSION['uid'];?>! </i> </p>
                     </div>
                     <div class="clearfix">
                         <p style="color:#65bdff;font-size:15px; text-align:right;margin-top: 20px;
