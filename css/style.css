@@ -47,6 +47,13 @@ a:hover {
     float: right;
     width: 86.5%;
 }
+
+
+
+
+
+
+
 .page-container.sidebar-collapsed {
     transition: all 100ms linear;
     transition-delay: 300ms;

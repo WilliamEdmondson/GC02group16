@@ -82,16 +82,19 @@ session_start();
                 <div class="control-group">
                     <div class="controls">
                         <label class="checkbox"><input type="checkbox" />Remember me</label><button class="btn" type="submit">Login</button>
-                        <br><br>
-                        <p>Not registered yet? Sign up now!</p>
                     </div>
                 </div>
             </form>
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Sign up
-            </button>
+
+
+
+
+
+            <a data-toggle="modal" data-target="#myModal2">
+                Forgot password?
+            </a>
             <!-- （Modal） -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -116,8 +119,82 @@ session_start();
                         </div>
                         <div class="modal-body">
                             <form action="includes/signup.php" method="POST">
+                                Please enter your email address
                                 <input type="text" name="uid" placeholder="Username"><br>
-                                <input type="text" name="email" placeholder="Email"><br>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Send message</button> &#160&#160&#160&#160
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+
+                            </form>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+
+
+
+
+            <br><br>
+            <p>Not registered yet? Sign up now!</p>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Sign up
+            </button>
+            <!-- （Modal） -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">
+                            </button>
+                            <?php
+                            $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+                            if (strpos($url,'error=emailempty') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    Fill out all fields.
+                                </h4>
+                                <?php ;}
+
+                            if (strpos($url,'error=notsame') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    The passwords you entered didn't match.
+                                </h4>
+                                <?php ;}
+
+                            if (strpos($url,'error=username') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    Email address already exists.
+                                </h4>
+                                <?php ;}
+                            ?>
+                        </div>
+                        <div class="modal-body">
+                            <form action="includes/signup.php" method="POST">
+                                <input type="text" name="uid" placeholder="Email"><br>
                                 <input type="password" name="pwd" placeholder="Password"><br>
                                 <input type="password" name="pwd2" placeholder="Confirm Password"><br>
                                 <a href="includes/adminrequest.php">Request Administrator Access</a><br><br><br>
@@ -129,6 +206,14 @@ session_start();
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->
             </div>
+
+
+
+
+
+
+
+
         </div>
     </div>
 </div>

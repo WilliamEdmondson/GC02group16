@@ -28,7 +28,6 @@ session_start();
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/dropzone.js"></script>
     <link href="css/dropzone.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/dropzone.css" />
 
     <title>Dashboard</title>
 </head>
@@ -48,13 +47,26 @@ session_start();
                     <div class="span10" id="span10">
 
 
-                        <br><h3 class="text-left">Upload</h3><br><br>
-                        <br><br>
-                        <form action="parser.php" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                        </form>
+
+                        <?php
+                        $folder = "uploads";
+
+                        if (is_dir($folder)){
+                            $handler = opendir($folder);
+                            $output = "";
+                            while ($files = readdir($handler)){
+                                if(!is_dir($files)){
+                                    $output.="<img src =\"uploads/{$files}\" width='180' height='180'>";
+                                }
+                            }
+                        }
+
+                        echo $output;
+
+
+                        ?>
+
+                        <p><a href="dashboard.php" </p>
 
 
                         <p><a href="view_upload.php">View Upload</a> </p>
@@ -69,3 +81,6 @@ session_start();
 </div>
 </body>
 </html
+
+
+
