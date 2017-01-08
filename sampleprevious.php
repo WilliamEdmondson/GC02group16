@@ -6,21 +6,6 @@ session_start();
     <?php include("sidebar.php"); ?>
 </div>
 
-
-<script>
-    $(document).ready(function() {
-        var navoffeset=$(".sidebar-menu").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar-menu").addClass("fixed");
-            }else{
-                $(".sidebar-menu").removeClass("fixed");
-            }
-        });
-    });
-</script>
-
 <head>
 <title>Sample previous work</title>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -155,6 +140,27 @@ session_start();
                         
  						<div id="table" class="tab-pane fade">
 <!--TABLES-->
+<input id="btnPrint" style="float:right; margin-right:50px;" type="button" value="Print table" onclick=preview(1) />
+                    <script>
+                        function preview(oper)
+                        {
+                            if (oper < 10)
+                            {
+                                bdhtml=window.document.body.innerHTML;
+                                sprnstr="<!--startprint"+oper+"-->";
+                                eprnstr="<!--endprint"+oper+"-->";
+                                prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
+
+                                prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
+                                window.document.body.innerHTML=prnhtml;
+                                window.print();
+                                window.document.body.innerHTML=bdhtml;
+                            } else {
+                                window.print();
+                            }
+                        }
+                    </script>
+<!--startprint1-->
 <div id="align" align="center">					
 <?php
 mysql_connect('localhost', 'root', '');
@@ -190,6 +196,7 @@ for ($i=0; $i < 20; $i++) {
 }
 ?>
 </div>
+<!--endprint1-->
 <!--END TABLES--> 
                             
   						</div>
