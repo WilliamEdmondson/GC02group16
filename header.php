@@ -11,19 +11,20 @@
             <div class="header-main">
                 <div class="header-left">
                     <div class="logo-name">
-                        <a href="dashboard.php"> <h1 style="color:#65bdff; width:500px; margin-top: 16px;">ATG Class Student OCR Feedback Scanning App</i></h1></a>
+                        <a href="dashboard.php"><h1 style="color:#65bdff; margin-top: 16px; width:600px">Student Feedback Scanning App</h1></a>
                     </div>
 
                     <div class="clearfix" > </div>
                 </div>
                 <div class="header-right">
                     <div class="clearfix">
-                        <p style="color:#65bdff;font-size:20px;font-weight:bold; text-align:right;margin-top: 5px;
+                        <p style="color:#65bdff; font-size:20px; font-weight:bold; text-align:right; margin-top:5px;
 								   margin-right: 50px;">Welcome, <?php echo $_SESSION['uid'];?>! </i> </p>
                     </div>
                     <div class="clearfix">
-                        <p style="color:#65bdff;font-size:15px; text-align:right;margin-top: 20px;
-								   margin-right: 50px;"><a href="includes/logout.php">Log out</a></i></p>
+                        <p style="color:#65bdff; font-size:15px; text-align:right; margin-top:20px; margin-right:50px;">
+                        	<a href="includes/logout.php">Log out</a>
+                        </p>
                     </div>
 
                 </div>

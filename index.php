@@ -58,11 +58,9 @@ session_start();
 <!--            <img alt="UCL Student OCR Feedback Web App" src="img/test1.png" />-->
 
             <section>
-
-
-
-                <div class="hex" style="width: 18vw; height: 18vw;font-size:19px;background-color: #5763ff; color: white;  line-height: 15vw;  text-align: center;">UCL Student OCR Feedback Web App</div>
-
+                <div class="hex" style="width:18vw; height:18vw; font-size:19px; background-color:#5763ff; color:white; line-height:15vw;  text-align:center; padding:2vw;">
+                	UCL Student OCR Feedback Web App
+                </div>
             </section>
             <script src="js/anime.js"></script>
             <script>
@@ -109,7 +107,7 @@ session_start();
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <label class="checkbox"><input type="checkbox" />Remember me 10 days</label><button class="btn" type="submit">Login</button>
+                        <label class="checkbox"><input type="checkbox" />Remember me</label><button class="btn" type="submit">Login</button>
                     </div>
                 </div>
             </form>

@@ -57,65 +57,53 @@ session_start();
                         <h3 class="text-left">Previous work</h3>
                         <div class="row-fluid">
                             <div class="row-fluid">
-                                <?php
-
-                                include "data.php";
-
-                                ?>
-                                <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-                                <script type="text/javascript" src="js/Chart.min.js"></script>
-                                <?php
-                                $json_array = $_SESSION['json_array'];
-                                //	echo implode("<br>",$json_array);
-
-                                for ($i=0; $i < 20; $i++) {
-                                    ?><div class="col-xs-3 span5"><?php
-                                    $data = $json_array[$i];
-//		echo $current_json;
-                                    $question = $i+1;
-                                    echo "Question $question:<br><br>";
-//	echo $data;
-                                    echo "<canvas id='mycanvas".$i."' style='width:300; height:300'></canvas>";
-                                    echo "<script language='javascript'>
-	
-	                                var data = $data;
-                                    var label = [];
-                                    var total = [];
-                                
-                                    for(var j in data) {
-                                        label.push(data[j].label);
-                                        total.push(data[j].total);
-                                    }
-                                    var ctx = document.getElementById('mycanvas".$i."');
-                                    var mycanvas".$i." = new Chart(ctx, {
-                                    type: 'pie',
-                                    data: {
-                                        labels: label,
-                                        datasets: [{
-                                                label: 'Question ' + $question,
-                                                backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(153, 102, 255, 0.2)'],
-                                                borderColor: ['rgba(255,99,132,1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(54, 162, 235, 1)', 'rgba(153, 102, 255, 1)'],
-                                                data: total
-                                                        }
-                                                    ]
-                                                },
-                                                options: {
-                                                    responsive: false,
-                                                    scales: {
-                                                        yAxes: [{
-                                                            ticks: {
-                                                                beginAtZero:true
-                                                            }
-                                                        }]
-                                                    }
-                                                }
-                                            
-                                            });
-                                            
-                                                </script>";
-                                    ?><br><br><br></div><?php
-                                }
-                                ?>
+                            <br><br><br><br>
+                            	<?php include("data.php");?>
+                            <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+                            <script type="text/javascript" src="js/Chart.min.js"></script>
+                            <?php
+	                        $json_array = $_SESSION['json_array'];
+                            //	echo implode("<br>",$json_array);						
+	                        for ($i=4; $i < 8; $i++) {
+								echo "<div class='col-xs-5 span5'>";
+		                    	$data = $json_array[$i];//		echo $current_json;
+		                        $question = $i+1;
+        	                    //	echo $data;
+	        	                echo "<a href='sampleprevious.php'><canvas style = 'padding-top:5px; margin-bottom:50px;' id='mycanvas".$i."' style='width:360; height:360'></canvas></a>";
+								echo "</div>";
+	            	            echo "<script language='javascript'>
+	                	        var data = $data;
+                        	    var label = [];
+                            	var total = [];
+	                            for(var j in data) {
+    	                        label.push(data[j].label);
+        	                    total.push(data[j].total);
+            	            }
+                            var ctx = document.getElementById('mycanvas".$i."');
+                            var mycanvas".$i." = new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                            labels: label,
+                            datasets: [{
+                            label: 'Question ' + $question,
+                            backgroundColor: ['rgba(255, 0, 0, 0.2)', 'rgba(255, 110, 0, 0.2)', 'rgba(255, 225, 0, 0.2)', 'rgba(100, 200, 35, 0.2)', 'rgba(50, 185, 255, 0.2)', 'rgba(200, 75, 255, 0.2)'],
+                            borderColor: ['rgba(255, 0, 0, 1)', 'rgba(255, 110, 0, 1)', 'rgba(255, 225, 0, 1)', 'rgba(100, 200, 35, 1)', 'rgba(50, 185, 255, 1)', 'rgba(200, 75, 255, 1)'],
+							borderWidth: 1,
+                            data: total
+                            }]},
+                            options: {
+                                responsive: false,
+								legend: {
+            						display: false,
+        						},
+								tooltips: {
+                					enabled: false,
+            					}
+                            }
+                            });
+	                        </script>";
+                            }
+                            ?>
                             </div>
                         </div>
                     </div>
@@ -128,7 +116,7 @@ session_start();
                                 <input name="file" type="file" multiple />
                             </div>
                         </form>
-                        <p><a href="view_upload.php">View Upload</a> </p>
+                        <p><a href="view_upload.php">View Uploads</a></p>
 
                     </div>
 

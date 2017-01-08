@@ -15,40 +15,38 @@
 <div id="sidebar" class="sidebar-menu" >
     <div id class="menu">
         <ul id="menu" >
+        
             <li id="menu-home" ><a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Main Menu</span></a></li>
-
-
-            <li><a href="#"><i class="fa fa-list"></i><span>Previous upload</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                <ul id="menu-academico-sub" >
-                    <li><a href="view_upload.php"><i class="fa fa-star"></i><span>Previous upload</a>
-                    <li><a href="sampleprevious.php"><i class="fa fa-star"></i><span>Previous chart</a>
+            
+			<li><a href="#"><i class="fa fa-list"></i><span>Previous work</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                <ul id="menu-academico-sub">
+                    <li id="menu-arquivos"><a href="view_upload.php"><i class="fa fa-star"></i>Previous uploads</a></li>
+                    <li id="menu-arquivos"><a href="sampleprevious.php"><i class="fa fa-pie-chart"></i>Previous charts</a></li>
+                </ul>
+            </li>
+            
+            <li id="menu--upload"><a href="upload.php"><i class="fa fa-plus"></i><span>Upload</span></a></li>
+            
+            <li id="menu--comunicacao"><a href="#"><i class="fa fa-user nav_icon"></i><span>My Account</span><span class="fa fa-angle-right" style="float: right"></span></a>         
+                <ul id="menu-comunicacao-sub">
+                    <li id="menu-arquivos"><a href="changepassword.php"><i class="fa fa-refresh"></i>Change password</a></li>
+                    <li id="menu-arquivos"><a href="manage.php"><i class="fa fa-table"></i>Manage</a></li>
+                    <li id="menu-arquivos"><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
                 </ul>
             </li>
 
-            <li id="menu--upload" ><a href="upload.php"><i class="fa fa-plus"></i><span>upload</span></a></li>
-
-            <li id="menu--comunicacao" ><a href="#"><i class="fa fa-user nav_icon"></i><span>My Account</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                <ul id="menu-comunicacao-sub" >
-                    <li id="menu-arquivos" ><a href="changepassword.php"><i class="fa fa-refresh"></i>Change password</a></li>
-                    <li id="menu-arquivos" ><a href="manage.php"><i class="fa fa-table"></i>Manage</a></li>
-                    <li id="menu-arquivos" ><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
-                </ul>
-            </li>
-
-            </li>
             <?php
             if($_SESSION['admin']==1){ ?>
                 <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                    <ul id="menu-academico-sub" >
-                        <li> <a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a> </li>
-                        <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
+                    <ul id="menu-academico-sub">
+                        <li id="menu-arquivos"><a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a></li>
+                        <li id="menu-arquivos"><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
                     </ul>
-                </li>";
+                </li>
             <?php }?>
         </ul>
+        
     </div>
-
 </div>
-
 
 </body>
