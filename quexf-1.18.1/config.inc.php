@@ -32,11 +32,13 @@
  * Copy the define part of the directive to this file and edit it here.
  *
  */
+ 
+include_once("identifier.php");
 
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'site');  //quexf previously
+define('DB_NAME', 'site');
 
 //define('ADODB_DIR', '/usr/share/php/adodb/');
 //define('ADODB_DIR', 'C:/xampp/php/pear/adodb/');
@@ -49,7 +51,17 @@ define('PROCESS_MISSING_PAGES',true);
 //REQUIRED: Ghostscript binary
 //define('GS_BIN', "/usr/bin/gs");
 //define('GS_BIN', "C:/xampp/gs9.20/bin/gswin32c.exe");
-define('GS_BIN', dirname(__DIR__)."/gs9.20/bin/gs");
+//define('GS_BIN', dirname(__DIR__)."\gs9.20\bin\gswin32c.exe");
+if($os === "Windows")
+{
+	$location = "/gs9.20/bin/gswin32c.exe";
+}
+elseif($os === "Mac")
+{
+	$location = "/gs9.20/bin/gs";
+}
+
+define('GS_BIN', dirname(__DIR__).$location);
 
 //Temporary directory
 define('TEMPORARY_DIRECTORY', "/tmp");
