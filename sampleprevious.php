@@ -7,6 +7,20 @@ session_start();
 </div>
 
 
+<script>
+    $(document).ready(function() {
+        var navoffeset=$(".sidebar-menu").offset().top;
+        $(window).scroll(function(){
+            var scrollpos=$(window).scrollTop();
+            if(scrollpos >=navoffeset){
+                $(".sidebar-menu").addClass("fixed");
+            }else{
+                $(".sidebar-menu").removeClass("fixed");
+            }
+        });
+    });
+</script>
+
 <head>
 <title>Sample previous work</title>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -24,37 +38,41 @@ session_start();
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="span12">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle ="tab" href="#chart">Chart</a></li>
-                            <li><a data-toggle ="tab" href="#table">Table</a></li>
-                        </ul>
-                    </div>
-			    <div id="myTabContent" class="tab-content">
-                    <div id="chart" class="tab-pane fade in active">
-                        <div class="row-fluid">
-                            <?php
-                            include "data.php";
-                            ?>
+                    
+                    <!-- CONTENT -->
+                    
+                    <ul class="nav nav-tabs">
+  						<li class="active"><a data-toggle="tab" href="#chart">Chart</a></li>
+  						<li><a data-toggle="tab" href="#bar">Bar</a></li>
+						<li><a data-toggle="tab" href="#table">Table</a></li>
+					</ul>
+
+					<div class="tab-content">
+  						<div id="chart" class="tab-pane fade in active">
+   							<!--PIE CHART-->
+                            <div id="align" align="center">
+                            <?php include("data.php");?>
                             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
                             <script type="text/javascript" src="js/Chart.min.js"></script>
                             <?php
 	                        $json_array = $_SESSION['json_array'];
-                            //	echo implode("<br>",$json_array);
+                            //	echo implode("<br>",$json_array);						
 	                        for ($i=0; $i < 20; $i++) {
-	                        ?><div class="col-xs-3 span3"><?php
-		                    $data = $json_array[$i];//		echo $current_json;
-	                        $question = $i+1;
-	                        echo "Question $question:<br><br>";
-                            //	echo $data;
-	                        echo "<canvas id='mycanvas".$i."' style='width:360; height:360'></canvas>";
-	                        echo "<script language='javascript'>
-	                        var data = $data;
-                            var label = [];
-                            var total = [];
-                            for(var j in data) {
-                            label.push(data[j].label);
-                            total.push(data[j].total);
-                            }
+								echo "<div class='col-xs-5 span5'>";
+		                    	$data = $json_array[$i];//		echo $current_json;
+		                        $question = $i+1;
+		                        echo "Question $question:";
+        	                    //	echo $data;
+	        	                echo "<canvas style = 'padding-top:5px; margin-bottom:50px;' id='mycanvas".$i."' style='width:360; height:360'></canvas>";
+								echo "</div>";
+	            	            echo "<script language='javascript'>
+	                	        var data = $data;
+                        	    var label = [];
+                            	var total = [];
+	                            for(var j in data) {
+    	                        label.push(data[j].label);
+        	                    total.push(data[j].total);
+            	            }
                             var ctx = document.getElementById('mycanvas".$i."');
                             var mycanvas".$i." = new Chart(ctx, {
                             type: 'pie',
@@ -62,38 +80,86 @@ session_start();
                             labels: label,
                             datasets: [{
                             label: 'Question ' + $question,
-                            backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(153, 102, 255, 0.2)'],
-                            borderColor: ['rgba(255,99,132,1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(54, 162, 235, 1)', 'rgba(153, 102, 255, 1)'],
+                            backgroundColor: ['rgba(255, 0, 0, 0.2)', 'rgba(255, 110, 0, 0.2)', 'rgba(255, 225, 0, 0.2)', 'rgba(100, 200, 35, 0.2)', 'rgba(50, 185, 255, 0.2)', 'rgba(200, 75, 255, 0.2)'],
+                            borderColor: ['rgba(255, 0, 0, 1)', 'rgba(255, 110, 0, 1)', 'rgba(255, 225, 0, 1)', 'rgba(100, 200, 35, 1)', 'rgba(50, 185, 255, 1)', 'rgba(200, 75, 255, 1)'],
+							borderWidth: 1,
                             data: total
-                            }
-                            ]
-                            },
+                            }]},
                             options: {
                                 responsive: false,
-                                    scales: {
-                                        yAxes: [{
-                                             ticks: {
-                                                   beginAtZero:true
-                                                    }
-                                                }]
-                                            }
-                                        }
-                                    
-                                    });
-
+                            	}
+                            });
 	                        </script>";
-                             ?><br><br><br></div><?php
                             }
                             ?>
-                    </div>
-                </div>
-                <div id="table" class="tab-pane fade in active">
+                            </div>
+                            <!--END PIE CHART-->
+  						</div>
+                        
+                        
+  						<div id="bar" class="tab-pane fade">
+    						<!--BAR CHART-->
+                            <div id="align" align="center">
+                            <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+                            <script type="text/javascript" src="js/Chart.min.js"></script>
+                            <?php
+	                        $json_array = $_SESSION['json_array'];
+							for ($j=0; $j < 20; $j++) {
+								echo "<div class='col-xs-5 span5'>";
+		                    	$data = $json_array[$j];//		echo $current_json;
+		                        $question = $j+1;
+		                        echo "Question $question:";
+        	                    $k = $j+100;
+	        	                echo "<canvas style = 'padding-top:5px; margin-bottom:50px; width:360; height:360;' id='mycanvas".$k."'></canvas>";
+								echo "</div>";
+	            	            echo "<script language='javascript'>
+	                	        var data = $data;
+                        	    var label = [];
+                            	var total = [];
+	                            for(var j in data) {
+    	                        label.push(data[j].label);
+        	                    total.push(data[j].total);
+								}
+                            var ctx = document.getElementById('mycanvas".$k."');
+                            var mycanvas".$k." = new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                            labels: label,
+                            datasets: [{
+                            label: 'Question ' + $question,
+                            backgroundColor: ['rgba(255, 0, 0, 0.2)', 'rgba(255, 110, 0, 0.2)', 'rgba(255, 225, 0, 0.2)', 'rgba(100, 200, 35, 0.2)', 'rgba(50, 185, 255, 0.2)', 'rgba(200, 75, 255, 0.2)'],
+                            borderColor: ['rgba(255, 0, 0, 1)', 'rgba(255, 110, 0, 1)', 'rgba(255, 225, 0, 1)', 'rgba(100, 200, 35, 1)', 'rgba(50, 185, 255, 1)', 'rgba(200, 75, 255, 1)'],
+							borderWidth: 1,
+                            data: total
+                            }]},
+                            options: {
+                                responsive: false,
+								scales: {
+            						yAxes: [{
+                						ticks: {
+											stepSize: 1,
+                    						beginAtZero: true
+                						}
+           							}]
+        						}
+                            }
+                            });
+	                        </script>";
+                            }						
+	                        
+                            ?>
+                            </div>
+                            <!--END BAR CHART-->
+  						</div>
+                        
+                        
+ 						<div id="table" class="tab-pane fade">
+<!--TABLES-->
+<div id="align" align="center">					
 <?php
 mysql_connect('localhost', 'root', '');
 mysql_select_db('quexf');
-
 $bgid;
-
 for ($i=0; $i < 20; $i++) {
 	$bgid = $i + 1;
 	$sql="SELECT label, COUNT(f.bid) AS total
@@ -102,27 +168,35 @@ for ($i=0; $i < 20; $i++) {
 	GROUP BY label
 	ORDER BY b.bid";
 	$records = mysql_query($sql);
-
-	echo "Question $bgid";
-
-	echo "<table style = 'margin:20; border:1px solid black'>";
-
+	echo "<div class='col-xs-5 span5' style='margin-left:15px;'>";
+	echo "Question $bgid:";
+	echo "<table class='table' style='margin-bottom:50px; margin-top:10px;'>";
+//	echo "<thead>";
 	echo "<tr>";
-		echo "<th style = 'padding:5px; border:1px solid grey'>Option</th>";
-		echo "<th style = 'padding:5px; border:1px solid grey'>Total</th>";
+		echo "<th width='70%'>Option</th>";
+		echo "<th width='30%'>Total</th>";
 	echo "</tr>";
-
+//	echo "</thead>";
+//	echo "<tbody>";
 	while ($quexf=mysql_fetch_assoc($records)) {
 		echo "<tr>";
-		echo "<td style = 'padding:5px;'>".$quexf['label']."</td>";
-		echo "<td style = 'padding:5px;'>".$quexf['total']."</td>";
+		echo "<td>".$quexf['label']."</td>";
+		echo "<td>".$quexf['total']."</td>";
 		echo "</tr>";
 	}
+//	echo "</tbody>";
 	echo "</table>";
+	echo "</div>";
 }
 ?>
-                </div>
-            </div>
+</div>
+<!--END TABLES--> 
+                            
+  						</div>
+					</div>
+                    
+                    <!-- END CONTENT -->
+                    
                     </div>
 				</div>
 			</div>
