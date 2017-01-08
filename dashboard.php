@@ -29,6 +29,14 @@ session_start();
     <script src="js/dropzone.js"></script>
     <link href="css/dropzone.css" rel="stylesheet" type="text/css">
 
+
+
+    <script src="scripts/modernizr-chrg.min.js"></script>
+    <script src="scripts/imagesloaded.min.js"></script>
+    <script src="scripts/masonry.min.js"></script>
+    <script src="scripts/chromagallery.min.js"></script>
+
+
     <title>Dashboard</title>
 </head>
 <body>

@@ -52,10 +52,6 @@ array_push($json,$json_string);
 //echo "<br><br>";
 }
 
-//	if(isset($_SESSION['json_array'])){ 
-//		$_SESSION['json_array'] = array();
-//	}
-
 $_SESSION['json_array'] = $json;
 
 //close connection

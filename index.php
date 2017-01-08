@@ -8,8 +8,10 @@ session_start();
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+    <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
     <script type="text/javascript" src="js/bootstrap.fix.js"></script>
-<title>Login</title>
+
+    <title>Login</title>
 </head>
 <body>
 <div class="container-fluid">
@@ -53,7 +55,28 @@ session_start();
             </div>
         </div>
         <div class="col-xs-6 span3">
-            <img alt="ATG Class Student OCR Feedback Scanning App" src="img/test1.png" />
+<!--            <img alt="UCL Student OCR Feedback Web App" src="img/test1.png" />-->
+
+            <section>
+
+
+
+                <div class="hex" style="width: 18vw; height: 18vw;font-size:19px;background-color: #5763ff; color: white;  line-height: 15vw;  text-align: center;">UCL Student OCR Feedback Web App</div>
+
+            </section>
+            <script src="js/anime.js"></script>
+            <script>
+                var hex = anime({
+                    targets: '.hex',
+                    backgroundColor: '#319BFF',
+                    duration: 3000,
+                    loop: true,
+                    direction: 'alternate',
+                    easing: 'easeOutQuad'
+                });
+            </script>
+
+
             <br>
             <br>
             <br>
@@ -76,18 +99,20 @@ session_start();
                         $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
                         if (strpos($url,'error=incorrect') !==false){
                             echo "Your username or password is incorrect!";
-                        }?>
+                        }
+                        if (strpos($url,'error=resetpass') !==false){
+                            echo "Your temporary password is: 66666666, please login and change your password as soon as possible!";
+                        }
+
+                        ?>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <label class="checkbox"><input type="checkbox" />Remember me</label><button class="btn" type="submit">Login</button>
+                        <label class="checkbox"><input type="checkbox" />Remember me 10 days</label><button class="btn" type="submit">Login</button>
                     </div>
                 </div>
             </form>
-
-
-
 
 
             <a data-toggle="modal" data-target="#myModal2">
@@ -101,30 +126,45 @@ session_start();
                             <button type="button" class="close" data-dismiss="modal"
                                     aria-hidden="true">
                             </button>
+                        </div>
+                        <div class="modal-body">
                             <?php
                             $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-                            if (strpos($url,'error=empty') !==false){
+                            if (strpos($url,'error=messagesent') !==false){
                                 ?>
                                 <script>
-                                    $(function () { $('#myModal').modal({
+                                    $(function () { $('#myModal2').modal({
                                         keyboard: true
                                     })});
                                 </script>
                                 <h4 class="modal-title" id="myModalLabel">
                                     <style>
                                     </style>
-                                    Fill out all fields!
+                                    Success, please check your email inbox.
                                 </h4>
-                                <?php ;} ?>
-                        </div>
-                        <div class="modal-body">
-                            <form action="includes/signup.php" method="POST">
-                                Please enter your email address
-                                <input type="text" name="uid" placeholder="Username"><br>
-                                <br>
-                                <button type="submit" class="btn btn-primary">Send message</button> &#160&#160&#160&#160
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                                <?php ;}
+                                if (strpos($url,'error=checkemail') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal2').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    Sorry, we couldn't verify your account, please try again
+                                </h4>
+                                <?php ;}
 
+
+                            ?>
+                            <form action="includes/sendemail.php" method="post">
+                                Please enter your email address
+                                <input type="text" name="email" placeholder="Email"><br>
+                                <br>
+                                <button type="submit" class="btn btn-primary" name="forgotPass" value="Request Password">Send message</button> &#160&#160&#160&#160
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
                             </form>
                         </div>
                     </div><!-- /.modal-content -->
@@ -206,9 +246,6 @@ session_start();
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->
             </div>
-
-
-
 
 
 

@@ -1,7 +1,6 @@
 <?php
-session_start();
+session_start ();
 include '../db/dbh.php';
-
 $uid = $_POST['username'];
 $pwd = $_POST['oldpassword'];
 $newpassword = $_POST["newpassword"];
@@ -30,9 +29,7 @@ if ($newpassword !== $assertpassword) {
         $sql = "UPDATE  users SET pwd='{$newpassword}' WHERE uid='{$uid}'";
         $result = mysqli_query($conn, $sql);
  //       mysqli_query ( "UPDATE  users SET pwd='{$newpassword}' WHERE uid='{$uid}'");
- //       session_destroy();
-        header("Location: ../dashboard.php");
+        session_destroy();
+        header("Location: ../index.php");
     }
 }
-
-?>

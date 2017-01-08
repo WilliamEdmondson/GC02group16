@@ -20,50 +20,35 @@
 
             <li><a href="#"><i class="fa fa-list"></i><span>Previous upload</span><span class="fa fa-angle-right" style="float: right"></span></a>
                 <ul id="menu-academico-sub" >
-                    <li><a href="#"><i class="fa fa-star"></i><span>Previous upload</a>
-                    <li><a href="#"><i class="fa fa-star"></i><span>Previous chart</a>
-              </ul>
+                    <li><a href="view_upload.php"><i class="fa fa-star"></i><span>Previous upload</a>
+                    <li><a href="sampleprevious.php"><i class="fa fa-star"></i><span>Previous chart</a>
+                </ul>
             </li>
 
-            <li id="menu--upload" ><a href="#"><i class="fa fa-plus"></i><span>upload</span></a></li>
+            <li id="menu--upload" ><a href="upload.php"><i class="fa fa-plus"></i><span>upload</span></a></li>
 
             <li id="menu--comunicacao" ><a href="#"><i class="fa fa-user nav_icon"></i><span>My Account</span><span class="fa fa-angle-right" style="float: right"></span></a>
                 <ul id="menu-comunicacao-sub" >
                     <li id="menu-arquivos" ><a href="changepassword.php"><i class="fa fa-refresh"></i>Change password</a></li>
-                    <li id="menu-arquivos" ><a href="#"><i class="fa fa-table"></i>Manage</a></li>
+                    <li id="menu-arquivos" ><a href="manage.php"><i class="fa fa-table"></i>Manage</a></li>
                     <li id="menu-arquivos" ><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
                 </ul>
             </li>
 
             </li>
             <?php
-                if($_SESSION['admin']==1){ ?>
-                    <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                      <ul id="menu-academico-sub" >
+            if($_SESSION['admin']==1){ ?>
+                <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul id="menu-academico-sub" >
                         <li> <a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a> </li>
                         <li> <a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a> </li>
-                     </ul>
-                    </li>";
-           <?php }?>
+                    </ul>
+                </li>";
+            <?php }?>
         </ul>
     </div>
 
 </div>
-
-<script>
-    $(document).ready(function() {
-        var navoffeset=$(".sidebar").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar").addClass("fixed");
-            }else{
-                $(".sidebar").removeClass("fixed");
-            }
-        });
-    });
-
-</script>
 
 
 </body>
