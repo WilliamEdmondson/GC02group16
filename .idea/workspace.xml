@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file4.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file5.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file6.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file3.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/loginverify.php" afterPath="$PROJECT_DIR$/includes/loginverify.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sampleprevious.php" afterPath="$PROJECT_DIR$/sampleprevious.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,23 +29,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="sampleprevious.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sampleprevious.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+              <folding>
+                <marker date="1484003610000" expanded="true" signature="2670:4037" ph="..." />
+                <marker date="1484003610000" expanded="true" signature="2854:2994" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="3140:4001" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484003610000" expanded="true" signature="3217:3849" ph="{&quot;labels&quot;: label...}" />
+                <marker date="1484003610000" expanded="true" signature="3300:3848" ph="[...]" />
+                <marker date="1484003610000" expanded="true" signature="3301:3847" ph="{&quot;data&quot;: total...}" />
+                <marker date="1484003610000" expanded="true" signature="3888:3971" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="5187:6742" ph="..." />
+                <marker date="1484003610000" expanded="true" signature="5371:5494" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="5640:6706" ph="{&quot;type&quot;: 'bar'...}" />
+                <marker date="1484003610000" expanded="true" signature="5717:6349" ph="{&quot;labels&quot;: label...}" />
+                <marker date="1484003610000" expanded="true" signature="5800:6348" ph="[...]" />
+                <marker date="1484003610000" expanded="true" signature="5801:6347" ph="{&quot;data&quot;: total...}" />
+                <marker date="1484003610000" expanded="true" signature="6388:6676" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="6457:6646" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="6484:6630" ph="[...]" />
+                <marker date="1484003610000" expanded="true" signature="6485:6629" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="6516:6609" ph="{...}" />
+                <marker date="1484003610000" expanded="true" signature="8270:8418" ph="SELECT label... boxes" />
+                <marker date="1484003610000" expanded="true" signature="8494:8511" ph="..." />
+                <marker date="1484003610000" expanded="true" signature="8576:8612" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.import.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="820" column="0" lean-forward="true" selection-start-line="820" selection-start-column="0" selection-end-line="820" selection-end-column="0" />
+              <folding>
+                <marker date="1484003997000" expanded="true" signature="4125:4202" ph="INSERT INTO questionnaires... " />
+                <marker date="1484003997000" expanded="true" signature="8428:8499" ph="SELECT qid F... ocrkbboxgroup" />
+                <marker date="1484003997000" expanded="true" signature="8589:8660" ph="SELECT qid F... ocrkbboxgroup" />
+                <marker date="1484003997000" expanded="true" signature="9167:9253" ph="INSERT INTO formboxverifychar" />
+                <marker date="1484003997000" expanded="true" signature="9373:9459" ph="INSERT INTO formboxverifytext" />
+                <marker date="1484003997000" expanded="true" signature="9572:9821" ph="SELECT b.bid... boxes" />
+                <marker date="1484003997000" expanded="true" signature="10533:10782" ph="SELECT b.bid... boxes" />
+                <marker date="1484003997000" expanded="true" signature="11491:11644" ph="SELECT b.bid... boxes" />
+                <marker date="1484003997000" expanded="true" signature="11900:11978" ph="INSERT INTO formboxes" />
+                <marker date="1484003997000" expanded="true" signature="12076:12278" ph="SELECT b.bid... boxes" />
+                <marker date="1484003997000" expanded="true" signature="12620:12928" ph="SELECT boxes... boxes" />
+                <marker date="1484003997000" expanded="true" signature="13040:13381" ph="SELECT formb... formboxes" />
+                <marker date="1484003997000" expanded="true" signature="13520:13822" ph="SELECT formb... formboxes" />
+                <marker date="1484003997000" expanded="true" signature="14268:14604" ph="SELECT boxes... boxes" />
+                <marker date="1484003997000" expanded="true" signature="15042:15134" ph="SELECT pfid,... processforms" />
+                <marker date="1484003997000" expanded="true" signature="17665:17721" ph="SELECT qid F... pages" />
+                <marker date="1484003997000" expanded="true" signature="18065:18122" ph="INSERT INTO forms... " />
+                <marker date="1484003997000" expanded="true" signature="18065:18157" ph="INSERT INTO forms... " />
+                <marker date="1484003997000" expanded="true" signature="20055:20133" ph="SELECT * FRO... pages" />
+                <marker date="1484003997000" expanded="true" signature="20340:20444" ph="INSERT INTO missingpages... " />
+                <marker date="1484003997000" expanded="true" signature="21343:21396" ph="INSERT INTO formpages... " />
+                <marker date="1484003997000" expanded="true" signature="22294:22398" ph="INSERT INTO missingpages... " />
+                <marker date="1484003997000" expanded="true" signature="22793:22919" ph="INSERT INTO processforms... " />
+                <marker date="1484003997000" expanded="true" signature="23032:23191" ph="UPDATE proce... " />
+                <marker date="1484003997000" expanded="true" signature="23265:23321" ph="UPDATE forms... " />
+                <marker date="1484003997000" expanded="true" signature="23600:23726" ph="INSERT INTO processforms... " />
+                <marker date="1484003997000" expanded="true" signature="24205:24491" ph="SELECT mpid,... forms" />
+                <marker date="1484003997000" expanded="true" signature="25256:25306" ph="INSERT INTO formpages... " />
+                <marker date="1484003997000" expanded="true" signature="25737:25791" ph="DELETE FROM " />
+                <marker date="1484003997000" expanded="true" signature="25957:26151" ph="SELECT count... forms" />
+                <marker date="1484003997000" expanded="true" signature="26332:26386" ph="DELETE FROM " />
+                <marker date="1484003997000" expanded="true" signature="27050:27107" ph="INSERT INTO ocrkb... " />
+                <marker date="1484003997000" expanded="true" signature="27893:27941" ph="SELECT pid F... pages" />
+                <marker date="1484003997000" expanded="true" signature="28039:28080" ph="DELETE FROM " />
+                <marker date="1484003997000" expanded="true" signature="28120:28168" ph="DELETE FROM " />
+                <marker date="1484003997000" expanded="true" signature="28212:28254" ph="DELETE FROM " />
+                <marker date="1484003997000" expanded="true" signature="28394:28467" ph="UPDATE quest... " />
+                <marker date="1484003997000" expanded="true" signature="28678:28765" ph="INSERT INTO sections... " />
+                <marker date="1484003997000" expanded="true" signature="29052:29134" ph="SELECT pid F... pages" />
+                <marker date="1484003997000" expanded="true" signature="30003:30098" ph="UPDATE pages... " />
+                <marker date="1484003997000" expanded="true" signature="30508:30652" ph="INSERT INTO boxgroupstype... " />
+                <marker date="1484003997000" expanded="true" signature="30953:31078" ph="INSERT INTO boxes... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="159">
+              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding>
-                <marker date="1484000945000" expanded="true" signature="3237:5615" ph="..." />
-                <marker date="1484000945000" expanded="true" signature="3514:3699" ph="{...}" />
-                <marker date="1484000945000" expanded="true" signature="3877:5503" ph="{&quot;type&quot;: 'pie'...}" />
-                <marker date="1484000945000" expanded="true" signature="3978:4730" ph="{&quot;labels&quot;: label...}" />
-                <marker date="1484000945000" expanded="true" signature="4093:4676" ph="[...]" />
-                <marker date="1484000945000" expanded="true" signature="4094:4618" ph="{&quot;data&quot;: total...}" />
-                <marker date="1484000945000" expanded="true" signature="4793:5404" ph="{...}" />
-                <marker date="1484000945000" expanded="true" signature="4934:5350" ph="{...}" />
-                <marker date="1484000945000" expanded="true" signature="5003:5292" ph="[...]" />
-                <marker date="1484000945000" expanded="true" signature="5004:5291" ph="{...}" />
-                <marker date="1484000945000" expanded="true" signature="5077:5229" ph="{...}" />
+                <marker date="1484004519000" expanded="true" signature="3237:3238" ph="..." />
+                <marker date="1484004519000" expanded="true" signature="3237:5320" ph="..." />
+                <marker date="1484004519000" expanded="true" signature="3530:3715" ph="{...}" />
+                <marker date="1484004519000" expanded="true" signature="3893:5207" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484004519000" expanded="true" signature="3893:5208" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484004519000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
+                <marker date="1484004519000" expanded="true" signature="4109:4164" ph="[...]" />
+                <marker date="1484004519000" expanded="true" signature="4109:4805" ph="[...]" />
+                <marker date="1484004519000" expanded="true" signature="4110:4164" ph="{&quot;data&quot;: total...}" />
+                <marker date="1484004519000" expanded="true" signature="4922:5109" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -57,72 +141,20 @@
             <state relative-caret-position="251">
               <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
-                <marker date="1484000667000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
+                <marker date="1484001382000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="480">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
               <folding>
-                <marker date="1484001124000" expanded="true" signature="1858:1958" ph="UPDATE forms... " />
-                <marker date="1484001124000" expanded="true" signature="2706:2723" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.import.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="919" column="37" lean-forward="false" selection-start-line="919" selection-start-column="25" selection-end-line="919" selection-end-column="37" />
-              <folding>
-                <marker date="1483995291000" expanded="true" signature="4125:4202" ph="INSERT INTO questionnaires... " />
-                <marker date="1483995291000" expanded="true" signature="8428:8499" ph="SELECT qid F... ocrkbboxgroup" />
-                <marker date="1483995291000" expanded="true" signature="8589:8660" ph="SELECT qid F... ocrkbboxgroup" />
-                <marker date="1483995291000" expanded="true" signature="9167:9253" ph="INSERT INTO formboxverifychar" />
-                <marker date="1483995291000" expanded="true" signature="9373:9459" ph="INSERT INTO formboxverifytext" />
-                <marker date="1483995291000" expanded="true" signature="9572:9821" ph="SELECT b.bid... boxes" />
-                <marker date="1483995291000" expanded="true" signature="10533:10782" ph="SELECT b.bid... boxes" />
-                <marker date="1483995291000" expanded="true" signature="11491:11644" ph="SELECT b.bid... boxes" />
-                <marker date="1483995291000" expanded="true" signature="11900:11978" ph="INSERT INTO formboxes" />
-                <marker date="1483995291000" expanded="true" signature="12076:12278" ph="SELECT b.bid... boxes" />
-                <marker date="1483995291000" expanded="true" signature="12620:12928" ph="SELECT boxes... boxes" />
-                <marker date="1483995291000" expanded="true" signature="13040:13381" ph="SELECT formb... formboxes" />
-                <marker date="1483995291000" expanded="true" signature="13520:13822" ph="SELECT formb... formboxes" />
-                <marker date="1483995291000" expanded="true" signature="14268:14604" ph="SELECT boxes... boxes" />
-                <marker date="1483995291000" expanded="true" signature="15042:15134" ph="SELECT pfid,... processforms" />
-                <marker date="1483995291000" expanded="true" signature="17665:17721" ph="SELECT qid F... pages" />
-                <marker date="1483995291000" expanded="true" signature="18064:18116" ph="INSERT INTO forms... " />
-                <marker date="1483995291000" expanded="true" signature="20014:20092" ph="SELECT * FRO... pages" />
-                <marker date="1483995291000" expanded="true" signature="20299:20403" ph="INSERT INTO missingpages... " />
-                <marker date="1483995291000" expanded="true" signature="21302:21355" ph="INSERT INTO formpages... " />
-                <marker date="1483995291000" expanded="true" signature="22253:22357" ph="INSERT INTO missingpages... " />
-                <marker date="1483995291000" expanded="true" signature="22752:22878" ph="INSERT INTO processforms... " />
-                <marker date="1483995291000" expanded="true" signature="22991:23150" ph="UPDATE proce... " />
-                <marker date="1483995291000" expanded="true" signature="23224:23280" ph="UPDATE forms... " />
-                <marker date="1483995291000" expanded="true" signature="23559:23685" ph="INSERT INTO processforms... " />
-                <marker date="1483995291000" expanded="true" signature="24164:24450" ph="SELECT mpid,... forms" />
-                <marker date="1483995291000" expanded="true" signature="25215:25265" ph="INSERT INTO formpages... " />
-                <marker date="1483995291000" expanded="true" signature="25696:25750" ph="DELETE FROM " />
-                <marker date="1483995291000" expanded="true" signature="25916:26110" ph="SELECT count... forms" />
-                <marker date="1483995291000" expanded="true" signature="26291:26345" ph="DELETE FROM " />
-                <marker date="1483995291000" expanded="true" signature="27009:27066" ph="INSERT INTO ocrkb... " />
-                <marker date="1483995291000" expanded="true" signature="27852:27900" ph="SELECT pid F... pages" />
-                <marker date="1483995291000" expanded="true" signature="27998:28039" ph="DELETE FROM " />
-                <marker date="1483995291000" expanded="true" signature="28079:28127" ph="DELETE FROM " />
-                <marker date="1483995291000" expanded="true" signature="28171:28213" ph="DELETE FROM " />
-                <marker date="1483995291000" expanded="true" signature="28353:28426" ph="UPDATE quest... " />
-                <marker date="1483995291000" expanded="true" signature="28637:28724" ph="INSERT INTO sections... " />
-                <marker date="1483995291000" expanded="true" signature="29011:29093" ph="SELECT pid F... pages" />
-                <marker date="1483995291000" expanded="true" signature="29962:30057" ph="UPDATE pages... " />
-                <marker date="1483995291000" expanded="true" signature="30467:30611" ph="INSERT INTO boxgroupstype... " />
-                <marker date="1483995291000" expanded="true" signature="30912:31037" ph="INSERT INTO boxes... " />
+                <marker date="1484003997000" expanded="true" signature="2014:2114" ph="UPDATE forms... " />
+                <marker date="1484003997000" expanded="true" signature="2862:2879" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,62 +180,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quexf-1.18.1/verifyjs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="3046">
+              <caret line="451" column="19" lean-forward="false" selection-start-line="451" selection-start-column="8" selection-end-line="451" selection-end-column="19" />
               <folding>
-                <marker date="1484000143000" expanded="true" signature="318:593" ph="SELECT MIN(b... boxes" />
-                <marker date="1484000143000" expanded="true" signature="640:777" ph="SELECT offx,... formpages" />
-                <marker date="1484000143000" expanded="true" signature="823:977" ph="SELECT b.bid... boxes" />
-                <marker date="1484000143000" expanded="true" signature="2419:2432" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="3047:3259" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="4057:4269" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="5160:5415" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="6013:6268" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="6988:7251" ph="UPDATE formp... " />
-                <marker date="1484000143000" expanded="true" signature="7098:7145" ph="SELECT heigh... pages" />
-                <marker date="1484000143000" expanded="true" signature="7163:7209" ph="SELECT width... pages" />
-                <marker date="1484000143000" expanded="true" signature="7681:7758" ph="DELETE FROM " />
-                <marker date="1484000143000" expanded="true" signature="7819:7908" ph="INSERT INTO formboxverifychar... " />
-                <marker date="1484000143000" expanded="true" signature="8061:8138" ph="DELETE FROM " />
-                <marker date="1484000143000" expanded="true" signature="8373:8464" ph="INSERT INTO formboxverifychar... " />
-                <marker date="1484000143000" expanded="true" signature="8748:8839" ph="INSERT INTO formboxverifytext... " />
-                <marker date="1484000143000" expanded="true" signature="9208:9369" ph="UPDATE forms... " />
-                <marker date="1484000143000" expanded="true" signature="9511:9572" ph="UPDATE verif... " />
-                <marker date="1484000143000" expanded="true" signature="9703:9768" ph="SELECT rpc_s... questionnaires" />
-                <marker date="1484000143000" expanded="true" signature="11877:11896" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="11898:11963" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="12046:12176" ph="SELECT vq.qi... verifierquestionnaire" />
-                <marker date="1484000143000" expanded="true" signature="12296:12371" ph="SELECT count... forms" />
-                <marker date="1484000143000" expanded="true" signature="12417:12970" ph="SELECT q.des... forms" />
-                <marker date="1484000143000" expanded="true" signature="12617:12671" ph="SELECT count... pages" />
-                <marker date="1484000143000" expanded="true" signature="13596:14244" ph="SELECT b.bid... boxes" />
-                <marker date="1484000143000" expanded="true" signature="14260:14491" ph="SELECT b.bgi... boxes" />
-                <marker date="1484000143000" expanded="true" signature="14505:14799" ph="SELECT b.pid... boxes" />
-                <marker date="1484000143000" expanded="true" signature="17544:17594" ph="SELECT bid F... boxes" />
-                <marker date="1484000143000" expanded="true" signature="18333:18379" ph="SELECT pid F... boxes" />
-                <marker date="1484000143000" expanded="true" signature="19862:19881" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="20552:20745" ph="SELECT boxgr... boxgroupstype" />
-                <marker date="1484000143000" expanded="true" signature="21336:21383" ph="SELECT bid F... boxes" />
-                <marker date="1484000143000" expanded="true" signature="32516:32535" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="32537:32592" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="32712:32730" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="32746:32871" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="32975:32993" ph="..." />
-                <marker date="1484000143000" expanded="true" signature="33052:33087" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="343:618" ph="SELECT MIN(b... boxes" />
+                <marker date="1484004750000" expanded="true" signature="665:802" ph="SELECT offx,... formpages" />
+                <marker date="1484004750000" expanded="true" signature="848:1002" ph="SELECT b.bid... boxes" />
+                <marker date="1484004750000" expanded="true" signature="2444:2457" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="3072:3284" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="4082:4294" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="5185:5440" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="6038:6293" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="7013:7276" ph="UPDATE formp... " />
+                <marker date="1484004750000" expanded="true" signature="7123:7170" ph="SELECT heigh... pages" />
+                <marker date="1484004750000" expanded="true" signature="7188:7234" ph="SELECT width... pages" />
+                <marker date="1484004750000" expanded="true" signature="7706:7783" ph="DELETE FROM " />
+                <marker date="1484004750000" expanded="true" signature="7844:7933" ph="INSERT INTO formboxverifychar... " />
+                <marker date="1484004750000" expanded="true" signature="8086:8163" ph="DELETE FROM " />
+                <marker date="1484004750000" expanded="true" signature="8398:8489" ph="INSERT INTO formboxverifychar... " />
+                <marker date="1484004750000" expanded="true" signature="8773:8864" ph="INSERT INTO formboxverifytext... " />
+                <marker date="1484004750000" expanded="true" signature="9233:9394" ph="UPDATE forms... " />
+                <marker date="1484004750000" expanded="true" signature="9611:9672" ph="UPDATE verif... " />
+                <marker date="1484004750000" expanded="true" signature="9803:9868" ph="SELECT rpc_s... questionnaires" />
+                <marker date="1484004750000" expanded="true" signature="12252:12271" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="12273:12338" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="12421:12551" ph="SELECT vq.qi... verifierquestionnaire" />
+                <marker date="1484004750000" expanded="true" signature="12671:12746" ph="SELECT count... forms" />
+                <marker date="1484004750000" expanded="true" signature="12792:13345" ph="SELECT q.des... forms" />
+                <marker date="1484004750000" expanded="true" signature="12992:13046" ph="SELECT count... pages" />
+                <marker date="1484004750000" expanded="true" signature="13971:14619" ph="SELECT b.bid... boxes" />
+                <marker date="1484004750000" expanded="true" signature="14635:14866" ph="SELECT b.bgi... boxes" />
+                <marker date="1484004750000" expanded="true" signature="14880:15174" ph="SELECT b.pid... boxes" />
+                <marker date="1484004750000" expanded="true" signature="18024:18074" ph="SELECT bid F... boxes" />
+                <marker date="1484004750000" expanded="true" signature="18813:18859" ph="SELECT pid F... boxes" />
+                <marker date="1484004750000" expanded="true" signature="20342:20361" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="21032:21225" ph="SELECT boxgr... boxgroupstype" />
+                <marker date="1484004750000" expanded="true" signature="21816:21863" ph="SELECT bid F... boxes" />
+                <marker date="1484004750000" expanded="true" signature="32996:33015" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="33017:33072" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="33192:33210" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="33226:33351" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="33455:33473" ph="..." />
+                <marker date="1484004750000" expanded="true" signature="33532:33567" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -218,33 +240,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sampleprevious.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sampleprevious.php">
+      <file leaf-file-name="functions.database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="143">
+              <caret line="468" column="4" lean-forward="false" selection-start-line="468" selection-start-column="4" selection-end-line="468" selection-end-column="4" />
               <folding>
-                <marker date="1484000563000" expanded="true" signature="2252:3619" ph="..." />
-                <marker date="1484000563000" expanded="true" signature="2436:2576" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="2722:3583" ph="{&quot;type&quot;: 'pie'...}" />
-                <marker date="1484000563000" expanded="true" signature="2799:3431" ph="{&quot;labels&quot;: label...}" />
-                <marker date="1484000563000" expanded="true" signature="2882:3430" ph="[...]" />
-                <marker date="1484000563000" expanded="true" signature="2883:3429" ph="{&quot;data&quot;: total...}" />
-                <marker date="1484000563000" expanded="true" signature="3470:3553" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="4769:6324" ph="..." />
-                <marker date="1484000563000" expanded="true" signature="4953:5076" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="5222:6288" ph="{&quot;type&quot;: 'bar'...}" />
-                <marker date="1484000563000" expanded="true" signature="5299:5931" ph="{&quot;labels&quot;: label...}" />
-                <marker date="1484000563000" expanded="true" signature="5382:5930" ph="[...]" />
-                <marker date="1484000563000" expanded="true" signature="5383:5929" ph="{&quot;data&quot;: total...}" />
-                <marker date="1484000563000" expanded="true" signature="5970:6258" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="6039:6228" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="6066:6212" ph="[...]" />
-                <marker date="1484000563000" expanded="true" signature="6067:6211" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="6098:6191" ph="{...}" />
-                <marker date="1484000563000" expanded="true" signature="7852:8000" ph="SELECT label... boxes" />
-                <marker date="1484000563000" expanded="true" signature="8076:8093" ph="..." />
-                <marker date="1484000563000" expanded="true" signature="8158:8194" ph="..." />
+                <marker date="1484003768000" expanded="true" signature="1563:1603" ph="SELECT vid F... users" />
+                <marker date="1484003768000" expanded="true" signature="1831:1879" ph="SELECT * FRO... formcollections" />
+                <marker date="1484003768000" expanded="true" signature="2398:2447" ph="INSERT INTO formcollections... " />
+                <marker date="1484003768000" expanded="true" signature="2584:2621" ph="SELECT MAX(c... formcollections" />
+                <marker date="1484003768000" expanded="true" signature="2906:3032" ph="UPDATE formc... " />
+                <marker date="1484003768000" expanded="true" signature="3297:3347" ph="SELECT MAX(b... boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="3654:3704" ph="SELECT qid F... formcollections" />
+                <marker date="1484003768000" expanded="true" signature="3968:4008" ph="SELECT pid F... pages" />
+                <marker date="1484003768000" expanded="true" signature="4318:4407" ph="SELECT bgid boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="4455:4559" ph="SELECT bgid boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="5111:5163" ph="SELECT label... boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="5446:5494" ph="SELECT * FRO... boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="5814:6066" ph="SELECT b.bgi... boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="6144:6221" ph="UPDATE boxgr... " />
+                <marker date="1484003768000" expanded="true" signature="6417:6546" ph="SELECT b.bgi... boxgroupstype" />
+                <marker date="1484003768000" expanded="true" signature="6624:6701" ph="UPDATE boxgr... " />
+                <marker date="1484003768000" expanded="true" signature="7074:7160" ph="SELECT f.fid... forms" />
+                <marker date="1484003768000" expanded="true" signature="7461:7570" ph="SELECT f.fid... forms" />
+                <marker date="1484003768000" expanded="true" signature="8195:8260" ph="UPDATE verif... " />
+                <marker date="1484003768000" expanded="true" signature="8601:8673" ph="SELECT fid F... worklog" />
+                <marker date="1484003768000" expanded="true" signature="8911:8979" ph="SELECT fid F... forms" />
+                <marker date="1484003768000" expanded="true" signature="9230:9292" ph="SELECT fid F... worklog" />
+                <marker date="1484003768000" expanded="true" signature="9401:9444" ph="SELECT vid F... worklog" />
+                <marker date="1484003768000" expanded="true" signature="9602:10012" ph="SELECT b.bid... boxes" />
+                <marker date="1484003768000" expanded="true" signature="10189:10248" ph="SELECT qid,d... forms" />
               </folding>
             </state>
           </provider>
@@ -261,10 +287,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>include /quefx</find>
-      <find>include 'quexf-1.18.1/functions/functions.database.php';</find>
-      <find>vid</find>
-      <find>HTTP_SERVER</find>
       <find>HTTP_</find>
       <find>pwd</find>
       <find>s</find>
@@ -276,7 +298,6 @@
       <find>$fid</find>
       <find>$fid =</find>
       <find>get_fid</find>
-      <find>insert into forms</find>
       <find>$qid =</find>
       <find>width</find>
       <find>collection</find>
@@ -286,11 +307,16 @@
       <find>pageset</find>
       <find>usepagesetup</find>
       <find>there</find>
-      <find>session</find>
-      <find>data</find>
       <find>suc</find>
       <find>uid</find>
+      <find>data</find>
+      <find>insert into forms</find>
+      <find>fid</find>
+      <find>session_un</find>
       <find>post</find>
+      <find>description</find>
+      <find>session</find>
+      <find>session_uns</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -320,15 +346,15 @@
         <option value="$PROJECT_DIR$/data.php" />
         <option value="$PROJECT_DIR$/includes/signup.php" />
         <option value="$PROJECT_DIR$/parser.php" />
-        <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
-        <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/config.inc.php" />
-        <option value="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
-        <option value="$PROJECT_DIR$/sampleprevious.php" />
         <option value="$PROJECT_DIR$/includes/loginverify.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/sampleprevious.php" />
+        <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
         <option value="$PROJECT_DIR$/upload.php" />
+        <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
       </list>
     </option>
   </component>
@@ -343,7 +369,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="50" />
     <option name="y" value="23" />
     <option name="width" value="1203" />
     <option name="height" value="731" />
@@ -386,7 +412,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
+              <option name="myItemId" value="quexf-1.18.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quexf-1.18.1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,10 +538,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45443000" />
+    <option name="totallyTimeSpent" value="48449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="23" width="1203" height="731" extended-state="0" />
+    <frame x="50" y="23" width="1203" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18536991" sideWeight="0.4939577" order="0" side_tool="false" content_ui="combo" />
@@ -630,40 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-          <folding>
-            <marker date="1483995119000" expanded="true" signature="1563:1603" ph="SELECT vid F... users" />
-            <marker date="1483995119000" expanded="true" signature="1831:1879" ph="SELECT * FRO... formcollections" />
-            <marker date="1483995119000" expanded="true" signature="2398:2447" ph="INSERT INTO formcollections... " />
-            <marker date="1483995119000" expanded="true" signature="2584:2621" ph="SELECT MAX(c... formcollections" />
-            <marker date="1483995119000" expanded="true" signature="2906:3032" ph="UPDATE formc... " />
-            <marker date="1483995119000" expanded="true" signature="3297:3347" ph="SELECT MAX(b... boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="3649:3699" ph="SELECT qid F... formcollections" />
-            <marker date="1483995119000" expanded="true" signature="3946:3986" ph="SELECT pid F... pages" />
-            <marker date="1483995119000" expanded="true" signature="4296:4385" ph="SELECT bgid boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="4433:4537" ph="SELECT bgid boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="5089:5141" ph="SELECT label... boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="5424:5472" ph="SELECT * FRO... boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="5792:6044" ph="SELECT b.bgi... boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="6122:6199" ph="UPDATE boxgr... " />
-            <marker date="1483995119000" expanded="true" signature="6395:6524" ph="SELECT b.bgi... boxgroupstype" />
-            <marker date="1483995119000" expanded="true" signature="6602:6679" ph="UPDATE boxgr... " />
-            <marker date="1483995119000" expanded="true" signature="7052:7138" ph="SELECT f.fid... forms" />
-            <marker date="1483995119000" expanded="true" signature="7439:7548" ph="SELECT f.fid... forms" />
-            <marker date="1483995119000" expanded="true" signature="8173:8238" ph="UPDATE verif... " />
-            <marker date="1483995119000" expanded="true" signature="8579:8651" ph="SELECT fid F... worklog" />
-            <marker date="1483995119000" expanded="true" signature="8889:8957" ph="SELECT fid F... forms" />
-            <marker date="1483995119000" expanded="true" signature="9208:9270" ph="SELECT fid F... worklog" />
-            <marker date="1483995119000" expanded="true" signature="9379:9422" ph="SELECT vid F... worklog" />
-            <marker date="1483995119000" expanded="true" signature="9580:9990" ph="SELECT b.bid... boxes" />
-            <marker date="1483995119000" expanded="true" signature="10167:10226" ph="SELECT qid,d... forms" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/admin/pagesetup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -699,104 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="919" column="37" lean-forward="false" selection-start-line="919" selection-start-column="25" selection-end-line="919" selection-end-column="37" />
-          <folding>
-            <marker date="1483995291000" expanded="true" signature="4125:4202" ph="INSERT INTO questionnaires... " />
-            <marker date="1483995291000" expanded="true" signature="8428:8499" ph="SELECT qid F... ocrkbboxgroup" />
-            <marker date="1483995291000" expanded="true" signature="8589:8660" ph="SELECT qid F... ocrkbboxgroup" />
-            <marker date="1483995291000" expanded="true" signature="9167:9253" ph="INSERT INTO formboxverifychar" />
-            <marker date="1483995291000" expanded="true" signature="9373:9459" ph="INSERT INTO formboxverifytext" />
-            <marker date="1483995291000" expanded="true" signature="9572:9821" ph="SELECT b.bid... boxes" />
-            <marker date="1483995291000" expanded="true" signature="10533:10782" ph="SELECT b.bid... boxes" />
-            <marker date="1483995291000" expanded="true" signature="11491:11644" ph="SELECT b.bid... boxes" />
-            <marker date="1483995291000" expanded="true" signature="11900:11978" ph="INSERT INTO formboxes" />
-            <marker date="1483995291000" expanded="true" signature="12076:12278" ph="SELECT b.bid... boxes" />
-            <marker date="1483995291000" expanded="true" signature="12620:12928" ph="SELECT boxes... boxes" />
-            <marker date="1483995291000" expanded="true" signature="13040:13381" ph="SELECT formb... formboxes" />
-            <marker date="1483995291000" expanded="true" signature="13520:13822" ph="SELECT formb... formboxes" />
-            <marker date="1483995291000" expanded="true" signature="14268:14604" ph="SELECT boxes... boxes" />
-            <marker date="1483995291000" expanded="true" signature="15042:15134" ph="SELECT pfid,... processforms" />
-            <marker date="1483995291000" expanded="true" signature="17665:17721" ph="SELECT qid F... pages" />
-            <marker date="1483995291000" expanded="true" signature="18064:18116" ph="INSERT INTO forms... " />
-            <marker date="1483995291000" expanded="true" signature="20014:20092" ph="SELECT * FRO... pages" />
-            <marker date="1483995291000" expanded="true" signature="20299:20403" ph="INSERT INTO missingpages... " />
-            <marker date="1483995291000" expanded="true" signature="21302:21355" ph="INSERT INTO formpages... " />
-            <marker date="1483995291000" expanded="true" signature="22253:22357" ph="INSERT INTO missingpages... " />
-            <marker date="1483995291000" expanded="true" signature="22752:22878" ph="INSERT INTO processforms... " />
-            <marker date="1483995291000" expanded="true" signature="22991:23150" ph="UPDATE proce... " />
-            <marker date="1483995291000" expanded="true" signature="23224:23280" ph="UPDATE forms... " />
-            <marker date="1483995291000" expanded="true" signature="23559:23685" ph="INSERT INTO processforms... " />
-            <marker date="1483995291000" expanded="true" signature="24164:24450" ph="SELECT mpid,... forms" />
-            <marker date="1483995291000" expanded="true" signature="25215:25265" ph="INSERT INTO formpages... " />
-            <marker date="1483995291000" expanded="true" signature="25696:25750" ph="DELETE FROM " />
-            <marker date="1483995291000" expanded="true" signature="25916:26110" ph="SELECT count... forms" />
-            <marker date="1483995291000" expanded="true" signature="26291:26345" ph="DELETE FROM " />
-            <marker date="1483995291000" expanded="true" signature="27009:27066" ph="INSERT INTO ocrkb... " />
-            <marker date="1483995291000" expanded="true" signature="27852:27900" ph="SELECT pid F... pages" />
-            <marker date="1483995291000" expanded="true" signature="27998:28039" ph="DELETE FROM " />
-            <marker date="1483995291000" expanded="true" signature="28079:28127" ph="DELETE FROM " />
-            <marker date="1483995291000" expanded="true" signature="28171:28213" ph="DELETE FROM " />
-            <marker date="1483995291000" expanded="true" signature="28353:28426" ph="UPDATE quest... " />
-            <marker date="1483995291000" expanded="true" signature="28637:28724" ph="INSERT INTO sections... " />
-            <marker date="1483995291000" expanded="true" signature="29011:29093" ph="SELECT pid F... pages" />
-            <marker date="1483995291000" expanded="true" signature="29962:30057" ph="UPDATE pages... " />
-            <marker date="1483995291000" expanded="true" signature="30467:30611" ph="INSERT INTO boxgroupstype... " />
-            <marker date="1483995291000" expanded="true" signature="30912:31037" ph="INSERT INTO boxes... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/verifyjs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <marker date="1484000143000" expanded="true" signature="318:593" ph="SELECT MIN(b... boxes" />
-            <marker date="1484000143000" expanded="true" signature="640:777" ph="SELECT offx,... formpages" />
-            <marker date="1484000143000" expanded="true" signature="823:977" ph="SELECT b.bid... boxes" />
-            <marker date="1484000143000" expanded="true" signature="2419:2432" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="3047:3259" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="4057:4269" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="5160:5415" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="6013:6268" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="6988:7251" ph="UPDATE formp... " />
-            <marker date="1484000143000" expanded="true" signature="7098:7145" ph="SELECT heigh... pages" />
-            <marker date="1484000143000" expanded="true" signature="7163:7209" ph="SELECT width... pages" />
-            <marker date="1484000143000" expanded="true" signature="7681:7758" ph="DELETE FROM " />
-            <marker date="1484000143000" expanded="true" signature="7819:7908" ph="INSERT INTO formboxverifychar... " />
-            <marker date="1484000143000" expanded="true" signature="8061:8138" ph="DELETE FROM " />
-            <marker date="1484000143000" expanded="true" signature="8373:8464" ph="INSERT INTO formboxverifychar... " />
-            <marker date="1484000143000" expanded="true" signature="8748:8839" ph="INSERT INTO formboxverifytext... " />
-            <marker date="1484000143000" expanded="true" signature="9208:9369" ph="UPDATE forms... " />
-            <marker date="1484000143000" expanded="true" signature="9511:9572" ph="UPDATE verif... " />
-            <marker date="1484000143000" expanded="true" signature="9703:9768" ph="SELECT rpc_s... questionnaires" />
-            <marker date="1484000143000" expanded="true" signature="11877:11896" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="11898:11963" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="12046:12176" ph="SELECT vq.qi... verifierquestionnaire" />
-            <marker date="1484000143000" expanded="true" signature="12296:12371" ph="SELECT count... forms" />
-            <marker date="1484000143000" expanded="true" signature="12417:12970" ph="SELECT q.des... forms" />
-            <marker date="1484000143000" expanded="true" signature="12617:12671" ph="SELECT count... pages" />
-            <marker date="1484000143000" expanded="true" signature="13596:14244" ph="SELECT b.bid... boxes" />
-            <marker date="1484000143000" expanded="true" signature="14260:14491" ph="SELECT b.bgi... boxes" />
-            <marker date="1484000143000" expanded="true" signature="14505:14799" ph="SELECT b.pid... boxes" />
-            <marker date="1484000143000" expanded="true" signature="17544:17594" ph="SELECT bid F... boxes" />
-            <marker date="1484000143000" expanded="true" signature="18333:18379" ph="SELECT pid F... boxes" />
-            <marker date="1484000143000" expanded="true" signature="19862:19881" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="20552:20745" ph="SELECT boxgr... boxgroupstype" />
-            <marker date="1484000143000" expanded="true" signature="21336:21383" ph="SELECT bid F... boxes" />
-            <marker date="1484000143000" expanded="true" signature="32516:32535" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="32537:32592" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="32712:32730" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="32746:32871" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="32975:32993" ph="..." />
-            <marker date="1484000143000" expanded="true" signature="33052:33087" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -810,36 +722,6 @@
         <state relative-caret-position="165">
           <caret line="21" column="90" lean-forward="false" selection-start-line="21" selection-start-column="87" selection-end-line="21" selection-end-column="90" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleprevious.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1484000563000" expanded="true" signature="2252:3619" ph="..." />
-            <marker date="1484000563000" expanded="true" signature="2436:2576" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="2722:3583" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1484000563000" expanded="true" signature="2799:3431" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1484000563000" expanded="true" signature="2882:3430" ph="[...]" />
-            <marker date="1484000563000" expanded="true" signature="2883:3429" ph="{&quot;data&quot;: total...}" />
-            <marker date="1484000563000" expanded="true" signature="3470:3553" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="4769:6324" ph="..." />
-            <marker date="1484000563000" expanded="true" signature="4953:5076" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="5222:6288" ph="{&quot;type&quot;: 'bar'...}" />
-            <marker date="1484000563000" expanded="true" signature="5299:5931" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1484000563000" expanded="true" signature="5382:5930" ph="[...]" />
-            <marker date="1484000563000" expanded="true" signature="5383:5929" ph="{&quot;data&quot;: total...}" />
-            <marker date="1484000563000" expanded="true" signature="5970:6258" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="6039:6228" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="6066:6212" ph="[...]" />
-            <marker date="1484000563000" expanded="true" signature="6067:6211" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="6098:6191" ph="{...}" />
-            <marker date="1484000563000" expanded="true" signature="7852:8000" ph="SELECT label... boxes" />
-            <marker date="1484000563000" expanded="true" signature="8076:8093" ph="..." />
-            <marker date="1484000563000" expanded="true" signature="8158:8194" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,38 +746,200 @@
         <state relative-caret-position="251">
           <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <marker date="1484000667000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
+            <marker date="1484001382000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/sampleprevious.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="242">
+          <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
           <folding>
-            <marker date="1484000945000" expanded="true" signature="3237:5615" ph="..." />
-            <marker date="1484000945000" expanded="true" signature="3514:3699" ph="{...}" />
-            <marker date="1484000945000" expanded="true" signature="3877:5503" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1484000945000" expanded="true" signature="3978:4730" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1484000945000" expanded="true" signature="4093:4676" ph="[...]" />
-            <marker date="1484000945000" expanded="true" signature="4094:4618" ph="{&quot;data&quot;: total...}" />
-            <marker date="1484000945000" expanded="true" signature="4793:5404" ph="{...}" />
-            <marker date="1484000945000" expanded="true" signature="4934:5350" ph="{...}" />
-            <marker date="1484000945000" expanded="true" signature="5003:5292" ph="[...]" />
-            <marker date="1484000945000" expanded="true" signature="5004:5291" ph="{...}" />
-            <marker date="1484000945000" expanded="true" signature="5077:5229" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="2670:4037" ph="..." />
+            <marker date="1484003610000" expanded="true" signature="2854:2994" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="3140:4001" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484003610000" expanded="true" signature="3217:3849" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1484003610000" expanded="true" signature="3300:3848" ph="[...]" />
+            <marker date="1484003610000" expanded="true" signature="3301:3847" ph="{&quot;data&quot;: total...}" />
+            <marker date="1484003610000" expanded="true" signature="3888:3971" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="5187:6742" ph="..." />
+            <marker date="1484003610000" expanded="true" signature="5371:5494" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="5640:6706" ph="{&quot;type&quot;: 'bar'...}" />
+            <marker date="1484003610000" expanded="true" signature="5717:6349" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1484003610000" expanded="true" signature="5800:6348" ph="[...]" />
+            <marker date="1484003610000" expanded="true" signature="5801:6347" ph="{&quot;data&quot;: total...}" />
+            <marker date="1484003610000" expanded="true" signature="6388:6676" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="6457:6646" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="6484:6630" ph="[...]" />
+            <marker date="1484003610000" expanded="true" signature="6485:6629" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="6516:6609" ph="{...}" />
+            <marker date="1484003610000" expanded="true" signature="8270:8418" ph="SELECT label... boxes" />
+            <marker date="1484003610000" expanded="true" signature="8494:8511" ph="..." />
+            <marker date="1484003610000" expanded="true" signature="8576:8612" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="820" column="0" lean-forward="true" selection-start-line="820" selection-start-column="0" selection-end-line="820" selection-end-column="0" />
+          <folding>
+            <marker date="1484003997000" expanded="true" signature="4125:4202" ph="INSERT INTO questionnaires... " />
+            <marker date="1484003997000" expanded="true" signature="8428:8499" ph="SELECT qid F... ocrkbboxgroup" />
+            <marker date="1484003997000" expanded="true" signature="8589:8660" ph="SELECT qid F... ocrkbboxgroup" />
+            <marker date="1484003997000" expanded="true" signature="9167:9253" ph="INSERT INTO formboxverifychar" />
+            <marker date="1484003997000" expanded="true" signature="9373:9459" ph="INSERT INTO formboxverifytext" />
+            <marker date="1484003997000" expanded="true" signature="9572:9821" ph="SELECT b.bid... boxes" />
+            <marker date="1484003997000" expanded="true" signature="10533:10782" ph="SELECT b.bid... boxes" />
+            <marker date="1484003997000" expanded="true" signature="11491:11644" ph="SELECT b.bid... boxes" />
+            <marker date="1484003997000" expanded="true" signature="11900:11978" ph="INSERT INTO formboxes" />
+            <marker date="1484003997000" expanded="true" signature="12076:12278" ph="SELECT b.bid... boxes" />
+            <marker date="1484003997000" expanded="true" signature="12620:12928" ph="SELECT boxes... boxes" />
+            <marker date="1484003997000" expanded="true" signature="13040:13381" ph="SELECT formb... formboxes" />
+            <marker date="1484003997000" expanded="true" signature="13520:13822" ph="SELECT formb... formboxes" />
+            <marker date="1484003997000" expanded="true" signature="14268:14604" ph="SELECT boxes... boxes" />
+            <marker date="1484003997000" expanded="true" signature="15042:15134" ph="SELECT pfid,... processforms" />
+            <marker date="1484003997000" expanded="true" signature="17665:17721" ph="SELECT qid F... pages" />
+            <marker date="1484003997000" expanded="true" signature="18065:18122" ph="INSERT INTO forms... " />
+            <marker date="1484003997000" expanded="true" signature="18065:18157" ph="INSERT INTO forms... " />
+            <marker date="1484003997000" expanded="true" signature="20055:20133" ph="SELECT * FRO... pages" />
+            <marker date="1484003997000" expanded="true" signature="20340:20444" ph="INSERT INTO missingpages... " />
+            <marker date="1484003997000" expanded="true" signature="21343:21396" ph="INSERT INTO formpages... " />
+            <marker date="1484003997000" expanded="true" signature="22294:22398" ph="INSERT INTO missingpages... " />
+            <marker date="1484003997000" expanded="true" signature="22793:22919" ph="INSERT INTO processforms... " />
+            <marker date="1484003997000" expanded="true" signature="23032:23191" ph="UPDATE proce... " />
+            <marker date="1484003997000" expanded="true" signature="23265:23321" ph="UPDATE forms... " />
+            <marker date="1484003997000" expanded="true" signature="23600:23726" ph="INSERT INTO processforms... " />
+            <marker date="1484003997000" expanded="true" signature="24205:24491" ph="SELECT mpid,... forms" />
+            <marker date="1484003997000" expanded="true" signature="25256:25306" ph="INSERT INTO formpages... " />
+            <marker date="1484003997000" expanded="true" signature="25737:25791" ph="DELETE FROM " />
+            <marker date="1484003997000" expanded="true" signature="25957:26151" ph="SELECT count... forms" />
+            <marker date="1484003997000" expanded="true" signature="26332:26386" ph="DELETE FROM " />
+            <marker date="1484003997000" expanded="true" signature="27050:27107" ph="INSERT INTO ocrkb... " />
+            <marker date="1484003997000" expanded="true" signature="27893:27941" ph="SELECT pid F... pages" />
+            <marker date="1484003997000" expanded="true" signature="28039:28080" ph="DELETE FROM " />
+            <marker date="1484003997000" expanded="true" signature="28120:28168" ph="DELETE FROM " />
+            <marker date="1484003997000" expanded="true" signature="28212:28254" ph="DELETE FROM " />
+            <marker date="1484003997000" expanded="true" signature="28394:28467" ph="UPDATE quest... " />
+            <marker date="1484003997000" expanded="true" signature="28678:28765" ph="INSERT INTO sections... " />
+            <marker date="1484003997000" expanded="true" signature="29052:29134" ph="SELECT pid F... pages" />
+            <marker date="1484003997000" expanded="true" signature="30003:30098" ph="UPDATE pages... " />
+            <marker date="1484003997000" expanded="true" signature="30508:30652" ph="INSERT INTO boxgroupstype... " />
+            <marker date="1484003997000" expanded="true" signature="30953:31078" ph="INSERT INTO boxes... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
           <folding>
-            <marker date="1484001124000" expanded="true" signature="1858:1958" ph="UPDATE forms... " />
-            <marker date="1484001124000" expanded="true" signature="2706:2723" ph="..." />
+            <marker date="1484003997000" expanded="true" signature="2014:2114" ph="UPDATE forms... " />
+            <marker date="1484003997000" expanded="true" signature="2862:2879" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <marker date="1484004519000" expanded="true" signature="3237:3238" ph="..." />
+            <marker date="1484004519000" expanded="true" signature="3237:5320" ph="..." />
+            <marker date="1484004519000" expanded="true" signature="3530:3715" ph="{...}" />
+            <marker date="1484004519000" expanded="true" signature="3893:5207" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484004519000" expanded="true" signature="3893:5208" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484004519000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1484004519000" expanded="true" signature="4109:4164" ph="[...]" />
+            <marker date="1484004519000" expanded="true" signature="4109:4805" ph="[...]" />
+            <marker date="1484004519000" expanded="true" signature="4110:4164" ph="{&quot;data&quot;: total...}" />
+            <marker date="1484004519000" expanded="true" signature="4922:5109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="468" column="4" lean-forward="false" selection-start-line="468" selection-start-column="4" selection-end-line="468" selection-end-column="4" />
+          <folding>
+            <marker date="1484003768000" expanded="true" signature="1563:1603" ph="SELECT vid F... users" />
+            <marker date="1484003768000" expanded="true" signature="1831:1879" ph="SELECT * FRO... formcollections" />
+            <marker date="1484003768000" expanded="true" signature="2398:2447" ph="INSERT INTO formcollections... " />
+            <marker date="1484003768000" expanded="true" signature="2584:2621" ph="SELECT MAX(c... formcollections" />
+            <marker date="1484003768000" expanded="true" signature="2906:3032" ph="UPDATE formc... " />
+            <marker date="1484003768000" expanded="true" signature="3297:3347" ph="SELECT MAX(b... boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="3654:3704" ph="SELECT qid F... formcollections" />
+            <marker date="1484003768000" expanded="true" signature="3968:4008" ph="SELECT pid F... pages" />
+            <marker date="1484003768000" expanded="true" signature="4318:4407" ph="SELECT bgid boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="4455:4559" ph="SELECT bgid boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="5111:5163" ph="SELECT label... boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="5446:5494" ph="SELECT * FRO... boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="5814:6066" ph="SELECT b.bgi... boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="6144:6221" ph="UPDATE boxgr... " />
+            <marker date="1484003768000" expanded="true" signature="6417:6546" ph="SELECT b.bgi... boxgroupstype" />
+            <marker date="1484003768000" expanded="true" signature="6624:6701" ph="UPDATE boxgr... " />
+            <marker date="1484003768000" expanded="true" signature="7074:7160" ph="SELECT f.fid... forms" />
+            <marker date="1484003768000" expanded="true" signature="7461:7570" ph="SELECT f.fid... forms" />
+            <marker date="1484003768000" expanded="true" signature="8195:8260" ph="UPDATE verif... " />
+            <marker date="1484003768000" expanded="true" signature="8601:8673" ph="SELECT fid F... worklog" />
+            <marker date="1484003768000" expanded="true" signature="8911:8979" ph="SELECT fid F... forms" />
+            <marker date="1484003768000" expanded="true" signature="9230:9292" ph="SELECT fid F... worklog" />
+            <marker date="1484003768000" expanded="true" signature="9401:9444" ph="SELECT vid F... worklog" />
+            <marker date="1484003768000" expanded="true" signature="9602:10012" ph="SELECT b.bid... boxes" />
+            <marker date="1484003768000" expanded="true" signature="10189:10248" ph="SELECT qid,d... forms" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/verifyjs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3046">
+          <caret line="451" column="19" lean-forward="false" selection-start-line="451" selection-start-column="8" selection-end-line="451" selection-end-column="19" />
+          <folding>
+            <marker date="1484004750000" expanded="true" signature="343:618" ph="SELECT MIN(b... boxes" />
+            <marker date="1484004750000" expanded="true" signature="665:802" ph="SELECT offx,... formpages" />
+            <marker date="1484004750000" expanded="true" signature="848:1002" ph="SELECT b.bid... boxes" />
+            <marker date="1484004750000" expanded="true" signature="2444:2457" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="3072:3284" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="4082:4294" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="5185:5440" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="6038:6293" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="7013:7276" ph="UPDATE formp... " />
+            <marker date="1484004750000" expanded="true" signature="7123:7170" ph="SELECT heigh... pages" />
+            <marker date="1484004750000" expanded="true" signature="7188:7234" ph="SELECT width... pages" />
+            <marker date="1484004750000" expanded="true" signature="7706:7783" ph="DELETE FROM " />
+            <marker date="1484004750000" expanded="true" signature="7844:7933" ph="INSERT INTO formboxverifychar... " />
+            <marker date="1484004750000" expanded="true" signature="8086:8163" ph="DELETE FROM " />
+            <marker date="1484004750000" expanded="true" signature="8398:8489" ph="INSERT INTO formboxverifychar... " />
+            <marker date="1484004750000" expanded="true" signature="8773:8864" ph="INSERT INTO formboxverifytext... " />
+            <marker date="1484004750000" expanded="true" signature="9233:9394" ph="UPDATE forms... " />
+            <marker date="1484004750000" expanded="true" signature="9611:9672" ph="UPDATE verif... " />
+            <marker date="1484004750000" expanded="true" signature="9803:9868" ph="SELECT rpc_s... questionnaires" />
+            <marker date="1484004750000" expanded="true" signature="12252:12271" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="12273:12338" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="12421:12551" ph="SELECT vq.qi... verifierquestionnaire" />
+            <marker date="1484004750000" expanded="true" signature="12671:12746" ph="SELECT count... forms" />
+            <marker date="1484004750000" expanded="true" signature="12792:13345" ph="SELECT q.des... forms" />
+            <marker date="1484004750000" expanded="true" signature="12992:13046" ph="SELECT count... pages" />
+            <marker date="1484004750000" expanded="true" signature="13971:14619" ph="SELECT b.bid... boxes" />
+            <marker date="1484004750000" expanded="true" signature="14635:14866" ph="SELECT b.bgi... boxes" />
+            <marker date="1484004750000" expanded="true" signature="14880:15174" ph="SELECT b.pid... boxes" />
+            <marker date="1484004750000" expanded="true" signature="18024:18074" ph="SELECT bid F... boxes" />
+            <marker date="1484004750000" expanded="true" signature="18813:18859" ph="SELECT pid F... boxes" />
+            <marker date="1484004750000" expanded="true" signature="20342:20361" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="21032:21225" ph="SELECT boxgr... boxgroupstype" />
+            <marker date="1484004750000" expanded="true" signature="21816:21863" ph="SELECT bid F... boxes" />
+            <marker date="1484004750000" expanded="true" signature="32996:33015" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="33017:33072" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="33192:33210" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="33226:33351" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="33455:33473" ph="..." />
+            <marker date="1484004750000" expanded="true" signature="33532:33567" ph="..." />
           </folding>
         </state>
       </provider>

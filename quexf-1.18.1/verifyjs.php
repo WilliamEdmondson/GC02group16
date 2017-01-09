@@ -8,7 +8,8 @@ include("functions/functions.database.php"); // includes session start
 
 //get vid
 $vid = get_vid();
-
+//hardcoded qid
+$qid = 1;
 
 function bgidtocss($zoom = 1,$fid,$pid)
 {
@@ -251,7 +252,11 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
+
+	//avoid vid unset
+	$vid = $_SESSION['vid'];
 	session_unset();
+    $_SESSION['vid'] = $vid;
 
 	$sql = "UPDATE verifiers
 		SET currentfid = NULL
@@ -293,13 +298,21 @@ if (isset($_GET['clear']))
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
-	session_unset();
+    //avoid vid unset
+    $vid = $_SESSION['vid'];
+    session_unset();
+    $_SESSION['vid'] = $vid;
+
 }
 
 if (isset($_POST['assign']))
 {
-	session_unset();
-	$fid = ($vid);
+    //avoid vid unset
+    $vid = $_SESSION['vid'];
+    session_unset();
+    $_SESSION['vid'] = $vid;
+
+    $fid = ($vid);
 	if ($fid == false) 
 	{
     xhtml_head(T_("Verify: No more work"),true,false,false,"onload='document.form1.assign.focus();'");
@@ -307,9 +320,13 @@ if (isset($_POST['assign']))
 		print "<form name=\"form1\" action=\"" . $_SERVER['PHP_SELF'] . "\" method=\"post\"><input type=\"submit\" name=\"assign\" value=\"" . T_("Check for more work") . "\"/></form>";
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
-		unset($_SESSION['pages']);	
-		session_unset();
-		xhtml_foot();
+		unset($_SESSION['pages']);
+        //avoid vid unset
+        $vid = $_SESSION['vid'];
+        session_unset();
+        $_SESSION['vid'] = $vid;
+
+        xhtml_foot();
 		exit();
 	}
 	//set assigned time session variable
@@ -430,8 +447,12 @@ if (!isset($_SESSION['boxes'])) {
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
-		session_unset();
-		xhtml_foot();
+        //avoid vid unset
+        $vid = $_SESSION['vid'];
+        session_unset();
+        $_SESSION['vid'] = $vid;
+
+        xhtml_foot();
 		exit();
 	}
 

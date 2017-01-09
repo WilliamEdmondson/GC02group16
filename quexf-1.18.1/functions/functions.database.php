@@ -164,13 +164,14 @@ function get_bgids_from_cid( $cid, $option = 1){
     global $db;
 
     $result = array();
-
-    //$cid = get_cid(); This as an input parameter when looking managing
+	/*
+    //$cid = get_cid();// This as an input parameter when looking managing
 
     $sql ="SELECT qid FROM formcollections WHERE cid = '$cid'";
 
     $qid_rs = $db->getAll($sql);
-
+	*/
+	$qid_rs = 1;
     if(count($qid_rs) > 1)
     {
         echo "error converting fid to qid too many results";

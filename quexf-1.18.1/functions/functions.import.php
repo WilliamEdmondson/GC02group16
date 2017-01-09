@@ -812,9 +812,10 @@ function import($filename,$description = false)
 		print T_("Got qid") . ": $qid...";
 
 
+
         //create form entry in DB
-        $sql = "INSERT INTO forms (fid,qid)
-				VALUES (NULL,'$qid')";
+        $sql = "INSERT INTO forms (fid,qid,cid)
+				VALUES (NULL,'$qid','{$_SESSION['current_collection']}')";
 
         $db->Execute($sql);
 

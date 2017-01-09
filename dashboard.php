@@ -77,7 +77,7 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                             echo $label;
                                             echo "<canvas id='mycanvas" . $i . "' style='width:300; height:300'></canvas>";
                                             echo "<script language='javascript'>
-        
+                        
                                         var data = $data;
                                         var label = [];
                                         var total = [];
@@ -92,21 +92,16 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                         data: {
                                             labels: label,
                                             datasets: [{
-                                                    backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(153, 102, 255, 0.2)'],
-                                                    borderColor: ['rgba(255,99,132,1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(54, 162, 235, 1)', 'rgba(153, 102, 255, 1)'],
+                                                     backgroundColor: ['rgba(255, 0, 0, 0.2)', 'rgba(255, 110, 0, 0.2)', 'rgba(255, 225, 0, 0.2)', 'rgba(100, 200, 35, 0.2)', 'rgba(50, 185, 255, 0.2)', 'rgba(200, 75, 255, 0.2)'],
+                                                     borderColor: ['rgba(255, 0, 0, 1)', 'rgba(255, 110, 0, 1)', 'rgba(255, 225, 0, 1)', 'rgba(100, 200, 35, 1)', 'rgba(50, 185, 255, 1)', 'rgba(200, 75, 255, 1)'],
+                                                    borderWidth: 1,
                                                     data: total
                                                             }
                                                         ]
                                                     },
                                                     options: {
                                                         responsive: false,
-                                                        scales: {
-                                                            yAxes: [{
-                                                                ticks: {
-                                                                    beginAtZero:true
-                                                                }
-                                                            }]
-                                                        }
+                                                        
                                                     }
                                                 
                                                 });
@@ -135,13 +130,14 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                             <br>
                             <h3>Create New Form Collection</h3>
                             <button class="text-left" type="submit" >Create New Form Collection</button>
+                            <br>new collection name
+                            <input type="text" name="description">
                             <br>
                             or
                             <br>
                             <h3>Add to an existing collection</h3>
                             <p>Which collection would you like to add files to?
-                        </form>
-                        <form>
+
                             <select name="collection">
                                 <option value="" >--Select--</option>
                                 <?php

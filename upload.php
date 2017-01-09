@@ -28,6 +28,10 @@ if(!isset($_POST['collection']))
 
 
 $current_cid = $_POST['collection'];
+
+//set current collection
+$_SESSION['current_collection']=$current_cid;
+
 $vid = get_vid();
 
 //TODO ability to change the qid HARDCODED HERE
@@ -35,8 +39,11 @@ $qid = 1;
 
 
 //TODO mechanism for description entered on the previous page?
-// $description = $_POST['description']
-$description = 'my_collection_'.$current_cid;
+if($description = $_POST['description'] == "") {
+    $description = 'my_collection_' . $current_cid;
+} else {
+    $description = $description = $_POST['description'];
+}
 echo "Collection description : ".$description."<br>";
 
 //update the vid and description in the formcollections table
