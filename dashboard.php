@@ -2,6 +2,7 @@
 session_start();
 ?>
 <html>
+<link rel="icon" type="image/png" href="img/ucl-icon.gif" />
 <div id =sidebar class="visible">
     <?php include("sidebar.php"); ?>
 </div>
@@ -25,6 +26,7 @@ session_start();
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/dropzone.js"></script>
     <link href="css/dropzone.css" rel="stylesheet" type="text/css">

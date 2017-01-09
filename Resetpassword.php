@@ -25,6 +25,7 @@ if(isset($_GET["email"]) && isset($_GET["token"])){
 
 
         <html>
+        <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
         <head>
             <meta http-equiv="refresh" content="3;
 url=<?php echo $url1; ?>">

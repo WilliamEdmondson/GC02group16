@@ -2,6 +2,7 @@
 session_start();
 ?>
 <html>
+<link rel="icon" type="image/png" href="img/ucl-icon.gif" />
 <div id =sidebar class="visible">
     <?php include("sidebar.php"); ?>
 </div>
