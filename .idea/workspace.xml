@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file4.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file5.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file6.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/snap61.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file3.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,11 +59,11 @@
       <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="57" column="120" lean-forward="true" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="120" />
               <folding>
-                <marker date="1483988767000" expanded="true" signature="1809:1909" ph="UPDATE forms... " />
-                <marker date="1483988767000" expanded="true" signature="2655:2672" ph="..." />
+                <marker date="1483989206000" expanded="true" signature="1860:1960" ph="UPDATE forms... " />
+                <marker date="1483989206000" expanded="true" signature="2708:2725" ph="..." />
               </folding>
             </state>
           </provider>
@@ -444,7 +439,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39169000" />
+    <option name="totallyTimeSpent" value="39574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1203" height="731" extended-state="0" />
@@ -709,11 +704,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="57" column="120" lean-forward="true" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="120" />
           <folding>
-            <marker date="1483988767000" expanded="true" signature="1809:1909" ph="UPDATE forms... " />
-            <marker date="1483988767000" expanded="true" signature="2655:2672" ph="..." />
+            <marker date="1483989206000" expanded="true" signature="1860:1960" ph="UPDATE forms... " />
+            <marker date="1483989206000" expanded="true" signature="2708:2725" ph="..." />
           </folding>
         </state>
       </provider>

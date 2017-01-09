@@ -5,11 +5,11 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session_start include
 include("quexf-1.18.1/functions/functions.xhtml.php");
 include("quexf-1.18.1/functions/functions.process.php");
 
+//test that there are files to be uploaded
 if(!isset($_FILES['fileList']['name'][0]))
 {
     header("Location: /dashboard.php");
 }
-
 
 if(!isset($_POST['collection']))
 {
@@ -53,10 +53,9 @@ array_map('unlink', glob("uploads/*"));
 $continue = 0;
 for( $i = 0 ; $i < sizeof($_FILES['fileList']['name']) ; $i++) {
     echo $i." ";
-        $temp_name = $_FILES['fileList']['tmp_name'][$i];
-        echo $name = basename($_FILES['fileList']['name'][$i]);
-        echo move_uploaded_file( $temp_name , "$targetpath/$name" ) ? " Successfully Moved to /upload<br>" : " Failed <br>";
-
+    $temp_name = $_FILES['fileList']['tmp_name'][$i];
+    echo $name = basename($_FILES['fileList']['name'][$i]);
+    echo move_uploaded_file( $temp_name , "$targetpath/$name" ) ? " Successfully Moved to /upload<br>" : "unsuccessfully moved to upload<br>";
 }
 
 
@@ -84,7 +83,7 @@ else
     echo "failure assigning vid";
 }
 
-header("Location: ../quexf-1.18.1/verifyjs.php");
+//header("Location: ../quexf-1.18.1/verifyjs.php");
 
 /*
 //import the target directory using the import_directory function functions.database
