@@ -36,14 +36,19 @@
             </li>
 
             <?php
-            if($_SESSION['admin']==1){ ?>
-                <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                    <ul id="menu-academico-sub">
-                        <li id="menu-arquivos"><a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a></li>
-                        <li id="menu-arquivos"><a href="includes/logout.php"><i class="fa fa-sign-out"></i>Logout</a></li>
-                    </ul>
-                </li>
-            <?php }?>
+            if(isset($_SESSION['admin'])) {
+                if ($_SESSION['admin'] == 1) { ?>
+                    <li><a href="#"><i class="fa fa-user-plus"></i><span>Administrator</span><span
+                                    class="fa fa-angle-right" style="float: right"></span></a>
+                        <ul id="menu-academico-sub">
+                            <li id="menu-arquivos"><a href="masquerade.php"><i class="fa fa-user-plus"></i>Profile</a>
+                            </li>
+                            <li id="menu-arquivos"><a href="includes/logout.php"><i
+                                            class="fa fa-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                <?php }
+            }?>
         </ul>
         
     </div>

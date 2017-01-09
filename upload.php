@@ -17,7 +17,7 @@ if(!isset($_POST['collection']))
 
     //TODO test this will work before creating new collection
     new_collection();
-    //echo "new collection created<br>";
+    echo "new collection created<br>";
 
 } else {
     echo $_POST['collection'];

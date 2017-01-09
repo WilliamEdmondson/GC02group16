@@ -1,5 +1,6 @@
 <?php
-session_start();
+include("data.php"); //includes session start
+
 ?>
 <html>
 <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
@@ -37,7 +38,7 @@ session_start();
   						<div id="chart" class="tab-pane fade in active">
    							<!--PIE CHART-->
                             <div id="align" align="center">
-                            <?php include("data.php");?>
+
                             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
                             <script type="text/javascript" src="js/Chart.min.js"></script>
                             <?php

@@ -15,6 +15,7 @@ if (!$row = mysqli_fetch_assoc($result)){
     header("Location: ../index.php?error=incorrect");
 } else{
     $_SESSION['vid'] = $row['vid'];
+    $_SESSION['uid'] = $row['uid'];
     $_SESSION['admin'] = $row['admin'];
 
     header("Location: ../dashboard.php");

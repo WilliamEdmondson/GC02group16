@@ -140,23 +140,26 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                             <br>
                             <h3>Add to an existing collection</h3>
                             <p>Which collection would you like to add files to?
-                                <select name="collection">
-                                    <option value="" >--Select--</option>
-                                    <?php
-                                    $cid_arr = get_collections();
-                                    foreach( $cid_arr as $cid){
-                                        echo $cid['cid'];
-                                    }
-                                    foreach ($cid_arr as $collection)
-                                    {
-                                        ?>
-                                        <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
-                                        <?php
-                                    }
-                                    ?>
-                                </select>
-                                <button type="submit">Add Files</button>
                         </form>
+                        <form>
+                            <select name="collection">
+                                <option value="" >--Select--</option>
+                                <?php
+                                $cid_arr = get_collections();
+                                foreach( $cid_arr as $cid){
+                                    echo $cid['cid'];
+                                }
+                                foreach ($cid_arr as $collection)
+                                {
+                                    ?>
+                                    <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
+                                    <?php
+                                }
+                                ?>
+                            </select>
+                            <button type="submit">Add Files</button>
+                        </form>
+
 
 
 

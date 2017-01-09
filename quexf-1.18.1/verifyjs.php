@@ -323,7 +323,7 @@ if ($fid == false)
 	print "<p>" . T_("There is no form currently assigned to you") . "</p>";
 
 	//WILL go to the sample previous page if there are no more forms to verify
-    //header("Location: ../sampleprevious.php");
+    ?><a href="../sampleprevious.php">Proceed to analysis</a><?php
 
 //	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Assign next form") . "</a></p>";
   print "<form name=\"form1\" action=\"" . $_SERVER['PHP_SELF'] . "\" method=\"post\"><input type=\"submit\" name=\"assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"  value=\"" . T_("Assign next form") . "\"/></form>";
