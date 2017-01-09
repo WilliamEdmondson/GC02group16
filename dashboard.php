@@ -75,7 +75,7 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                             <div class="col-xs-3 span5"><?php
                                             $data = $json_array[$i];
                                             echo $label;
-                                            echo "<canvas id='mycanvas" . $i . "' style='width:300; height:300'></canvas>";
+                                            echo "<canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas>";
                                             echo "<script language='javascript'>
         
                                         var data = $data;
@@ -100,16 +100,13 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                                     },
                                                     options: {
                                                         responsive: false,
-                                                        scales: {
-                                                            yAxes: [{
-                                                                ticks: {
-                                                                    beginAtZero:true
-                                                                }
-                                                            }]
+                                                        legend: {                                 display: false,
+                                                        },
+                                                        tooltips: {
+                                                            enabled: false,
                                                         }
                                                     }
-                                                
-                                                });
+                                                    });
                                                 
                                                     </script>";
                                             ?><br><br><br></div><?php
