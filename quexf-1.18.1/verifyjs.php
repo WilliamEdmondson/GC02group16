@@ -148,18 +148,7 @@ function bgidtocss($zoom = 1,$fid,$pid)
 
 
 
-/*
-if($vid == false){
-    echo $_SERVER['PHP_AUTH_USER'];
-    echo $_SESSION['uid'];
-    echo get_vid();
-    print T_("Please log in"); exit;}
 
-if(isset($_SESSION['uid'])){
-    $vid = $_SESSION['uid'];
-    echo "The current uid has been set as the form identifier";
-}
-*/
 
 $fid = get_fid($vid);
 
@@ -1294,9 +1283,6 @@ else
 	print "<p><a href=\"javascript:void(0)\" onclick=\"allDone();\">" . T_("Accept page") . "</a></p>";
 
 	//WILL
-    ?><form action = "../sampleprevious.php">
-    <input type="submit" value="continiue to preview">Done</input>
-</form><?php
 
 	print "<div id='note'><object class='embeddedobject' id='mainobj' data='pagenote.php?pid=$pid&amp;fid=$fid&amp;vid=$vid' standby='" . T_("Loading panel...") . "' type='application/xhtml+xml'><div>" . T_("Error, try with Firefox") . "</div></object></div>";
 	

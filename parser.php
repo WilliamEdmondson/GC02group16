@@ -1,7 +1,6 @@
 <?php
 
 if(!empty($_FILES)){
-
     $temp = $_FILES["file"]["tmp_name"];
     $dir_separator = DIRECTORY_SEPARATOR;
     $folder = "uploads";

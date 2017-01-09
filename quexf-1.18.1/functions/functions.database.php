@@ -470,11 +470,10 @@ function get_vid()
 }
 
 
-function get_fid($vid = "")
+function get_fid($vid)
 {
 	global $db;
 
-	$sql ="";
 
 	$sql = "SELECT fid
 		FROM forms

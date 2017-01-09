@@ -711,9 +711,9 @@ function import($filename,$description = false)
 	//use ghostscript to convert to individual PNG pages
 	exec(GS_BIN . " -sDEVICE=pnggray -r300 -sOutputFile=\"$tmp\"%d.png -dNOPAUSE -dBATCH \"$filename\"");
 
-	//$qid = 1;
+	$qid = 1;
 
-	$qid = "";
+
 	$fid = "";	
 
 	//find the qid

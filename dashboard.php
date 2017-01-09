@@ -129,12 +129,11 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                 <input name="file" type="file" multiple />
                             </div>
                         </form>
-                        or choose files to be uploaded:
-                        <br>
                         <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <div style="display :none;"><input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple></div>
-                            <label for="fileList"> Select a file to upload</label>
-
+                            <br>
+                            <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
+                            <br>
+                            <h3>Create New Form Collection</h3>
                             <button class="text-left" type="submit" >Create New Form Collection</button>
                             <br>
                             or
