@@ -1,5 +1,7 @@
 <?php
 
+include_once 'quexf-1.18.1/functions/functions.database.php';
+
 //session_start();
 
 //setting header to json
@@ -19,6 +21,8 @@ if(!$mysqli){
 }
 */
 //query to get data from the table
+
+
 
 $json = array();
 
