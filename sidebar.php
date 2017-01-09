@@ -21,7 +21,7 @@
             <li><a href="#"><i class="fa fa-list"></i><span>Previous upload</span><span class="fa fa-angle-right" style="float: right"></span></a>
                 <ul id="menu-academico-sub" >
                     <li><a href="view_upload.php"><i class="fa fa-star"></i><span>Previous upload</a>
-                    <li><a href="sampleprevious.php"><i class="fa fa-star"></i><span>Previous chart</a>
+                    <li><a href="previous.php"><i class="fa fa-star"></i><span>Previous chart</a>
                 </ul>
             </li>
 
