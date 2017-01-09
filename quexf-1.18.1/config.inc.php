@@ -40,9 +40,18 @@ define('DB_NAME', 'quexf');
 
 //define('ADODB_DIR', '/usr/share/php/adodb/');
 //define('ADODB_DIR', 'C:/xampp/php/pear/adodb/');
-define('ADODB_DIR', dirname(__DIR__)."/adodb/");
+if($os === "Windows")
+{
+	$location = "/gs9.20/bin/gswin32c.exe";
+}
+elseif($os === "Mac")
+{
+	$location = "/gs9.20/bin/gs";
+}
 
-//TODO ESTHER
+define('GS_BIN', dirname(__DIR__).$location);
+
+
 define('BLANK_PAGE_DETECTION', true);
 
 define('PROCESS_MISSING_PAGES',true);
