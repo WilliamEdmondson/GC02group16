@@ -75,7 +75,7 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                             <div class="col-xs-3 span5"><?php
                                             $data = $json_array[$i];
                                             echo $label;
-                                            echo "<canvas id='mycanvas" . $i . "' style='width:300; height:300'></canvas>";
+                                            echo "<canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas>";
                                             echo "<script language='javascript'>
                         
                                         var data = $data;
@@ -101,10 +101,17 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                                     },
                                                     options: {
                                                         responsive: false,
+<<<<<<< HEAD
                                                         
+=======
+                                                        legend: {                                 display: false,
+                                                        },
+                                                        tooltips: {
+                                                            enabled: false,
+                                                        }
+>>>>>>> 67327c14dde9e690f7d70051f09d13d4b85f050a
                                                     }
-                                                
-                                                });
+                                                    });
                                                 
                                                     </script>";
                                             ?><br><br><br></div><?php
