@@ -33,6 +33,8 @@
  *
  */
 
+include_once("identifier.php");
+
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_HOST', 'localhost');
@@ -40,6 +42,16 @@ define('DB_NAME', 'quexf');
 
 //define('ADODB_DIR', '/usr/share/php/adodb/');
 //define('ADODB_DIR', 'C:/xampp/php/pear/adodb/');
+define('ADODB_DIR', dirname(__DIR__)."/adodb/");
+
+
+define('BLANK_PAGE_DETECTION', true);
+
+define('PROCESS_MISSING_PAGES',true);
+
+//REQUIRED: Ghostscript binary
+//define('GS_BIN', "/usr/bin/gs");
+//define('GS_BIN', "C:/xampp/gs9.20/bin/gswin32c.exe");
 if($os === "Windows")
 {
 	$location = "/gs9.20/bin/gswin32c.exe";
@@ -50,16 +62,6 @@ elseif($os === "Mac")
 }
 
 define('GS_BIN', dirname(__DIR__).$location);
-
-
-define('BLANK_PAGE_DETECTION', true);
-
-define('PROCESS_MISSING_PAGES',true);
-
-//REQUIRED: Ghostscript binary
-//define('GS_BIN', "/usr/bin/gs");
-//define('GS_BIN', "C:/xampp/gs9.20/bin/gswin32c.exe");
-define('GS_BIN', dirname(__DIR__)."/gs9.20/bin/gs");
 
 //Temporary directory
 define('TEMPORARY_DIRECTORY', "/tmp");
