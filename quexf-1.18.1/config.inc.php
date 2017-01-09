@@ -42,6 +42,7 @@ define('DB_NAME', 'quexf');
 //define('ADODB_DIR', 'C:/xampp/php/pear/adodb/');
 define('ADODB_DIR', dirname(__DIR__)."/adodb/");
 
+//TODO ESTHER
 define('BLANK_PAGE_DETECTION', true);
 
 define('PROCESS_MISSING_PAGES',true);
