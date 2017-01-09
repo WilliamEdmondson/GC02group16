@@ -3818,6 +3818,7 @@ p.bottom {
         right: 12px!important;
     }
     .sidebar-menu {
+        position: fixed;
         width: 65px;
         transition: all 100ms ease-in-out;
         transition-delay: 300ms;
