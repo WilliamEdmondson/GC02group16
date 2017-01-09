@@ -55,7 +55,7 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                 <div class="row-fluid">
 
                     <div class="span6">
-                        <?php if(!isset($_SESSION['uid'])){
+                        <?php if(!isset($_SESSION['vid'])){
                             echo "<h3>Please log in <a href='index.php'>here</a></h3>";
                         } else { ?>
                             <h3 class="text-left">Previous work</h3>

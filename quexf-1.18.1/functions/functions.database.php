@@ -28,10 +28,6 @@ include_once(dirname(__FILE__).'/../config.inc.php');
 include_once(dirname(__FILE__).'/../db.inc.php');
 
 
-
-
-
-
 /*
  * WILL HAS ADDED
  */
@@ -469,24 +465,7 @@ function assign_to_merge($vid)
 
 function get_vid()
 {
-
-	global $db;
-
-	$sql = "SELECT vid
-		FROM verifiers
-		WHERE http_username = '{$_SESSION['uid']}'";
-		//echo "<br>".$_SESSION['uid']; // Changed from htaccess user EDIT
-
-    $rs = $db->GetRow($sql);
-
-    //echo $rs ? "success " : "failed";
-
-    if (empty($rs))
-        return false; //invalid user
-    else
-    {
-        return $rs['vid'];
-    }
+	return $_SESSION['vid'];
 
 }
 
