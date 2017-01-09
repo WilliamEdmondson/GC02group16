@@ -64,21 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quexf-1.18.1/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="89">
+              <caret line="469" column="9" lean-forward="false" selection-start-line="469" selection-start-column="9" selection-end-line="469" selection-end-column="18" />
               <folding>
                 <marker date="1483974115000" expanded="true" signature="1569:1609" ph="SELECT vid F... users" />
                 <marker date="1483974115000" expanded="true" signature="1837:1885" ph="SELECT * FRO... formcollections" />
@@ -135,6 +135,7 @@
       <find>get</find>
       <find>assign_</find>
       <find>get_cid</find>
+      <find>get_vid()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,11 +162,11 @@
         <option value="$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/functions/functions.database.php" />
         <option value="$PROJECT_DIR$/htdocs/combined/upload.php" />
         <option value="$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/verifyjs.php" />
-        <option value="$PROJECT_DIR$/quexf-1.18.1/config.inc.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
         <option value="$PROJECT_DIR$/data.php" />
         <option value="$PROJECT_DIR$/parser.php" />
         <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/quexf-1.18.1/config.inc.php" />
       </list>
     </option>
   </component>
@@ -353,16 +354,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32671000" />
+    <option name="totallyTimeSpent" value="33421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1203" height="731" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18536991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -373,7 +375,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -557,10 +558,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="176" column="6" lean-forward="true" selection-start-line="176" selection-start-column="6" selection-end-line="176" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1483974734000" expanded="true" signature="3221:5599" ph="..." />
+            <marker date="1483974734000" expanded="true" signature="3498:3683" ph="{...}" />
+            <marker date="1483974734000" expanded="true" signature="3861:5487" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1483974734000" expanded="true" signature="3962:4714" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1483974734000" expanded="true" signature="4077:4660" ph="[...]" />
+            <marker date="1483974734000" expanded="true" signature="4078:4602" ph="{&quot;data&quot;: total...}" />
+            <marker date="1483974734000" expanded="true" signature="4777:5388" ph="{...}" />
+            <marker date="1483974734000" expanded="true" signature="4918:5334" ph="{...}" />
+            <marker date="1483974734000" expanded="true" signature="4987:5276" ph="[...]" />
+            <marker date="1483974734000" expanded="true" signature="4988:5275" ph="{...}" />
+            <marker date="1483974734000" expanded="true" signature="5061:5213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="89">
+          <caret line="469" column="9" lean-forward="false" selection-start-line="469" selection-start-column="9" selection-end-line="469" selection-end-column="18" />
           <folding>
             <marker date="1483974115000" expanded="true" signature="1569:1609" ph="SELECT vid F... users" />
             <marker date="1483974115000" expanded="true" signature="1837:1885" ph="SELECT * FRO... formcollections" />
@@ -589,36 +620,6 @@
             <marker date="1483974115000" expanded="true" signature="9914:10324" ph="SELECT b.bid... boxes" />
             <marker date="1483974115000" expanded="true" signature="10501:10560" ph="SELECT qid,d... forms" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="176" column="6" lean-forward="true" selection-start-line="176" selection-start-column="6" selection-end-line="176" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1483974734000" expanded="true" signature="3221:5599" ph="..." />
-            <marker date="1483974734000" expanded="true" signature="3498:3683" ph="{...}" />
-            <marker date="1483974734000" expanded="true" signature="3861:5487" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1483974734000" expanded="true" signature="3962:4714" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1483974734000" expanded="true" signature="4077:4660" ph="[...]" />
-            <marker date="1483974734000" expanded="true" signature="4078:4602" ph="{&quot;data&quot;: total...}" />
-            <marker date="1483974734000" expanded="true" signature="4777:5388" ph="{...}" />
-            <marker date="1483974734000" expanded="true" signature="4918:5334" ph="{...}" />
-            <marker date="1483974734000" expanded="true" signature="4987:5276" ph="[...]" />
-            <marker date="1483974734000" expanded="true" signature="4988:5275" ph="{...}" />
-            <marker date="1483974734000" expanded="true" signature="5061:5213" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quexf-1.18.1/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
