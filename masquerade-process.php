@@ -6,6 +6,7 @@ include 'db/dbh.php';
 ?>
 
 <div id =sidebar class="visible">
+    <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
     <?php include("sidebar.php"); ?>
 </div>
 
