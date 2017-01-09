@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <link rel="icon" type="image/png" href="img/ucl-icon.gif" />

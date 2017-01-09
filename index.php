@@ -59,7 +59,7 @@ session_start();
 
             <section>
                 <div class="hex" style="width:18vw; height:18vw; font-size:19px; background-color:#5763ff; color:white; line-height:15vw;  text-align:center; padding:2vw;">
-                	UCL Student OCR Feedback Web App
+                	UCL Student Feedback App
                 </div>
             </section>
             <script src="js/anime.js"></script>
