@@ -23,10 +23,249 @@
  */
 
 
-
+session_start();
 include_once(dirname(__FILE__).'/../config.inc.php');
 include_once(dirname(__FILE__).'/../db.inc.php');
 
+
+
+
+
+
+/*
+ * WILL HAS ADDED
+ */
+
+function get_cid(){
+
+    if( isset($_SESSION['cid'])){
+        $cid = $_SESSION['cid'];
+        echo $cid;
+        return $cid;
+    }
+    else {
+        echo "cid not set please log in";
+        return false;
+    }
+}
+
+/**
+ *  Given the uid returns the vid stored in the logintest database
+ *
+ */
+function uid_to_vid($uid){
+
+	$conn = mysqli_connect("localhost", "root", "", "logintest");
+
+    if (!$conn){
+        die("Connection failed: ".mysqli_connect_error());
+    }
+
+    $sql = "SELECT vid FROM users WHERE uid = '$uid'";
+
+    $rs = mysqli_query($conn, $sql);
+
+	$rs = $rs->fetch_row()[0];
+
+    return $rs;
+
+}
+
+// returns cids for current vid
+function get_collections(){
+
+    global $db;
+
+    $result = array();
+
+    $vid = get_vid();
+
+    $sql = "SELECT * FROM formcollections WHERE vid = '$vid'";
+
+    $rs = $db->getAll($sql);
+    //echo $vid;
+    //echo $rs ? "succ" : "fail";
+
+    if(count($rs) < 1 )
+    {
+        echo "You currently have no collections on record, click new collection to create your first";
+        return false;
+    }
+
+    foreach ($rs as $cid ) {
+          array_push($result, $cid);
+    }
+
+    return $result;
+}
+
+//creates a new row in the formcollections database edits cid session variable ready for import
+function new_collection(){
+
+    global $db;
+
+    $vid = get_vid();
+
+    $sql = "INSERT INTO formcollections (vid) VALUES ('$vid')";
+
+    $query = $db->Execute($sql);
+
+    if($query){
+        //echo "SUCCESS";
+    } else {
+        //echo "FAILED";
+    }
+
+    $sql = "SELECT MAX(cid) FROM  formcollections";
+
+    $rs = $db->GetRow($sql);
+
+    $new_cid = $rs['MAX(cid)'];
+
+    $_POST['cid'] = $new_cid;
+
+
+}
+
+//update the values in the collection database
+function update_collection($cid, $vid, $description, $qid)
+{
+    global $db;
+
+    echo $cid.$vid.$description.$qid;
+
+    $sql = "UPDATE formcollections
+            SET vid = '$vid',
+				description = '$description',
+				qid = '$qid'
+				WHERE cid = '$cid'";
+
+    if( $db->Execute($sql)){
+        echo "Collection Updated<br>";
+    } else {
+        echo "Update Failed<br>";
+    }
+
+
+}
+
+//Gets the number of multiple choice/array box groups for a given quesitonnaire
+function get_bgid_max(){
+
+    global $db;
+
+    $sql = "SELECT MAX(bgid) FROM boxgroupstype WHERE btid = 1";
+
+    $rs = $db->GetRow($sql);
+
+    return $rs['MAX(bgid)'];
+
+}
+
+//returns an array of bgids corresponding from a given fid
+function get_bgids_from_cid( $cid, $option = 1){
+
+    global $db;
+
+    $result = array();
+
+    //$cid = get_cid(); This as an input parameter when looking managing
+
+    $sql ="SELECT qid FROM formcollections WHERE cid = '$cid'";
+
+    $qid_rs = $db->getAll($sql);
+
+    if(count($qid_rs) > 1)
+    {
+        echo "error converting fid to qid too many results";
+        return false;
+    }
+
+    foreach ($qid_rs as $qid_row) {
+
+        $qid = $qid_row['qid'];
+
+        $sql = "SELECT pid FROM pages WHERE qid = '$qid'";
+
+        $pid_rs = $db->getAll($sql);
+
+        if (count($pid_rs) <= 0) {
+            echo "error converting qid to fid too few results";
+            return false;
+        }
+
+        foreach ($pid_rs as $pid_row) {
+
+            $pid = $pid_row['pid'];
+
+            if($option != 0){
+                $sql = "SELECT bgid 
+                  FROM boxgroupstype 
+                  WHERE (pid = '$pid')";
+            } else {
+                $sql = "SELECT bgid 
+                  FROM boxgroupstype 
+                  WHERE (pid = '$pid') AND (btid = 1)";
+            }
+
+            $bgid_rs = $db->getAll($sql);
+
+            if (count($pid_rs) == 0) {
+                echo "error no box groups found for those pages.";
+                return false;
+            }
+
+            foreach ($bgid_rs as $bgid_row) {
+
+                $bgid = $bgid_row['bgid'];
+                array_push($result,$bgid);
+            }
+        }
+    }
+    return $result;
+}
+
+//returns the description of a question from a given bgid
+function get_question_description($bgid){
+
+    global $db;
+
+    $db->StartTrans();
+
+    $sql = "SELECT label FROM boxgroupstype WHERE bgid = '$bgid'";
+
+    $rs = $db->GetRow($sql);
+
+    if (empty($rs))
+        return "Question Label Unavailable";
+    else
+    {
+        return $rs['label'];
+    }
+}
+
+//gets the varname from the given bgid
+function get_question_varname($bgid){
+
+    global $db;
+
+    $db->StartTrans();
+
+    $sql = "SELECT * FROM boxgroupstype WHERE bgid = '$bgid'";
+
+    $rs = $db->GetRow($sql);
+
+    if (empty($rs))
+        return "Question Label Unavailable";
+    else
+    {
+        return $rs['varname'];
+    }
+}
+
+/*
+ *  End OF WILL ADDED
+ */
 /* Sort box groups by pageid then box tly tlx
  *
  */
@@ -117,7 +356,6 @@ function assign_to($vid)
  */
 
 	//only assign a form if none currently assigned
-	//
 	$sql = "SELECT f.fid as fid
 		FROM forms as f
 		WHERE f.done = 0
@@ -185,10 +423,8 @@ function assign_to($vid)
 			SET currentfid = '$fid'
 			WHERE vid = '$vid'";
 
-		$sql = "UPDATE forms
-			SET assigned_vid = '$vid'
-			WHERE fid = '$fid'";
-
+		//WILL this is the point where a form is assigned in the database
+		//TODO add verifier into the collectionverify table?
 		$db->Execute($sql);
 	}
 
@@ -233,22 +469,24 @@ function assign_to_merge($vid)
 
 function get_vid()
 {
+
 	global $db;
 
 	$sql = "SELECT vid
 		FROM verifiers
-	"//	WHERE http_username = '{$_SERVER['PHP_AUTH_USER']}'"; Changed from htaccess user
-    ."WHERE http_username = '{$_SESSION['uid']}'";
+		WHERE http_username = '{$_SESSION['uid']}'";
+		//echo "<br>".$_SESSION['uid']; // Changed from htaccess user EDIT
 
-	$rs = $db->GetRow($sql);
+    $rs = $db->GetRow($sql);
 
-	if (empty($rs))
-		return false;//invalid user
-	else
-	{
-		return $rs['vid'];
-	}
+    //echo $rs ? "success " : "failed";
 
+    if (empty($rs))
+        return false; //invalid user
+    else
+    {
+        return $rs['vid'];
+    }
 
 }
 

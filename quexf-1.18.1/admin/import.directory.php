@@ -30,8 +30,11 @@ include("../functions/functions.process.php");
 
 
 
-   // import_directory($dir);
-import_directory("../../../combined/uploads");
+//    import_directory($dir); //EDIT
+
+$_SESSION['cid'] = 1;
+import_directory("../../uploads");
+
 
 if (isset($_POST['dir']) && isset($_POST['watch']))
 {

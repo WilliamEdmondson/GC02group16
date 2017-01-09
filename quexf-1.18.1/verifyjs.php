@@ -23,14 +23,16 @@
  */
 
 
-//verifier
+
 
 include_once("config.inc.php");
 include_once("db.inc.php");
 include("functions/functions.image.php");
 include("functions/functions.xhtml.php");
 include("functions/functions.database.php");
-				
+//verifier
+$vid = get_vid();
+
 
 function bgidtocss($zoom = 1,$fid,$pid)
 {
@@ -168,21 +170,21 @@ function bgidtocss($zoom = 1,$fid,$pid)
 
 }
 
-session_start();
+
+
 /*
-$vid = get_vid();
-
-
 if($vid == false){
     echo $_SERVER['PHP_AUTH_USER'];
     echo $_SESSION['uid'];
     echo get_vid();
     print T_("Please log in"); exit;}
-*/
+
 if(isset($_SESSION['uid'])){
     $vid = $_SESSION['uid'];
     echo "The current uid has been set as the form identifier";
 }
+*/
+
 $fid = get_fid($vid);
 
 
@@ -214,7 +216,7 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
 
 		$sql = "";
 		if ($box['btid'] == 1 || $box['btid'] == 2)
-    {
+        {
       //delete old data
       if (DELETE_ON_VERIFICATION)
       {
@@ -332,7 +334,7 @@ if (isset($_GET['clear']))
 if (isset($_POST['assign']))
 {
 	session_unset();
-	$fid = assign_to($vid);
+	$fid = ($vid);
 	if ($fid == false) 
 	{
     xhtml_head(T_("Verify: No more work"),true,false,false,"onload='document.form1.assign.focus();'");
@@ -354,6 +356,10 @@ if ($fid == false)
 	xhtml_head(T_("Verify: Assign form"),true,array("css/table.css"),false,"onload='document.form1.assign.focus();'");
 	print "<div id=\"links\">";
 	print "<p>" . T_("There is no form currently assigned to you") . "</p>";
+
+	//WILL go to the sample previous page if there are no more forms to verify
+    //header("Location: ../sampleprevious.php");
+
 //	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\">" . T_("Assign next form") . "</a></p>";
   print "<form name=\"form1\" action=\"" . $_SERVER['PHP_SELF'] . "\" method=\"post\"><input type=\"submit\" name=\"assign\" onclick=\"document.getElementById('links').style.visibility='hidden'; document.getElementById('wait').style.visibility='visible';\"  value=\"" . T_("Assign next form") . "\"/></form>";
 	print "</div>";
@@ -417,6 +423,8 @@ $qid_desc = get_qid_description($fid);
 $qid = $qid_desc['qid'];
 $description = $qid_desc['description'];
 
+//TODO when this is unset the pages can be verified????? original below WILL
+//if (!isset($_SESSION['boxes'])) {
 if (!isset($_SESSION['boxes'])) {
 	//nothing yet known about this form
 	
@@ -465,6 +473,7 @@ if (!isset($_SESSION['boxes'])) {
 	$b = $db->GetAssoc($sql2);
 	$c = $db->GetAssoc($sql3);
 
+	//TODO echo $c."WILLL";
 
 	$_SESSION['boxes'] = $a;
 	$_SESSION['boxgroups'] = $b;
@@ -1307,6 +1316,11 @@ else
 	print "<p>Q:$qid F:$fid P:$pid</p>";
 	print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?pid=$pid&amp;fid=$fid&amp;centre=centre\">" . T_("Centre Page") . "</a></p>";
 	print "<p><a href=\"javascript:void(0)\" onclick=\"allDone();\">" . T_("Accept page") . "</a></p>";
+
+	//WILL
+    ?><form action = "../sampleprevious.php">
+    <input type="submit" value="continiue to preview">Done</input>
+</form><?php
 
 	print "<div id='note'><object class='embeddedobject' id='mainobj' data='pagenote.php?pid=$pid&amp;fid=$fid&amp;vid=$vid' standby='" . T_("Loading panel...") . "' type='application/xhtml+xml'><div>" . T_("Error, try with Firefox") . "</div></object></div>";
 	

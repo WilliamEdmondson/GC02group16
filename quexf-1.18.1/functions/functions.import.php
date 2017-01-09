@@ -516,7 +516,7 @@ function boxfilled($bid,$fid,$filled)
 	global $db;
 	$db->Query("
 		INSERT INTO
-		formboxes (bid,fid,filled) 
+	  	formboxes (bid,fid,filled) 
 		VALUES ('$bid','$fid','$filled')");
 }
 
@@ -811,11 +811,12 @@ function import($filename,$description = false)
 	{
 		print T_("Got qid") . ": $qid...";
 
-		//create form entry in DB
-		$sql = "INSERT INTO forms (fid,qid,description)
-			VALUES (NULL,'$qid','$description')";
 
-		$db->Execute($sql);
+        //create form entry in DB
+        $sql = "INSERT INTO forms (fid,qid)
+				VALUES (NULL,'$qid')";
+
+        $db->Execute($sql);
 
 		$fid = $db->Insert_Id();
 	
@@ -1048,13 +1049,8 @@ function import($filename,$description = false)
 		else
 		{	
 			//update exisiting record
-			$sql = "UPDATE processforms
-				SET date = NOW(),
-				filepath = '$filename',
-				filehash = '$filehash',
-				status = 2,
-				allowanother = 0
-				WHERE pfid = '$pfid'";
+			//$sql = "UPDATE processforms
+				
 
 			$db->Execute($sql);
 		}
@@ -1391,7 +1387,7 @@ function import_directory($dir)
 				if (substr($file,-3) == "pdf")
 				{
 					//print "<p>$file</p>";
-			                $r = import("$dir/$file");
+			                $r = import("$dir$file");
 					if ($r == false)
 						print T_("File already in database");
 					 //unlink($file);
