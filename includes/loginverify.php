@@ -17,7 +17,8 @@ if (!$row = mysqli_fetch_assoc($result)){
     $_SESSION['vid'] = $row['vid'];
     $_SESSION['uid'] = $row['uid'];
     $_SESSION['admin'] = $row['admin'];
-
+    $_SESSION['uid'] = $row['uid'];
     header("Location: ../dashboard.php");
 }
 
+?>
