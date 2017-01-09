@@ -1,7 +1,7 @@
 <h1>Upload stage</h1>
 <?php
 include 'quexf-1.18.1/functions/functions.import.php';
-include 'quexf-1.18.1/functions/functions.database.php';
+include 'quexf-1.18.1/functions/functions.database.php'; //session_start included in here
 include("quexf-1.18.1/functions/functions.xhtml.php");
 include("quexf-1.18.1/functions/functions.process.php");
 
@@ -14,7 +14,6 @@ if(!isset($_POST['cid']))
     //TODO test this will work before creating new collection
     new_collection();
     //echo "new collection created<br>";
-
 
 } else {
     echo "cid previously set as a post variable<br>";

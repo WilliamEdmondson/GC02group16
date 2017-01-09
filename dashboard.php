@@ -1,6 +1,5 @@
 <?php
-
-include 'quexf-1.18.1/functions/functions.database.php';
+include 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 ?>
 <html>
 <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
