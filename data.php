@@ -5,7 +5,7 @@
 //setting header to json
 //header('Content-Type: application/json');
 
-//database
+/*database
 define('DB_HOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
@@ -17,7 +17,7 @@ $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if(!$mysqli){
 	die("Connection failed: " . $mysqli->error);
 }
-
+*/
 //query to get data from the table
 
 $json = array();
@@ -35,7 +35,7 @@ for ($i=0; $i < 20; $i++) {
 
 
 //execute query
-$result = $mysqli->query($query);
+$result = $db->query($query);
 
 //loop through the returned data
 $data = array();
@@ -54,6 +54,7 @@ array_push($json,$json_string);
 
 $_SESSION['json_array'] = $json;
 
-//close connection
+/*close connection
 $mysqli->close();
+*/
 ?>
