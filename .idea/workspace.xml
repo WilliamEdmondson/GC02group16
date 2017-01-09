@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/loginverify.php" afterPath="$PROJECT_DIR$/includes/loginverify.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/signup.php" afterPath="$PROJECT_DIR$/includes/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passwrd/.htpasswd" afterPath="$PROJECT_DIR$/passwrd/.htpasswd" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,13 +72,25 @@
       <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+            <state relative-caret-position="975">
+              <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
               <folding>
-                <marker date="1483977729000" expanded="true" signature="634:672" ph="SELECT uid F... users" />
-                <marker date="1483977729000" expanded="true" signature="1000:1104" ph="INSERT INTO verifiers... " />
-                <marker date="1483977729000" expanded="true" signature="1668:1759" ph="INSERT INTO users... " />
-                <marker date="1483977729000" expanded="true" signature="1758:1759" ph="INSERT INTO users... " />
+                <marker date="1483979387000" expanded="true" signature="634:672" ph="SELECT uid F... users" />
+                <marker date="1483979387000" expanded="true" signature="1000:1104" ph="INSERT INTO verifiers... " />
+                <marker date="1483979387000" expanded="true" signature="1669:1761" ph="INSERT INTO users... " />
+                <marker date="1483979387000" expanded="true" signature="1760:1761" ph="INSERT INTO users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginverify.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/loginverify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <folding>
+                <marker date="1483979387000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -236,6 +248,9 @@
       <find>vid</find>
       <find>get_vid</find>
       <find>post</find>
+      <find>HTTP_SERVER</find>
+      <find>HTTP_</find>
+      <find>pwd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -270,6 +285,7 @@
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/includes/signup.php" />
+        <option value="$PROJECT_DIR$/includes/loginverify.php" />
       </list>
     </option>
   </component>
@@ -421,17 +437,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35462000" />
+    <option name="totallyTimeSpent" value="36808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="23" width="1203" height="731" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18536991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -476,28 +492,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="138" column="31" lean-forward="false" selection-start-line="138" selection-start-column="31" selection-end-line="138" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1483976885000" expanded="true" signature="3237:5615" ph="..." />
-            <marker date="1483976885000" expanded="true" signature="3514:3699" ph="{...}" />
-            <marker date="1483976885000" expanded="true" signature="3877:5503" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1483976885000" expanded="true" signature="3978:4730" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1483976885000" expanded="true" signature="4093:4676" ph="[...]" />
-            <marker date="1483976885000" expanded="true" signature="4094:4618" ph="{&quot;data&quot;: total...}" />
-            <marker date="1483976885000" expanded="true" signature="4793:5404" ph="{...}" />
-            <marker date="1483976885000" expanded="true" signature="4934:5350" ph="{...}" />
-            <marker date="1483976885000" expanded="true" signature="5003:5292" ph="[...]" />
-            <marker date="1483976885000" expanded="true" signature="5004:5291" ph="{...}" />
-            <marker date="1483976885000" expanded="true" signature="5077:5229" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/functions/functions.import.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/combined/upload.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/admin/import.directory.php" />
@@ -698,15 +692,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/loginverify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <marker date="1483979387000" expanded="true" signature="144:200" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="975">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
-            <marker date="1483977729000" expanded="true" signature="634:672" ph="SELECT uid F... users" />
-            <marker date="1483977729000" expanded="true" signature="1000:1104" ph="INSERT INTO verifiers... " />
-            <marker date="1483977729000" expanded="true" signature="1668:1759" ph="INSERT INTO users... " />
-            <marker date="1483977729000" expanded="true" signature="1758:1759" ph="INSERT INTO users... " />
+            <marker date="1483979387000" expanded="true" signature="634:672" ph="SELECT uid F... users" />
+            <marker date="1483979387000" expanded="true" signature="1000:1104" ph="INSERT INTO verifiers... " />
+            <marker date="1483979387000" expanded="true" signature="1669:1761" ph="INSERT INTO users... " />
+            <marker date="1483979387000" expanded="true" signature="1760:1761" ph="INSERT INTO users... " />
           </folding>
         </state>
       </provider>

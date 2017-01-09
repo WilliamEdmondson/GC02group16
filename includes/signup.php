@@ -57,7 +57,8 @@ else {
         //TODO set as the current user : this should be in the login page
         //$_SERVER['PHP_AUTH_USER'] = $vid;
 
-        $sql = "INSERT INTO users ( uid, email, pwd, admin, vid) VALUES ( '$uid','$uid', '$pwd', '0', $vid)";
+
+        $sql = "INSERT INTO users ( uid, email, pwd, admin, vid) VALUES ( '$uid','$uid', '$hash', '0', $vid)";
 
         $result = mysqli_query($conn, $sql);
 

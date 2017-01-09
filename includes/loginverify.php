@@ -5,8 +5,9 @@ include '../db/dbh.php';
 
 $uid = $_POST['uid'];
 $pwd = $_POST['pwd'];
+$hash = base64_encode(sha1($pwd, true));
 
-$sql = "SELECT * FROM users WHERE uid = '$uid' AND pwd = '$pwd'";
+$sql = "SELECT * FROM users WHERE uid = '$uid' AND pwd = '$hash'";
 $result = mysqli_query($conn, $sql);
 
 if (!$row = mysqli_fetch_assoc($result)){
