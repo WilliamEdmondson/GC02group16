@@ -1,72 +1,100 @@
+<h1>Upload stage</h1>
 <?php
 session_start();
+include 'quexf-1.18.1/functions/functions.import.php';
+include 'quexf-1.18.1/functions/functions.database.php';
+include("quexf-1.18.1/functions/functions.xhtml.php");
+include("quexf-1.18.1/functions/functions.process.php");
+
+
+if(!isset($_POST['cid']))
+{
+    echo $_POST['cid'];
+        //increment collections database
+
+    //TODO test this will work before creating new collection
+    new_collection();
+    //echo "new collection created<br>";
+
+
+} else {
+    echo "cid previously set as a post variable<br>";
+
+}
+
+$current_cid = $_POST['cid'];
+$vid = get_vid();
+
+//TODO ability to change the qid HARDCODED HERE
+$qid = 1;
+
+
+//TODO mechanism for description entered on the previous page?
+// $description = $_POST['description']
+$description = 'my_collection_'.$current_cid;
+echo "Collection description : ".$description."<br>";
+
+//update the vid and description in the formcollections table
+update_collection($current_cid, $vid, $description, $qid);
+
+//path for files not uploaded
+$targetpath = "uploads/";
+
+//remove all current files from targetpath
+array_map('unlink', glob("uploads/*"));
+
+
+//move selected files to upload directory
+$continue = 0;
+for( $i = 0 ; $i < sizeof($_FILES['fileList']['name']) ; $i++) {
+    echo $i." ";
+        $temp_name = $_FILES['fileList']['tmp_name'][$i];
+        echo $name = basename($_FILES['fileList']['name'][$i]);
+        echo move_uploaded_file( $temp_name , "$targetpath/$name" ) ? " Successfully Moved to /upload<br>" : " Failed <br>";
+
+}
+
+
+//import this directory
+import_directory($targetpath);
+
+//set the verifier to current user and set cid to current cid
+$vid = get_vid();
+
+$sql = "UPDATE forms
+			SET assigned_vid = '$vid',
+			    cid = '$current_cid'
+			WHERE assigned_vid IS NULL";
+
+if($db->Execute($sql))
+{
+    echo "success assigning vid";
+}
+else
+{
+    echo "failure assigning vid";
+}
+
+header("Location: ../quexf-1.18.1/verifyjs.php");
+
+/*
+//import the target directory using the import_directory function functions.database
+import_directory($targetpath);
+
+//assign the form to the current user TODO vid
+assign_to($vid);
+
+//set the veriferquestionaire variables TODO find the function 'set_vq'
+
+//update the vid and description in the formcollections table
+//update_collection($cid, $vid, $description, $qid);
+
+echo "<br><br>form has been assigned to the current user";
+
+//TODO write a SQL query which sets the fid to the current users vid therefore allowing them access
 ?>
-<html>
-<link rel="icon" type="image/png" href="img/ucl-icon.gif" />
-<div id =sidebar class="visible">
-    <?php include("sidebar.php"); ?>
-</div>
-
-<script>
-    $(document).ready(function() {
-        var navoffeset=$(".sidebar-menu").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar-menu").addClass("fixed");
-            }else{
-                $(".sidebar-menu").removeClass("fixed");
-            }
-        });
-
-    });
-</script>
-
-<head>
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-    <meta charset="UTF-8">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="js/dropzone.js"></script>
-    <link href="css/dropzone.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/dropzone.css" />
-
-    <title>Dashboard</title>
-</head>
-<body>
-<div class="page-container">
-    <div class="left-content">
-        <div class="mother-grid-inner">
-            <!--header start here-->
-            <?php include("header.php"); ?>
-
-
-            <br><br><br>
-
-            <div class="container-fluid">
-
-                <div class="row-fluid">
-                    <div class="span10" id="span10">
-
-
-                        <br><h3 class="text-left">Upload</h3><br><br>
-                        <br><br>
-                        <form action="parser.php" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                        </form>
-
-
-                        <p><a href="view_upload.php">View Upload</a> </p>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-</html
+<br><br>
+<form action="quexf-1.18.1/verifyjs.php">
+    <input type='submit' value='proceed to verification'/>
+</form>
+*/
