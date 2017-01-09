@@ -122,32 +122,24 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                         <?php } ?>
                     </div>
                     <div class="span4">
-
-                        <br><h3 class="text-left">Upload</h3><br><br>
+                        <h3>Upload</h3>
                         <br><br>
                         <form action="parser.php" class="dropzone">
                             <div class="fallback">
                                 <input name="file" type="file" multiple />
                             </div>
                         </form>
-                        <p><a href="view_upload.php">View Uploads</a></p>
-                        <h3>Upload</h3>
-                        Choose files to be uploaded.
-                        <br><br>
-
+                        or choose files to be uploaded:
+                        <br>
                         <form action="upload.php" method="post" enctype="multipart/form-data">
                             <div style="display :none;"><input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple></div>
                             <label for="fileList"> Select a file to upload</label>
 
                             <button class="text-left" type="submit" >Create New Form Collection</button>
-                        </form>
-
-                        or
-
-                        <h3>Add to an existing collection</h3>
-
-                        <!TODO if there are no collections above then hide this>
-                        <form action="upload.php" method="POST" style="color:#65bdff; width:500px; margin-top: 16px;">
+                            <br>
+                            or
+                            <br>
+                            <h3>Add to an existing collection</h3>
                             <p>Which collection would you like to add files to?
                                 <select name="collection">
                                     <option value="" >--Select--</option>
@@ -165,8 +157,10 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                     ?>
                                 </select>
                                 <button type="submit">Add Files</button>
-                            </p>
                         </form>
+
+
+
                     </div>
 
                 </div>

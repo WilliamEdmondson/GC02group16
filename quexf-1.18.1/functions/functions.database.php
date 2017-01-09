@@ -118,7 +118,7 @@ function new_collection(){
 
     $new_cid = $rs['MAX(cid)'];
 
-    $_POST['cid'] = $new_cid;
+    $_POST['collection'] = $new_cid;
 
 
 }

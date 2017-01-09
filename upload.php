@@ -5,10 +5,14 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session_start include
 include("quexf-1.18.1/functions/functions.xhtml.php");
 include("quexf-1.18.1/functions/functions.process.php");
 
-
-if(!isset($_POST['cid']))
+if(!isset($_FILES['fileList']['name'][0]))
 {
-    echo $_POST['cid'];
+    header("Location: /dashboard.php");
+}
+
+
+if(!isset($_POST['collection']))
+{
         //increment collections database
 
     //TODO test this will work before creating new collection
@@ -16,13 +20,14 @@ if(!isset($_POST['cid']))
     //echo "new collection created<br>";
 
 } else {
-    echo "cid previously set as a post variable<br>";
+    echo $_POST['collection'];
+    echo "collection previously set as a post variable<br>";
 
 }
 
 
 
-$current_cid = $_POST['cid'];
+$current_cid = $_POST['collection'];
 $vid = get_vid();
 
 //TODO ability to change the qid HARDCODED HERE
