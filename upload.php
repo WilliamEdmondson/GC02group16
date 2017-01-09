@@ -1,6 +1,5 @@
 <h1>Upload stage</h1>
 <?php
-session_start();
 include 'quexf-1.18.1/functions/functions.import.php';
 include 'quexf-1.18.1/functions/functions.database.php';
 include("quexf-1.18.1/functions/functions.xhtml.php");
@@ -21,6 +20,8 @@ if(!isset($_POST['cid']))
     echo "cid previously set as a post variable<br>";
 
 }
+
+
 
 $current_cid = $_POST['cid'];
 $vid = get_vid();
@@ -58,8 +59,12 @@ for( $i = 0 ; $i < sizeof($_FILES['fileList']['name']) ; $i++) {
 //import this directory
 import_directory($targetpath);
 
+
+
 //set the verifier to current user and set cid to current cid
+
 $vid = get_vid();
+
 
 $sql = "UPDATE forms
 			SET assigned_vid = '$vid',

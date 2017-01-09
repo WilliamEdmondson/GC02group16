@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include 'quexf-1.18.1/functions/functions.database.php';
 ?>
 <html>
@@ -153,7 +153,7 @@ include 'quexf-1.18.1/functions/functions.database.php';
                                 <select name="collection">
                                     <option value="" >--Select--</option>
                                     <?php
-                                    $cid_arr = get_collections(0);
+                                    $cid_arr = get_collections();
                                     foreach( $cid_arr as $cid){
                                         echo $cid['cid'];
                                     }

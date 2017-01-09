@@ -1,8 +1,6 @@
 <?php
+include_once 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 
-include_once 'quexf-1.18.1/functions/functions.database.php';
-
-//session_start();
 
 //setting header to json
 //header('Content-Type: application/json');

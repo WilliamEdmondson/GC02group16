@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 /*	Copyright Deakin University 2007,2008
  *	Written by Adam Zammit - adam.zammit@deakin.edu.au
  *	For the Deakin Computer Assisted Research Facility: http://www.deakin.edu.au/dcarf/
@@ -30,7 +30,8 @@ include_once("db.inc.php");
 include("functions/functions.image.php");
 include("functions/functions.xhtml.php");
 include("functions/functions.database.php");
-//verifier
+
+//get vid
 $vid = get_vid();
 
 
