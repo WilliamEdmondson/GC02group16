@@ -137,7 +137,42 @@ include 'quexf-1.18.1/functions/functions.database.php';
                             </div>
                         </form>
                         <p><a href="view_upload.php">View Uploads</a></p>
+                        <h3>Upload</h3>
+                        Choose files to be uploaded.
+                        <br><br>
 
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <div style="display :none;"><input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple></div>
+                            <label for="fileList"> Select a file to upload</label>
+
+                            <button class="text-left" type="submit" >Create New Form Collection</button>
+                        </form>
+
+                        or
+
+                        <h3>Add to an existing collection</h3>
+
+                        <!TODO if there are no collections above then hide this>
+                        <form action="upload.php" method="POST" style="color:#65bdff; width:500px; margin-top: 16px;">
+                            <p>Which collection would you like to add files to?
+                                <select name="collection">
+                                    <option value="" >--Select--</option>
+                                    <?php
+                                    $cid_arr = get_collections(0);
+                                    foreach( $cid_arr as $cid){
+                                        echo $cid['cid'];
+                                    }
+                                    foreach ($cid_arr as $collection)
+                                    {
+                                        ?>
+                                        <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                                <button type="submit">Add Files</button>
+                            </p>
+                        </form>
                     </div>
 
                 </div>
