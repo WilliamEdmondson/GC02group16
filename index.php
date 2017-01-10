@@ -31,7 +31,7 @@ session_start();
                         <img alt="here is picture 1" src="img/loginucl1.png" width="1356" height="850" />
                         <div class="carousel-caption">
                             <p>
-                                ATG Class Student OCR Feedback Scanning App
+                                UCL Student Feedback App
                             </p>
                         </div>
                     </div>
@@ -55,12 +55,14 @@ session_start();
             </div>
         </div>
         <div class="col-xs-6 span3">
-<!--            <img alt="UCL Student OCR Feedback Web App" src="img/test1.png" />-->
+            <!--            <img alt="UCL Student OCR Feedback Web App" src="img/test1.png" />-->
 
             <section>
-                <div class="hex" style="width:18vw; height:18vw; font-size:19px; background-color:#5763ff; color:white; line-height:15vw;  text-align:center; padding:2vw;">
-                	UCL Student Feedback App
-                </div>
+
+
+
+                <div class="hex" style="width: 18vw; height: 18vw;font-size:19px;background-color: #5763ff; color: white;  line-height: 15vw;  text-align: center;">UCL Student OCR Feedback Web App</div>
+
             </section>
             <script src="js/anime.js"></script>
             <script>
@@ -101,13 +103,16 @@ session_start();
                         if (strpos($url,'error=resetpass') !==false){
                             echo "Your temporary password is: 66666666, please login and change your password as soon as possible!";
                         }
+                        if (strpos($url,'success') !==false){
+                        echo "Sign up success, please login";}
+
 
                         ?>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <label class="checkbox"><input type="checkbox" />Remember me</label><button class="btn" type="submit">Login</button>
+                        <label class="checkbox"><input type="checkbox" />Remember me 10 days</label><button class="btn" type="submit">Login</button>
                     </div>
                 </div>
             </form>
@@ -141,7 +146,7 @@ session_start();
                                     Success, please check your email inbox.
                                 </h4>
                                 <?php ;}
-                                if (strpos($url,'error=checkemail') !==false){
+                            if (strpos($url,'error=checkemail') !==false){
                                 ?>
                                 <script>
                                     $(function () { $('#myModal2').modal({
@@ -194,8 +199,8 @@ session_start();
                                         keyboard: true
                                     })});
                                 </script>
-                                <h4 class="modal-title" id="myModalLabel">
-                                    <style>
+                                <h4 class="modal-title" id="myModalLabel" style="color: red">
+                                    <style> colo
                                     </style>
                                     Fill out all fields.
                                 </h4>
@@ -208,10 +213,36 @@ session_start();
                                         keyboard: true
                                     })});
                                 </script>
-                                <h4 class="modal-title" id="myModalLabel">
+                                <h4 class="modal-title" id="myModalLabel" style="color: red">
                                     <style>
                                     </style>
                                     The passwords you entered didn't match.
+                                </h4>
+                                <?php ;}
+                            if (strpos($url,'error=userempty') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel" style="color: red">
+                                    <style>
+                                    </style>
+                                    Fill out all fields.
+                                </h4>
+                                <?php ;}
+                            if (strpos($url,'error=emailexist') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel"  style="color: red">
+                                    <style>
+                                    </style>
+                                    Email already exist!
                                 </h4>
                                 <?php ;}
 
@@ -222,17 +253,18 @@ session_start();
                                         keyboard: true
                                     })});
                                 </script>
-                                <h4 class="modal-title" id="myModalLabel">
+                                <h4 class="modal-title" id="myModalLabel" style="color: red">
                                     <style>
                                     </style>
-                                    Email address already exists.
+                                    Username already exists.
                                 </h4>
                                 <?php ;}
                             ?>
                         </div>
                         <div class="modal-body">
                             <form action="includes/signup.php" method="POST">
-                                <input type="text" name="uid" placeholder="Email"><br>
+                                <input type="text" name="uid" placeholder="Username"><br>
+                                <input type="text" name="email" placeholder="Email"><br>
                                 <input type="password" name="pwd" placeholder="Password"><br>
                                 <input type="password" name="pwd2" placeholder="Confirm Password"><br>
                                 <a href="includes/adminrequest.php">Request Administrator Access</a><br><br><br>

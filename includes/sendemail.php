@@ -2,7 +2,7 @@
 if (isset($_POST["forgotPass"])){
     include '../db/dbh.php';
     $email = $conn->real_escape_string($_POST["email"]);
-    $data = $conn->query("SELECT uid FROM users WHERE uid ='$email'");
+    $data = $conn->query("SELECT email FROM users WHERE email ='$email'");
     if($data ->num_rows>0){
         $str = "0123456789qwertyuioplkjhgfdsazxcvbnm";
         $str = str_shuffle($str);
@@ -116,9 +116,9 @@ waiting 0 second
 </html>
 
 <?php
-            $conn->query("UPDATE users SET token='$str' WHERE uid='$email'");
+            $conn->query("UPDATE users SET token='$str' WHERE email='$email'");
 }
-//        $conn->query("UPDATE users SET token='$str' WHERE uid='$email'");
+//        $conn->query("UPDATE users SET token='$str' WHERE email='$email'");
 
         exit();
 
