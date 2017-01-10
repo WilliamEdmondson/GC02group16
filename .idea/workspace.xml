@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file2.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/file3.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" afterPath="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sampleprevious.php" afterPath="$PROJECT_DIR$/sampleprevious.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,22 +105,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="102" column="74" lean-forward="false" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
               <folding>
-                <marker date="1484004519000" expanded="true" signature="3237:3238" ph="..." />
-                <marker date="1484004519000" expanded="true" signature="3237:5320" ph="..." />
-                <marker date="1484004519000" expanded="true" signature="3530:3715" ph="{...}" />
-                <marker date="1484004519000" expanded="true" signature="3893:5207" ph="{&quot;type&quot;: 'pie'...}" />
-                <marker date="1484004519000" expanded="true" signature="3893:5208" ph="{&quot;type&quot;: 'pie'...}" />
-                <marker date="1484004519000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
-                <marker date="1484004519000" expanded="true" signature="4109:4164" ph="[...]" />
-                <marker date="1484004519000" expanded="true" signature="4109:4805" ph="[...]" />
-                <marker date="1484004519000" expanded="true" signature="4110:4164" ph="{&quot;data&quot;: total...}" />
-                <marker date="1484004519000" expanded="true" signature="4922:5109" ph="{...}" />
+                <marker date="1484046974000" expanded="true" signature="3237:5218" ph="..." />
+                <marker date="1484046974000" expanded="true" signature="3530:3715" ph="{...}" />
+                <marker date="1484046974000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
+                <marker date="1484046974000" expanded="true" signature="4109:4805" ph="[...]" />
+                <marker date="1484046974000" expanded="true" signature="4110:4747" ph="{&quot;data&quot;: total...}" />
+                <marker date="1484046974000" expanded="true" signature="4922:5052" ph="{...}" />
+                <marker date="1484046974000" expanded="true" signature="5057:5105" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484046974000" expanded="true" signature="5057:5106" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484046974000" expanded="true" signature="5057:5218" ph="..." />
               </folding>
             </state>
           </provider>
@@ -180,11 +170,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="verifyjs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quexf-1.18.1/verifyjs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3046">
-              <caret line="451" column="19" lean-forward="false" selection-start-line="451" selection-start-column="8" selection-end-line="451" selection-end-column="19" />
+            <state relative-caret-position="256">
+              <caret line="265" column="16" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
               <folding>
                 <marker date="1484004750000" expanded="true" signature="343:618" ph="SELECT MIN(b... boxes" />
                 <marker date="1484004750000" expanded="true" signature="665:802" ph="SELECT offx,... formpages" />
@@ -353,8 +343,8 @@
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
         <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
       </list>
     </option>
   </component>
@@ -538,7 +528,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48449000" />
+    <option name="totallyTimeSpent" value="48733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1203" height="731" extended-state="0" />
@@ -843,25 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <marker date="1484004519000" expanded="true" signature="3237:3238" ph="..." />
-            <marker date="1484004519000" expanded="true" signature="3237:5320" ph="..." />
-            <marker date="1484004519000" expanded="true" signature="3530:3715" ph="{...}" />
-            <marker date="1484004519000" expanded="true" signature="3893:5207" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1484004519000" expanded="true" signature="3893:5208" ph="{&quot;type&quot;: 'pie'...}" />
-            <marker date="1484004519000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
-            <marker date="1484004519000" expanded="true" signature="4109:4164" ph="[...]" />
-            <marker date="1484004519000" expanded="true" signature="4109:4805" ph="[...]" />
-            <marker date="1484004519000" expanded="true" signature="4110:4164" ph="{&quot;data&quot;: total...}" />
-            <marker date="1484004519000" expanded="true" signature="4922:5109" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -898,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/verifyjs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3046">
-          <caret line="451" column="19" lean-forward="false" selection-start-line="451" selection-start-column="8" selection-end-line="451" selection-end-column="19" />
+        <state relative-caret-position="256">
+          <caret line="265" column="16" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
           <folding>
             <marker date="1484004750000" expanded="true" signature="343:618" ph="SELECT MIN(b... boxes" />
             <marker date="1484004750000" expanded="true" signature="665:802" ph="SELECT offx,... formpages" />
@@ -940,6 +911,24 @@
             <marker date="1484004750000" expanded="true" signature="33226:33351" ph="..." />
             <marker date="1484004750000" expanded="true" signature="33455:33473" ph="..." />
             <marker date="1484004750000" expanded="true" signature="33532:33567" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="102" column="74" lean-forward="false" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+          <folding>
+            <marker date="1484046974000" expanded="true" signature="3237:5218" ph="..." />
+            <marker date="1484046974000" expanded="true" signature="3530:3715" ph="{...}" />
+            <marker date="1484046974000" expanded="true" signature="3994:4859" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1484046974000" expanded="true" signature="4109:4805" ph="[...]" />
+            <marker date="1484046974000" expanded="true" signature="4110:4747" ph="{&quot;data&quot;: total...}" />
+            <marker date="1484046974000" expanded="true" signature="4922:5052" ph="{...}" />
+            <marker date="1484046974000" expanded="true" signature="5057:5105" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484046974000" expanded="true" signature="5057:5106" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484046974000" expanded="true" signature="5057:5218" ph="..." />
           </folding>
         </state>
       </provider>
