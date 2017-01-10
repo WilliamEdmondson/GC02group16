@@ -75,7 +75,7 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                             <div class="col-xs-3 span5"><?php
                                             $data = $json_array[$i];
                                             echo $label;
-                                            echo "<canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas>";
+                                            echo "<a href='sampleprevious.php'><canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas></a>";
                                             echo "<script language='javascript'>
                         
                                         var data = $data;

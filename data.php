@@ -1,5 +1,5 @@
 <?php
-include 'quexf-1.18.1/functions/functions.database.php'; //includes session start
+include_once 'quexf-1.18.1/functions/functions.database.php'; //includes session start
 
 
 //setting header to json
@@ -23,12 +23,14 @@ if(!$mysqli){
 
 
 $json = array();
-$_SESSION['collection'] = 1;
-for ($i=0; $i < 20; $i++) {
+$_SESSION['collection'] = 2;
+for ($i=0; $i < 20; $i++) { 
 	$bgid = $i + 1;
-	$query="SELECT label, count(f.bid) AS total 
-FROM boxes b LEFT JOIN (formboxverifychar f LEFT JOIN formcollections c ON c.vid = f.vid) ON b.bid = f.bid 
-WHERE b.bgid = '$i+1' AND c.cid = '{$_SESSION['collection']}' GROUP BY label ORDER BY b.bid";
+	$query="SELECT label, COUNT(f.bid) AS total
+	FROM boxes b LEFT JOIN formboxverifychar f ON b.bid = f.bid
+	WHERE b.bgid=$bgid
+	GROUP BY label
+	ORDER BY b.bid";
 
 //print question number
 //echo "Question $bgid:<br>";
