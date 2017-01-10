@@ -100,10 +100,15 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                                                         ]
                                                     },
                                                     options: {
-                                                        responsive: false,
-                                                    }
-                                                    });
-                                                
+						                                responsive: false,
+														legend: {
+						            						display: false,
+        												},
+														tooltips: {
+                											enabled: false,
+            											}
+                            						}
+                            						});
                                                     </script>";
                                             ?><br><br><br></div><?php
                                             $i++;
