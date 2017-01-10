@@ -52,7 +52,7 @@ include("data.php"); //includes session start
                             $_SESSION['cid'] = 1;// this will be taken from the collection eventually TODO
                             $i = 0;
 
-                            $bgid_array =  get_bgids_from_cid( 4,  0 );
+                            $bgid_array =  get_bgids_from_cid( $_SESSION['cid'],  0 );
 
                             foreach ($bgid_array as $bgid)
                             {
