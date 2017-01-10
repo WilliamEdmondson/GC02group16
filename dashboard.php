@@ -121,6 +121,14 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                     </div>
                     <div class="span4">
                         <h3>Upload</h3>
+
+                        <!--Script for tooltip-->
+                        <script>
+							$(document).ready(function(){
+   							$('[data-toggle="tooltip"]').tooltip();   
+							});
+						</script>
+
                         <br><br>
                         <form action="parser.php" class="dropzone">
                             <div class="fallback">
@@ -131,22 +139,23 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                             <br>
                             <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
                             <br>
-                            <h3>Create New Form Collection</h3>
-                            <button class="text-left" type="submit" >Create New Form Collection</button>
-                            <br>new collection name
+                            <h3>Create New Form Collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
+                            <button class="text-left" type="submit" >Create new form collection</button>
+                            <br>New collection name
                             <input type="text" name="description">
-                            <br>
+                            <br><br>
                             or
-                            <br>
+                            <br><br>
                         </form>
+                        
                         <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <h3>Add to an existing collection</h3>
+                            <h3>Add form to an existing collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
 
                                 <br>
                                 <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
                                 <br>
 
-                            <p>Which collection would you like to add files to?
+                            <p>Which collection would you like to add files to?</p>
                             <select name="collection">
                                 <option value="" >--Select--</option>
                                 <?php

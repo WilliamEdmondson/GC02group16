@@ -8,7 +8,7 @@ include("quexf-1.18.1/functions/functions.process.php");
 //test that there are files to be uploaded
 if(!isset($_FILES['fileList']['name'][0]))
 {
-    header("Location: /dashboard.php");
+    header("Location: dashboard.php");
 }
 
 if(!isset($_POST['collection']))
@@ -92,7 +92,7 @@ else
 
 
 //
-header("Location: /quexf-1.18.1/verifyjs.php");
+header("Location: quexf-1.18.1/verifyjs.php");
 
 /*
 //import the target directory using the import_directory function functions.database
