@@ -92,7 +92,7 @@ else
 
 
 //
-header("Location: ../quexf-1.18.1/verifyjs.php");
+header("Location: /quexf-1.18.1/verifyjs.php");
 
 /*
 //import the target directory using the import_directory function functions.database

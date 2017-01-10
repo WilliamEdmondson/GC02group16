@@ -138,9 +138,15 @@ include 'quexf-1.18.1/functions/functions.database.php'; //session start include
                             <br>
                             or
                             <br>
+                        </form>
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
                             <h3>Add to an existing collection</h3>
-                            <p>Which collection would you like to add files to?
 
+                                <br>
+                                <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
+                                <br>
+
+                            <p>Which collection would you like to add files to?
                             <select name="collection">
                                 <option value="" >--Select--</option>
                                 <?php
