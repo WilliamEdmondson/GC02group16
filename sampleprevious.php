@@ -42,6 +42,7 @@ include("data.php"); //includes session start
                             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
                             <script type="text/javascript" src="js/Chart.min.js"></script>
                             <?php
+<<<<<<< HEAD
                             $json_array = $_SESSION['json_array'];
                             //  echo implode("<br>",$json_array);                       
                             for ($i=0; $i < 20; $i++) {
@@ -60,6 +61,39 @@ include("data.php"); //includes session start
                                 label.push(data[j].label);
                                 total.push(data[j].total);
                             }
+=======
+	                        $json_array = $_SESSION['json_array'];
+
+
+                            //get the questions from that form;
+
+                            $_SESSION['cid'] = 1;// this will be taken from the collection eventually TODO
+                            $i = 0;
+
+                            $bgid_array =  get_bgids_from_cid( $_SESSION['cid'],  0 );
+
+                            foreach ($bgid_array as $bgid)
+                            {
+
+                            ?><div class="col-xs-3 span3"><?php
+                                    $data = $json_array[$i];
+                                    //	echo $current_json;
+
+                                    //Get the question description WILL
+                                    $question = get_question_varname($bgid).". ".get_question_description($bgid);
+                                    echo $question;
+
+	        	                echo "<canvas style = 'padding-top:5px; margin-bottom:50px;' id='mycanvas".$i."' style='width:360; height:360'></canvas>";
+								echo "</div>";
+	            	            echo "<script language='javascript'>
+	                	        var data = $data;
+                        	    var label = [];
+                            	var total = [];
+	                            for(var j in data) {
+    	                        label.push(data[j].label);
+        	                    total.push(data[j].total);
+            	            }
+>>>>>>> origin/master
                             var ctx = document.getElementById('mycanvas".$i."');
                             var mycanvas".$i." = new Chart(ctx, {
                             type: 'pie',

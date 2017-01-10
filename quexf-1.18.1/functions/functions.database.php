@@ -170,7 +170,7 @@ function get_bgids_from_cid( $cid, $option = 1){
     $sql ="SELECT qid FROM formcollections WHERE cid = '$cid'";
 
     $qid_rs = $db->getAll($sql);
-	*/
+
 	$qid_rs = 1;
     if(count($qid_rs) > 1)
     {
@@ -181,7 +181,9 @@ function get_bgids_from_cid( $cid, $option = 1){
     foreach ($qid_rs as $qid_row) {
 
         $qid = $qid_row['qid'];
-
+	*/
+	//hardcoded
+	$qid = 1;
         $sql = "SELECT pid FROM pages WHERE qid = '$qid'";
 
         $pid_rs = $db->getAll($sql);
@@ -217,7 +219,7 @@ function get_bgids_from_cid( $cid, $option = 1){
                 $bgid = $bgid_row['bgid'];
                 array_push($result,$bgid);
             }
-        }
+
     }
     return $result;
 }
