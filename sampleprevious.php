@@ -304,7 +304,22 @@ for ($i=0; $i < 20; $i++) {
                         <div id="comments" class="tab-pane fade">
                             <!--COMMENTS-->
                             <div id="align" align="center">
-                            <p>comments</p>
+                            <?php
+                            echo "<h1> Comments </h1><br>";
+                            global $db;
+
+                            $sql = "SELECT val AS text
+                                    FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
+                                    WHERE b.bid = 101 AND c.cid = '$cid'";
+
+                            $rs = $db->GetAll($sql);
+
+                            foreach ( $rs as $result){
+                                echo $result['text'];
+                            }
+
+
+                            ?>
                             </div>
                             <!--END COMMENTS-->
                         </div>
