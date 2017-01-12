@@ -1,7 +1,7 @@
 <?php
 include 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 
-unset($_SESSION['current_collection'])
+unset($_SESSION['current_collection']);
 
 ?>
 <html>
@@ -57,7 +57,7 @@ unset($_SESSION['current_collection'])
                 
                 <div class="row-fluid">
 
-                    <div class="span6">
+                    <div class="col-sm-6 col-md-6">
                         <?php if(!isset($_SESSION['vid'])){
                             echo "<h3>Please log in <a href='index.php'>here</a></h3>";
                         } else { ?>
@@ -76,7 +76,7 @@ unset($_SESSION['current_collection'])
                                             $label = $collection['description'];
                                             $json_array = $_SESSION['json_array'];
                                             ?>
-                                            <div class="col-xs-3 span5"><?php
+                                            <div class="col-sm-6 col-md-6" align="center"><?php
                                             $data = $json_array[$i];
                                             echo $label;
                                             echo "<a href='sampleprevious.php?collection=$cid'><canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas></a>";
@@ -123,45 +123,34 @@ unset($_SESSION['current_collection'])
                                 </div>
                             </div>
                         <?php } ?>
-                        <a href="allprevious.php" style="margin-left: 30px;">View all previous work</a>
+                        <div id="align" align="center">
+                            <a href="allprevious.php">View all previous work</a>
+                        </div>
                     </div>
-                    <div class="span4">
+                    <div class="col-sm-6 col-md-6">
                         <h3>Upload</h3>
+                        <br><br><br>
 
                         <!--Script for tooltip-->
                         <script>
-							$(document).ready(function(){
-   							$('[data-toggle="tooltip"]').tooltip();   
-							});
-						</script>
+                            $(document).ready(function(){
+                                $('[data-toggle="tooltip"]').tooltip();
+                            });
+                        </script>
 
-                        
-                        <form action="parser.php" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                        </form>
                         <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <h4 style="margin-bottom: 20px">Create new form collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h4>
+                            <p>Collection name:</p>
+                            <input type="text" name="description" style="height: 30px" />
                             <br>
                             <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
-                            <br>
-                            <h3>Create New Form Collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
-                            New collection name
-                            <input type="text" name="description" style="height: 25px" />
-                            <button class="text-left" type="submit" style="margin-bottom: 10px">Create new form collection</button>
+                            <button type="submit" style="padding: 5px">Create new form collection</button>
                         </form>
 
-                        <h3 style="color: #53575e">or</h3>
-                        <br>
-                            
-                        
+                        <br><br><br>
+
                         <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <h3>Add form to an existing collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
-
-                                
-                                <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
-                                
-
+                            <h4 style="margin-bottom: 20px">Add form to an existing collection<a href="#" style="color: #53575e" data-toggle="tooltip" data-placement="top" title="A collection is a group of forms for a class"><sup>?</sup></a></h4>
                             <p>Which collection would you like to add files to?</p>
                             <select name="collection">
                                 <option value="" >--Select--</option>
@@ -178,7 +167,9 @@ unset($_SESSION['current_collection'])
                                 }
                                 ?>
                             </select>
-                            <button type="submit">Add Files</button>
+                            <br>
+                            <input type="file" name="fileList[]" value="fileList" id="fileList" multiple />
+                            <button type="submit" style="padding: 5px">Add Files</button>
                         </form>
 
 

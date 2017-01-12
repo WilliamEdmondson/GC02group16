@@ -23,12 +23,21 @@ if(!$mysqli){
 
 
 $json = array();
-$_SESSION['collection'] = 2;
+//$_SESSION['collection'] = 2;
+
+// check if masquerading as another user
+if (isset($_SESSION['masqvid'])) {
+    $vid = $_SESSION['masqvid'];
+}
+else {
+    $vid = $_SESSION['vid'];
+}
+
 for ($i=0; $i < 20; $i++) { 
 	$bgid = $i + 1;
 	$query="SELECT label, COUNT(f.bid) AS total
 	FROM boxes b LEFT JOIN formboxverifychar f ON b.bid = f.bid
-	WHERE b.bgid=$bgid
+	WHERE b.bgid=$bgid AND vid = $vid
 	GROUP BY label
 	ORDER BY b.bid";
 

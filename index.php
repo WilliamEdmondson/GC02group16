@@ -112,7 +112,7 @@ session_start();
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <label class="checkbox"><input type="checkbox" />Remember me 10 days</label><button class="btn" type="submit">Login</button>
+                        <label class="checkbox"><input type="checkbox" />Remember me</label><button class="btn" type="submit">Login</button>
                     </div>
                 </div>
             </form>

@@ -1,8 +1,8 @@
-
-
 <?php
 session_start();
 include 'db/dbh.php';
+
+unset($_SESSION['masqvid']);
 ?>
 
 <div id =sidebar class="visible">
@@ -54,6 +54,7 @@ include 'db/dbh.php';
                                 echo "SUCCESS<br>";
                                 $_SESSION["uid"] = $row["uid"];
                                 echo "Masquerading as ".$_SESSION["uid"];
+                                $_SESSION['masqvid'] = $row['vid'];
                             }
                         }
                         ?>

@@ -41,7 +41,7 @@ unset($_SESSION['current_collection'])
     <script src="scripts/chromagallery.min.js"></script>
 
 
-    <title>Dashboard</title>
+    <title>Previous work</title>
 </head>
 <body>
 <div class="page-container">
@@ -75,7 +75,7 @@ unset($_SESSION['current_collection'])
                                             $label = $collection['description'];
                                             $json_array = $_SESSION['json_array'];
                                             ?>
-                                            <div class="col-xs-5 span5"><?php
+                                            <div class="col-sm-6 col-md-6" align="center"><?php
                                             $data = $json_array[$i];
                                             echo $label;
                                             echo "<a href='sampleprevious.php?collection=$cid'><canvas id='mycanvas" . $i . "' style='width:300; height:300'></canvas></a>";

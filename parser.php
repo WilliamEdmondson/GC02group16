@@ -10,3 +10,4 @@ if(!empty($_FILES)){
     $target_path = $destination_path.$_FILES["file"]["name"];
     move_uploaded_file($temp, $target_path);
 }
+?>
