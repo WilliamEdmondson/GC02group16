@@ -308,6 +308,7 @@ for ($i=0; $i < 20; $i++) {
                             echo "<h1> Comments </h1><br>";
                             global $db;
 
+                            //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                             $sql = "SELECT val AS text
                                     FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
                                     WHERE b.bid = 101 AND c.cid = '$cid'";
@@ -315,7 +316,7 @@ for ($i=0; $i < 20; $i++) {
                             $rs = $db->GetAll($sql);
 
                             foreach ( $rs as $result){
-                                echo $result['text'];
+                                echo $result['text']."<br>";
                             }
 
 
