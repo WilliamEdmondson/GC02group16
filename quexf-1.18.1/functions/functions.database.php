@@ -76,7 +76,35 @@ function get_collections(){
 
     $vid = get_vid();
 
-    $sql = "SELECT * FROM formcollections WHERE vid = '$vid'";
+    $sql = "SELECT * FROM formcollections WHERE vid = '$vid' ORDER BY cid DESC";
+
+    $rs = $db->getAll($sql);
+    //echo $vid;
+    //echo $rs ? "succ" : "fail";
+
+    if(count($rs) < 1 )
+    {
+        echo "You currently have no collections on record, click new collection to create your first";
+        return false;
+    }
+
+    foreach ($rs as $cid ) {
+          array_push($result, $cid);
+    }
+
+    return $result;
+}
+
+// returns previous 4 collections for current vid
+function get_last_collections(){
+
+    global $db;
+
+    $result = array();
+
+    $vid = get_vid();
+
+    $sql = "SELECT * FROM formcollections WHERE vid = '$vid' ORDER BY cid DESC LIMIT 4";
 
     $rs = $db->getAll($sql);
     //echo $vid;

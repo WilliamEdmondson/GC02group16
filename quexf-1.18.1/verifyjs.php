@@ -253,10 +253,16 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
 
-	//avoid vid unset
+	//avoid vid, uid and cid unset
 	$vid = $_SESSION['vid'];
+	$uid = $_SESSION['uid'];
+	$cid = $_SESSION['current_collection'];
 	session_unset();
     $_SESSION['vid'] = $vid;
+    $_SESSION['uid'] = $uid;
+    $_SESSION['current_collection'] = $cid;
+
+
 
 	$sql = "UPDATE verifiers
 		SET currentfid = NULL
@@ -267,10 +273,13 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
 
 	$db->CompleteTrans();
 
+
+
 	//if XMLRPC is set - upload this form via XMLRPC
 	$sql = "SELECT rpc_server_url 
 		FROM questionnaires
 		WHERE qid = '$qid'";
+
 
 	$rpc = $db->GetRow($sql);
 
@@ -298,20 +307,27 @@ if (isset($_GET['clear']))
 	unset($_SESSION['boxgroups']);
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
-    //avoid vid unset
+    //avoid vid, uid and cid unset
     $vid = $_SESSION['vid'];
+    $uid = $_SESSION['uid'];
+    $cid = $_SESSION['current_collection'];
     session_unset();
     $_SESSION['vid'] = $vid;
+    $_SESSION['uid'] = $uid;
+    $_SESSION['current_collection'] = $cid;
 
 }
 
 if (isset($_POST['assign']))
 {
-    //avoid vid unset
+    //avoid vid, uid and cid unset
     $vid = $_SESSION['vid'];
+    $uid = $_SESSION['uid'];
+    $cid = $_SESSION['current_collection'];
     session_unset();
     $_SESSION['vid'] = $vid;
-
+    $_SESSION['uid'] = $uid;
+    $_SESSION['current_collection'] = $cid;
     $fid = ($vid);
 	if ($fid == false) 
 	{
@@ -321,10 +337,14 @@ if (isset($_POST['assign']))
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
 		unset($_SESSION['pages']);
-        //avoid vid unset
+        //avoid vid, uid and cid unset
+        $uid = $_SESSION['uid'];
         $vid = $_SESSION['vid'];
+        $cid = $_SESSION['current_collection'];
         session_unset();
         $_SESSION['vid'] = $vid;
+        $_SESSION['uid'] = $uid;
+        $_SESSION['current_collection'] - $cid;
 
         xhtml_foot();
 		exit();
@@ -447,10 +467,14 @@ if (!isset($_SESSION['boxes'])) {
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
-        //avoid vid unset
+        //avoid vid, uid and cid unset
         $vid = $_SESSION['vid'];
+        $uid = $_SESSION['uid'];
+        $cid = $_SESSION['current_collection'];
         session_unset();
         $_SESSION['vid'] = $vid;
+        $_SESSION['uid'] = $uid;
+        $_SESSION['current_collection'] = $cid;
 
         xhtml_foot();
 		exit();

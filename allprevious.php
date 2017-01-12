@@ -57,7 +57,6 @@ unset($_SESSION['current_collection'])
                 
                 <div class="row-fluid">
 
-                    <div class="span6">
                         <?php if(!isset($_SESSION['vid'])){
                             echo "<h3>Please log in <a href='index.php'>here</a></h3>";
                         } else { ?>
@@ -70,16 +69,16 @@ unset($_SESSION['current_collection'])
                                 <script type="text/javascript" src="js/Chart.min.js"></script>
                                     <?php
                                     $i = 0;
-                                    if($collection_arr = get_last_collections()) {
+                                    if($collection_arr = get_collections()) {
                                         foreach ($collection_arr as $collection) {
                                         	$cid = $collection['cid'];
                                             $label = $collection['description'];
                                             $json_array = $_SESSION['json_array'];
                                             ?>
-                                            <div class="col-xs-3 span5"><?php
+                                            <div class="col-xs-5 span5"><?php
                                             $data = $json_array[$i];
                                             echo $label;
-                                            echo "<a href='sampleprevious.php?collection=$cid'><canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas></a>";
+                                            echo "<a href='sampleprevious.php?collection=$cid'><canvas id='mycanvas" . $i . "' style='width:300; height:300'></canvas></a>";
                                             echo "<script language='javascript'>
                         
                                         var data = $data;
@@ -123,68 +122,6 @@ unset($_SESSION['current_collection'])
                                 </div>
                             </div>
                         <?php } ?>
-                        <a href="allprevious.php" style="margin-left: 30px;">View all previous work</a>
-                    </div>
-                    <div class="span4">
-                        <h3>Upload</h3>
-
-                        <!--Script for tooltip-->
-                        <script>
-							$(document).ready(function(){
-   							$('[data-toggle="tooltip"]').tooltip();   
-							});
-						</script>
-
-                        
-                        <form action="parser.php" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                        </form>
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <br>
-                            <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
-                            <br>
-                            <h3>Create New Form Collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
-                            New collection name
-                            <input type="text" name="description" style="height: 25px" />
-                            <button class="text-left" type="submit" style="margin-bottom: 10px">Create new form collection</button>
-                        </form>
-
-                        <h3 style="color: #53575e">or</h3>
-                        <br>
-                            
-                        
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <h3>Add form to an existing collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
-
-                                
-                                <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
-                                
-
-                            <p>Which collection would you like to add files to?</p>
-                            <select name="collection">
-                                <option value="" >--Select--</option>
-                                <?php
-                                $cid_arr = get_collections();
-                                foreach( $cid_arr as $cid){
-                                    echo $cid['cid'];
-                                }
-                                foreach ($cid_arr as $collection)
-                                {
-                                    ?>
-                                    <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
-                                    <?php
-                                }
-                                ?>
-                            </select>
-                            <button type="submit">Add Files</button>
-                        </form>
-
-
-
-
-                    </div>
 
                 </div>
             </div>
