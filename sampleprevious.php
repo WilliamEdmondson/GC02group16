@@ -142,7 +142,7 @@ include("data.php"); //includes session start
                         
  						<div id="table" class="tab-pane fade">
 <!--TABLES-->
-<input id="btnPrint" style="float:right; margin-right:50px;" type="button" value="Print table" onclick=preview(1) />
+<input id="btnPrint" style="float:right; margin-right:50px;color: #00aced" type="button" value="Print table" onclick=preview(1) />
                     <script>
                         function preview(oper)
                         {
@@ -162,7 +162,9 @@ include("data.php"); //includes session start
                             }
                         }
                     </script>
+                            <input type="button" onclick="Click()" value="Download as png" style="float:right; margin-right:50px; color: #00aced"/>
 <!--startprint1-->
+                            <div id="div">
 <div id="align" align="center">					
 <?php
 mysql_connect('localhost', 'root', '');
@@ -198,8 +200,91 @@ for ($i=0; $i < 20; $i++) {
 }
 ?>
 </div>
+
+
+                            </div>
 <!--endprint1-->
-<!--END TABLES--> 
+<!--END TABLES-->
+
+                            <script>
+                                function Click() {
+
+                                    //1.convert div to svg
+                                    var divContent = document.getElementById("div").innerHTML;
+                                    var data = "data:image/svg+xml," +
+                                        "<svg xmlns='http://www.w3.org/2000/svg' width='200' height='5500'>" +
+                                        "<foreignObject width='100%' height='100%'>" +
+                                        "<div xmlns='http://www.w3.org/1999/xhtml' style='font-size:16px;background: white;font-family:Helvetica'>" +
+                                        divContent +
+                                        "</div>" +
+                                        "</foreignObject>" +
+                                        "</svg>";
+                                    var img = new Image();
+                                    img.src = data;
+                                    document.getElementsByTagName('body')[0].appendChild(img);
+
+
+                                    //2.svg to canvas
+                                    var canvas = document.createElement('canvas');  //prepare new canvas
+                                    canvas.width = img.width;
+                                    canvas.height = img.height;
+
+                                    var context = canvas.getContext('2d');  //取得画布的2d绘图上下文
+                                    context.drawImage(img, 0, 0);
+
+
+                                    var a = document.createElement('a');
+//                                    a.href = canvas.toDataURL('image/png');  //export to png
+//                                    a.download = "TableFigure";  //download name
+//                                    a.click(); //download
+
+
+                                    //3. export to png
+                                    var type = 'png';
+                                    var imgData = canvas.toDataURL(type);
+
+                                    /**
+                                     * obtain mimeType
+                                     * @param  {String} type the old mime-type
+                                     * @return the new mime-type
+                                     */
+                                    var _fixType = function (type) {
+                                        type = type.toLowerCase().replace(/jpg/i, 'jpeg');
+                                        var r = type.match(/png|jpeg|bmp|gif/)[0];
+                                        return 'image/' + r;
+                                    };
+
+
+                                    imgData = imgData.replace(_fixType(type), 'image/octet-stream');
+
+
+                                    /**
+                                     * save in local
+                                     * @param  {String} data
+                                     * @param  {String} filename
+                                     */
+                                    var saveFile = function (data, filename) {
+                                        var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+                                        save_link.href = data;
+                                        save_link.download = filename;
+
+                                        var event = document.createEvent('MouseEvents');
+                                        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                                        save_link.dispatchEvent(event);
+                                    };
+
+                                    // Download neame
+                                    var filename = 'TableFigure' + (new Date()).getTime() + '.' + type;
+                                    // download
+                                    saveFile(imgData, filename);
+
+
+                                }
+                            </script>
+
+
+
+
                             
   						</div>
 					</div>
