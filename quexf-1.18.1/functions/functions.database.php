@@ -496,7 +496,13 @@ function assign_to_merge($vid)
 
 function get_vid()
 {
-	return $_SESSION['vid'];
+    if (isset($_SESSION['masqvid'])) {
+        $vid = $_SESSION['masqvid'];
+    }
+    else {
+        $vid = $_SESSION['vid'];
+    }
+	return $vid;
 
 }
 
