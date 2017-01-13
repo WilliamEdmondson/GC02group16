@@ -14,13 +14,14 @@ if(isset($_GET["email"]) && isset($_GET["token"])){
 //        $str = str_shuffle($str);
 //        $str = substr($str, 0, 15);
         $password = 66666666;
+        $hash = base64_encode(sha1($password, true));
 
-       $conn->query("UPDATE users SET pwd = '$password',token = '' WHERE uid ='$email'");
+       $conn->query("UPDATE users SET pwd = '$hash',token = '' WHERE uid ='$email'");
 
 
 
 
-        $url1 = "http://localhost/GC02group16-master/htdocs/combined/index.php?error=resetpass";
+        $url1 = "http://localhost/GC02group16-master/index.php?error=resetpass";
         ?>
 
 

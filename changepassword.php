@@ -10,7 +10,7 @@ session_start();
 </div>
 <head>
     <meta charset="UTF-8">
-    <title>Change password</title>
+    <title>change password</title>
     <style type="text/css">
         form{
             text-align: center;
@@ -29,32 +29,52 @@ session_start();
     </div>
 <br><br><br>
 
+
 <form  action="includes/alterpassword.php" method="post" onsubmit="return alter()">
+
 
     <div class="control-group">
         <label class="control-label" for="username">Username:
         <div class="controls">
-            <input style="height: 30px" type="text" name="username" id ="username" placeholder="Username" />
+            <input type="text" name="username" id ="username" />
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="inputPassword">Current password:</label>
+        <label class="control-label" for="inputPassword">Original password:</label>
         <div class="controls">
-            <input style="height: 30px" type="password" name="oldpassword" id ="oldpassword" placeholder="Current password"/><br>
+            <input type="password" name="oldpassword" id ="oldpassword"/><br>
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="inputPassword">New password:</label>
         <div class="controls">
-            <input style="height: 30px" type="password" name="newpassword" id="newpassword" placeholder="New password"/><br>
+            <input type="password" name="newpassword" id="newpassword"/><br>
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="inputPassword">Confirm new password:</label>
         <div class="controls">
-            <input style="height: 30px" type="password" name="assertpassword" id="assertpassword" placeholder="New password"/><br>
+            <input type="password" name="assertpassword" id="assertpassword"/><br>
         </div>
     </div>
+
+
+
+    <?php
+    $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    if (strpos($url,'error=incorrect') !==false){
+        echo "Your username or password is incorrect!";
+    }
+    if (strpos($url,'error=notsame') !==false){
+        echo "The new passwords you entered didn't match.";
+    }
+    if (strpos($url,'error=empty') !==false){
+        echo "Fill out all fields.";}
+
+
+    ?>
+    <br><br>
+
 
 
 
@@ -64,37 +84,7 @@ session_start();
     <br><br>
       <button><a href="dashboard.php">Back</a></button>
 </form>
-<script type="text/javascript">
-    document.getElementById("username").value="<?php echo "${_SESSION["username"]}";?>"
-</script>
 
-<script type="text/javascript">
-    function alter() {
 
-        var username=document.getElementById("username").value;
-        var oldpassword=document.getElementById("oldpassword").value;
-        var newpassword=document.getElementById("newpassword").value;
-        var assertpassword=document.getElementById("assertpassword").value;
-        var regex=/^[/s]+$/;
-        if(regex.test(username)||username.length==0){
-            alert("The username is not in the correct format");
-            return false;
-        }
-        if(regex.test(oldpassword)||oldpassword.length==0){
-            alert("The original password is not in the correct format");
-            return false;
-        }
-        if(regex.test(newpassword)||newpassword.length==0) {
-            alert("The new password is not in the correct format");
-            return false;
-        }
-        if (assertpassword != newpassword||assertpassword==0) {
-            alert("Two password entries are inconsistent");
-            return false;
-        }
-        return true;
-
-    }
-</script>
 </body>
 </html>

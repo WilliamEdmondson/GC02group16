@@ -7,7 +7,7 @@ if (isset($_POST["forgotPass"])){
         $str = "0123456789qwertyuioplkjhgfdsazxcvbnm";
         $str = str_shuffle($str);
         $str = substr($str, 0, 10);
-        $url = "http://localhost/GC02group16-master/htdocs/combined/Resetpassword.php?token=$str&email=$email";
+        $url = "http://localhost/GC02group16-master/Resetpassword.php?token=$str&email=$email";
 
 
 //SMTP needs accurate times, and the PHP time zone MUST be set
@@ -74,7 +74,7 @@ if (isset($_POST["forgotPass"])){
         </head>
         <body>
         <div style=\"width: 640px; font-family: Arial, Helvetica, sans-serif; font-size: 11px;\">
-        <a href=\"http://localhost/GC02group16-master/htdocs/combined/\"><img src=\"http://i1155.photobucket.com/albums/p545/phonne1/header.png\" alt=\"PHPMailer rocks\"></a>
+        <a href=\"http://localhost/GC02group16-master/\"><img src=\"http://i1155.photobucket.com/albums/p545/phonne1/header.png\" alt=\"PHPMailer rocks\"></a>
           <h1>Please reset your password as soon as possible.</h1>
           <div align=\"center\">
             <p>Please note: The following button and link can only be used once</p>
@@ -104,7 +104,7 @@ if (isset($_POST["forgotPass"])){
         } else {
 
 
-$url1 = "http://localhost/GC02group16-master/htdocs/combined/index.php?error=messagesent"; ?>
+$url1 = "http://localhost/GC02group16-master/index.php?error=messagesent"; ?>
 <html>
 <head>
 <meta http-equiv="refresh" content="0;
