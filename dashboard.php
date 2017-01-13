@@ -54,7 +54,6 @@ unset($_SESSION['current_collection']);
             <br><br><br>
 
             <div class="container-fluid">
-                
                 <div class="row-fluid">
 
                     <div class="col-sm-6 col-md-6">
@@ -124,12 +123,17 @@ unset($_SESSION['current_collection']);
                             </div>
                         <?php } ?>
                         <div id="align" align="center">
-                            <a href="allprevious.php">View all previous work</a>
+                            <br>
+                            <p><a href="allprevious.php">View all previous work</a></p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <h3>Upload</h3>
                         <br><br><br>
+
+                        <h5>This only works when each pdf contains a single questionnaire. Please split the pdf before upload.<br>
+                            This can be done online <a href="https://www.sejda.com/split-pdf" target="_blank">here</a>.</h5>
+                        <br>
 
                         <!--Script for tooltip-->
                         <script>

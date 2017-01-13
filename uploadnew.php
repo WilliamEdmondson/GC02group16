@@ -65,6 +65,8 @@ unset($_SESSION['current_collection']);
                             });
                         </script>
 
+                        <h5>This only works when each pdf contains a single questionnaire. Please split the pdf before upload. This can be done online <a href="https://www.sejda.com/split-pdf" target="_blank">here</a>.</h5>
+                        <br>
 
                         <form action="parser.php" class="dropzone">
                             <div class="fallback">

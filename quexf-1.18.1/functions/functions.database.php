@@ -84,7 +84,7 @@ function get_collections(){
 
     if(count($rs) < 1 )
     {
-        echo "You currently have no collections on record, click new collection to create your first";
+        echo "You currently have no collections on record, click new collection to create your first collection.";
         return false;
     }
 
@@ -112,7 +112,7 @@ function get_last_collections(){
 
     if(count($rs) < 1 )
     {
-        echo "You currently have no collections on record, click new collection to create your first";
+        echo "You currently have no collections on record, click new collection to create your first collection.";
         return false;
     }
 

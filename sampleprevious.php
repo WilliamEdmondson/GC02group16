@@ -339,7 +339,7 @@ else {
                                     //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                                     $sql = "SELECT val AS text
                                     FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
-                                    WHERE b.bid = 101 AND c.cid = '$cid' AND vid = $vid";
+                                    WHERE b.bid = 101 AND c.cid = '$cid' AND vid = '$vid'";
 
                                     $rs = $db->GetAll($sql);
 
