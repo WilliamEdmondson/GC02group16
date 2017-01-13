@@ -254,13 +254,21 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
 	unset($_SESSION['boxes']);
 
 	//avoid vid, uid and cid unset
-	$vid = $_SESSION['vid'];
-	$uid = $_SESSION['uid'];
-	$cid = $_SESSION['current_collection'];
-	session_unset();
+    $masq = false;
+    if(isset($_SESSION['masqvid'])) {
+        $masq = true;
+        $masqvid = $_SESSION['masqvid'];
+    }
+    $vid = $_SESSION['vid'];
+    $uid = $_SESSION['uid'];
+    $cid = $_SESSION['current_collection'];
+    session_unset();
     $_SESSION['vid'] = $vid;
     $_SESSION['uid'] = $uid;
     $_SESSION['current_collection'] = $cid;
+    if($masq == true) {
+        $_SESSION['masqvid'] = $masqvid;
+    }
 
 
 
@@ -308,6 +316,11 @@ if (isset($_GET['clear']))
 	unset($_SESSION['pages']);
 	unset($_SESSION['boxes']);
     //avoid vid, uid and cid unset
+    $masq = false;
+    if(isset($_SESSION['masqvid'])) {
+        $masq = true;
+        $masqvid = $_SESSION['masqvid'];
+    }
     $vid = $_SESSION['vid'];
     $uid = $_SESSION['uid'];
     $cid = $_SESSION['current_collection'];
@@ -315,12 +328,20 @@ if (isset($_GET['clear']))
     $_SESSION['vid'] = $vid;
     $_SESSION['uid'] = $uid;
     $_SESSION['current_collection'] = $cid;
+    if($masq == true) {
+        $_SESSION['masqvid'] = $masqvid;
+    }
 
 }
 
 if (isset($_POST['assign']))
 {
     //avoid vid, uid and cid unset
+    $masq = false;
+    if(isset($_SESSION['masqvid'])) {
+        $masq = true;
+        $masqvid = $_SESSION['masqvid'];
+    }
     $vid = $_SESSION['vid'];
     $uid = $_SESSION['uid'];
     $cid = $_SESSION['current_collection'];
@@ -328,6 +349,9 @@ if (isset($_POST['assign']))
     $_SESSION['vid'] = $vid;
     $_SESSION['uid'] = $uid;
     $_SESSION['current_collection'] = $cid;
+    if($masq == true) {
+        $_SESSION['masqvid'] = $masqvid;
+    }
     $fid = ($vid);
 	if ($fid == false) 
 	{
@@ -338,13 +362,21 @@ if (isset($_POST['assign']))
 		unset($_SESSION['boxes']);
 		unset($_SESSION['pages']);
         //avoid vid, uid and cid unset
-        $uid = $_SESSION['uid'];
+        $masq = false;
+        if(isset($_SESSION['masqvid'])) {
+            $masq = true;
+            $masqvid = $_SESSION['masqvid'];
+        }
         $vid = $_SESSION['vid'];
+        $uid = $_SESSION['uid'];
         $cid = $_SESSION['current_collection'];
         session_unset();
         $_SESSION['vid'] = $vid;
         $_SESSION['uid'] = $uid;
-        $_SESSION['current_collection'] - $cid;
+        $_SESSION['current_collection'] = $cid;
+        if($masq == true) {
+            $_SESSION['masqvid'] = $masqvid;
+        }
 
         xhtml_foot();
 		exit();
@@ -468,6 +500,11 @@ if (!isset($_SESSION['boxes'])) {
 		unset($_SESSION['pages']);
 		unset($_SESSION['boxes']);
         //avoid vid, uid and cid unset
+        $masq = false;
+        if(isset($_SESSION['masqvid'])) {
+            $masq = true;
+            $masqvid = $_SESSION['masqvid'];
+        }
         $vid = $_SESSION['vid'];
         $uid = $_SESSION['uid'];
         $cid = $_SESSION['current_collection'];
@@ -475,6 +512,9 @@ if (!isset($_SESSION['boxes'])) {
         $_SESSION['vid'] = $vid;
         $_SESSION['uid'] = $uid;
         $_SESSION['current_collection'] = $cid;
+        if($masq == true) {
+            $_SESSION['masqvid'] = $masqvid;
+        }
 
         xhtml_foot();
 		exit();
