@@ -175,7 +175,7 @@ else {
                                 </script>
 
                                 <input type="button" onclick="Click()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
-                                <br>
+                                <br><br>
                                 <!--startprint1-->
                                 <div id="div">
                                     <div id="align" align="center">
@@ -202,21 +202,18 @@ else {
 
 //	echo "<div class='col-xs-5 span5' style='margin-left:15px;'>";
                                             echo "Question $bgid:";
-                                            echo get_question_description($question);
+                                            echo get_question_description($bgid);
                                             echo "<table class='table' style='margin-bottom:50px; margin-top:10px;'>";
                                             echo "<tr>";
                                             echo "<th width='70%'>Option</th>";
                                             echo "<th width='30%'>Total</th>";
                                             echo "</tr>";
-//	echo "</thead>";
-//	echo "<tbody>";
                                             foreach ($rs as $result) {
                                                 echo "<tr>";
                                                 echo "<td>".$result['label']."</td>";
                                                 echo "<td>".$result['total']."</td>";
                                                 echo "</tr>";
                                             }
-//	echo "</tbody>";
                                             echo "</table>";
 //	echo "</div>";
                                         }
@@ -233,7 +230,7 @@ else {
                                         //1.convert div to svg
                                         var divContent = document.getElementById("div").innerHTML;
                                         var data = "data:image/svg+xml," +
-                                            "<svg xmlns='http://www.w3.org/2000/svg' width='200' height='5500'>" +
+                                            "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
                                             "<foreignObject width='100%' height='100%'>" +
                                             "<div xmlns='http://www.w3.org/1999/xhtml' style='font-size:16px;background: white;font-family:Helvetica'>" +
                                             divContent +
@@ -294,11 +291,10 @@ else {
                                             save_link.dispatchEvent(event);
                                         };
 
-                                        // Download neame
+                                        // Download name
                                         var filename = 'TableFigure' + (new Date()).getTime() + '.' + type;
                                         // download
                                         saveFile(imgData, filename);
-
 
                                     }
                                 </script>
@@ -310,26 +306,51 @@ else {
 
                             <div id="comments" class="tab-pane fade">
                                 <!--COMMENTS-->
+                                <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
+                                <script>
+                                    function preview(oper)
+                                    {
+                                        if (oper < 10) {
+                                            bdhtml=window.document.body.innerHTML;
+                                            sprnstr="<!--startprint"+oper+"-->";
+                                            eprnstr="<!--endprint"+oper+"-->";
+                                            prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
+
+                                            prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
+                                            window.document.body.innerHTML=prnhtml;
+                                            window.print();
+                                            window.document.body.innerHTML=bdhtml;
+                                        } else {
+                                            window.print();
+                                        }
+                                    }
+                                </script>
+
+                                <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
+                                <br><br>
+                                <!--startprint2-->
                                 <div id="align" align="center">
                                     <?php
                                     global $db;
 
-                                    echo "<h3>Comments</h3>";
+                                    //echo "<h3>Comments</h3>";
                                     echo get_question_description(21);
                                     echo "<br>";
                                     //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                                     $sql = "SELECT val AS text
                                     FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
-                                    WHERE b.bid = 101 AND c.cid = '$cid'";
+                                    WHERE b.bid = 101 AND c.cid = '$cid' AND vid = $vid";
 
                                     $rs = $db->GetAll($sql);
 
                                     foreach ( $rs as $result){
                                         echo "<p>".$result['text']."</p><br>";
                                     }
-                                  ?>
+                                    ?>
                                 </div>
+                                <!--endprint2-->
                                 <!--END COMMENTS-->
+
                             </div>
 
 

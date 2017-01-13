@@ -10,7 +10,7 @@ session_start();
 </div>
 <head>
     <meta charset="UTF-8">
-    <title>change password</title>
+    <title>Change password</title>
     <style type="text/css">
         form{
             text-align: center;
@@ -36,25 +36,25 @@ session_start();
     <div class="control-group">
         <label class="control-label" for="username">Username:
         <div class="controls">
-            <input type="text" name="username" id ="username" />
+            <input type="text" style="height: 30px" name="username" id ="username" placeholder="Username" />
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label" for="inputPassword">Original password:</label>
+        <label class="control-label" for="inputPassword">Current password:</label>
         <div class="controls">
-            <input type="password" name="oldpassword" id ="oldpassword"/><br>
+            <input type="password" style="height: 30px" name="oldpassword" id ="oldpassword" placeholder="Current password"/><br>
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="inputPassword">New password:</label>
         <div class="controls">
-            <input type="password" name="newpassword" id="newpassword"/><br>
+            <input type="password" style="height: 30px" name="newpassword" id="newpassword" placeholder="New password"/><br>
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="inputPassword">Confirm new password:</label>
         <div class="controls">
-            <input type="password" name="assertpassword" id="assertpassword"/><br>
+            <input type="password" style="height: 30px" name="assertpassword" id="assertpassword" placeholder="New password"/><br>
         </div>
     </div>
 
