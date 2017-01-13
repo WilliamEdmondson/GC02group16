@@ -12,9 +12,8 @@
 </head>
 <body>
 
-<div id="sidebar" class="sidebar-menu">
+<div id="sidebar" class="sidebar-menu" style="position: fixed">
     <div id class="menu">
-        <div class="span2">
         <ul id="menu">
         
             <li id="menu--comunicacao"><a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
@@ -49,7 +48,6 @@
                 <?php }
             }?>
         </ul>
-        </div>
     </div>
 </div>
 

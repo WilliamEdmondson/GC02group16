@@ -11,7 +11,7 @@
             <div class="header-main">
                 <div class="header-left">
                     <div class="logo-name">
-                        <a href="dashboard.php"><h1 style="color:#65bdff; margin-top: 16px; width:600px">Student Feedback Scanning App</h1></a>
+                        <a alt="UStuScan Logo" href="dashboard.php"><img src="img/logo.png" height="95" width="282" /></a>
                     </div>
 
                     <div class="clearfix" > </div>
