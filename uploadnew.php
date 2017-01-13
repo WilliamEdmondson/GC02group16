@@ -61,7 +61,7 @@ unset($_SESSION['current_collection']);
                         <!--Script for tooltip-->
                         <script>
                             $(document).ready(function(){
-                                $('[data-toggle="tooltip"]').tooltip();
+                                $('[data-toggle="tooltip"]').tooltip('show');
                             });
                         </script>
 
@@ -75,7 +75,7 @@ unset($_SESSION['current_collection']);
 
                         <div class="col-sm-6">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
-                                <h3 style="margin-bottom: 20px">Create new form collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
+                                <h3 style="margin-bottom: 20px">Create new form collection<a style="color: #53575e;" href="#" class="tip" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
                                 <p>Collection name:</p>
                                 <input type="text" name="description" style="height: 30px" />
                                 <br>
@@ -86,7 +86,7 @@ unset($_SESSION['current_collection']);
 
                         <div class="col-sm-6">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
-                                <h3 style="margin-bottom: 20px">Add form to an existing collection<a style="color: #53575e;" href="#" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
+                                <h3 style="margin-bottom: 20px">Add form to an existing collection<a style="color: #53575e;" href="#" class="tip" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
                                 <p>Which collection would you like to add files to?</p>
                                 <select name="collection">
                                     <option value="" >--Select--</option>
