@@ -1,5 +1,5 @@
 <?php  
-$cfg['blowfish_secret'] = 'DFn$risyMgAxC]2xrwYoy-5yIVODZU7JTh%Vbz81s';  // use here a value of your choice  
+$cfg['blowfish_secret'] = 'DFn$risyMgAxCyIVODZU7JTh%Vbz81s';  // use here a value of your choice  
 $i = 0;  
 /* First server */  
 $i++;  

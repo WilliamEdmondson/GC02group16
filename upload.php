@@ -15,16 +15,22 @@ if(!isset($_POST['collection']))
 {
         //increment collections database
 
-    //TODO test this will work before creating new collection
     new_collection();
     echo "new collection created<br>";
+
+    //set the collection name
+    if($description = $_POST['description'] == "") {
+        $description = 'my_collection_' . $current_cid;
+    } else {
+        $description = $description = $_POST['description'];
+    }
+    echo "Collection description : ".$description."<br>";
 
 } else {
     echo $_POST['collection'];
     echo "collection previously set as a post variable<br>";
 
 }
-
 
 
 $current_cid = $_POST['collection'];
@@ -38,13 +44,6 @@ $vid = get_vid();
 $qid = 1;
 
 
-//TODO mechanism for description entered on the previous page?
-if($description = $_POST['description'] == "") {
-    $description = 'my_collection_' . $current_cid;
-} else {
-    $description = $description = $_POST['description'];
-}
-echo "Collection description : ".$description."<br>";
 
 //update the vid and description in the formcollections table
 update_collection($current_cid, $vid, $description, $qid);
