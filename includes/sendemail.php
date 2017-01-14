@@ -59,7 +59,7 @@ if (isset($_POST["forgotPass"])){
 //        $mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-        $mail->addAddress('asino1990@live.com', 'Dear user');
+        $mail->addAddress($email, 'Dear user');
 
 //Set the subject line
         $mail->Subject = '[UCL Student OCR Feedback Scanning] Forget Password';

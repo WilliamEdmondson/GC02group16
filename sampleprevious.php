@@ -247,7 +247,7 @@ else {
                                         canvas.width = img.width;
                                         canvas.height = img.height;
 
-                                        var context = canvas.getContext('2d');  //取得画布的2d绘图上下文
+                                        var context = canvas.getContext('2d');  //
                                         context.drawImage(img, 0, 0);
 
 
@@ -305,52 +305,129 @@ else {
 
 
                             <div id="comments" class="tab-pane fade">
+
+
                                 <!--COMMENTS-->
-                                <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
-                                <script>
-                                    function preview(oper)
-                                    {
-                                        if (oper < 10) {
-                                            bdhtml=window.document.body.innerHTML;
-                                            sprnstr="<!--startprint"+oper+"-->";
-                                            eprnstr="<!--endprint"+oper+"-->";
-                                            prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
+                                <div id="div">
+                                    <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
+                                    <script>
+                                        function preview(oper)
+                                        {
+                                            if (oper < 10) {
+                                                bdhtml=window.document.body.innerHTML;
+                                                sprnstr="<!--startprint"+oper+"-->";
+                                                eprnstr="<!--endprint"+oper+"-->";
+                                                prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
 
-                                            prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
-                                            window.document.body.innerHTML=prnhtml;
-                                            window.print();
-                                            window.document.body.innerHTML=bdhtml;
-                                        } else {
-                                            window.print();
+                                                prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
+                                                window.document.body.innerHTML=prnhtml;
+                                                window.print();
+                                                window.document.body.innerHTML=bdhtml;
+                                            } else {
+                                                window.print();
+                                            }
                                         }
-                                    }
-                                </script>
+                                    </script>
 
-                                <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
-                                <br><br>
-                                <!--startprint2-->
-                                <div id="align" align="center">
-                                    <?php
-                                    global $db;
+                                    <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
+                                    <br><br>
+                                    <!--startprint2-->
+                                    <div id="align" align="center">
+                                        <?php
+                                        global $db;
 
-                                    //echo "<h3>Comments</h3>";
-                                    echo get_question_description(21);
-                                    echo "<br>";
-                                    //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
-                                    $sql = "SELECT val AS text
+                                        //echo "<h3>Comments</h3>";
+                                        echo get_question_description(21);
+                                        echo "<br>";
+                                        //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
+                                        $sql = "SELECT val AS text
                                     FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
                                     WHERE b.bid = 101 AND c.cid = '$cid' AND vid = '$vid'";
 
-                                    $rs = $db->GetAll($sql);
+                                        $rs = $db->GetAll($sql);
 
-                                    foreach ( $rs as $result){
-                                        echo "<p>".$result['text']."</p><br>";
-                                    }
-                                    ?>
+                                        foreach ( $rs as $result){
+                                            echo "<p>".$result['text']."</p><br>";
+                                        }
+                                        ?>
+                                    </div>
                                 </div>
                                 <!--endprint2-->
                                 <!--END COMMENTS-->
+                                <script>
+                                    function ClickComments() {
 
+                                        //1.convert div to svg
+                                        var divContent = document.getElementById("div").innerHTML;
+                                        var data = "data:image/svg+xml," +
+                                            "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
+                                            "<foreignObject width='100%' height='100%'>" +
+                                            "<div xmlns='http://www.w3.org/1999/xhtml' style='font-size:16px;background: white;font-family:Helvetica'>" +
+                                            divContent +
+                                            "</div>" +
+                                            "</foreignObject>" +
+                                            "</svg>";
+                                        var img = new Image();
+                                        img.src = data;
+                                        document.getElementsByTagName('body')[0].appendChild(img);
+
+
+                                        //2.svg to canvas
+                                        var canvas = document.createElement('canvas');  //prepare new canvas
+                                        canvas.width = img.width;
+                                        canvas.height = img.height;
+
+                                        var context = canvas.getContext('2d');  //
+                                        context.drawImage(img, 0, 0);
+
+
+                                        var a = document.createElement('a');
+//                                    a.href = canvas.toDataURL('image/png');  //export to png
+//                                    a.download = "TableFigure";  //download name
+//                                    a.click(); //download
+
+
+                                        //3. export to png
+                                        var type = 'png';
+                                        var imgData = canvas.toDataURL(type);
+
+                                        /**
+                                         * obtain mimeType
+                                         * @param  {String} type the old mime-type
+                                         * @return the new mime-type
+                                         */
+                                        var _fixType = function (type) {
+                                            type = type.toLowerCase().replace(/jpg/i, 'jpeg');
+                                            var r = type.match(/png|jpeg|bmp|gif/)[0];
+                                            return 'image/' + r;
+                                        };
+
+
+                                        imgData = imgData.replace(_fixType(type), 'image/octet-stream');
+
+
+                                        /**
+                                         * save in local
+                                         * @param  {String} data
+                                         * @param  {String} filename
+                                         */
+                                        var saveFile = function (data, filename) {
+                                            var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+                                            save_link.href = data;
+                                            save_link.download = filename;
+
+                                            var event = document.createEvent('MouseEvents');
+                                            event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                                            save_link.dispatchEvent(event);
+                                        };
+
+                                        // Download name
+                                        var filename = 'TableFigure' + (new Date()).getTime() + '.' + type;
+                                        // download
+                                        saveFile(imgData, filename);
+
+                                    }
+                                </script>
                             </div>
 
 

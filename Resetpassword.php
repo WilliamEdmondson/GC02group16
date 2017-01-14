@@ -6,7 +6,7 @@ if(isset($_GET["email"]) && isset($_GET["token"])){
     $email = $conn->real_escape_string($_GET["email"]);
     $token = $conn->real_escape_string($_GET["token"]);
 
-    $data=$conn->query("SELECT * FROM users WHERE uid='$email' AND token='$token'");
+    $data=$conn->query("SELECT * FROM users WHERE email='$email' AND token='$token'");
 
     if($data->num_rows>0){
 
@@ -16,8 +16,7 @@ if(isset($_GET["email"]) && isset($_GET["token"])){
         $password = 66666666;
         $hash = base64_encode(sha1($password, true));
 
-       $conn->query("UPDATE users SET pwd = '$hash',token = '' WHERE uid ='$email'");
-
+       $conn->query("UPDATE users SET pwd = '$hash',token = '' WHERE email ='$email'");
 
 
 
@@ -45,7 +44,7 @@ url=<?php echo $url1; ?>">
 
 
 
-    }else"please check your link!";
+    }else echo "please check your link!";
 
 }else{
 

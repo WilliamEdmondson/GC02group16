@@ -201,7 +201,7 @@ session_start();
                                     })});
                                 </script>
                                 <h4 class="modal-title" id="myModalLabel" style="color: red">
-                                    <style> colo
+                                    <style>
                                     </style>
                                     Fill out all fields.
                                 </h4>
@@ -268,10 +268,69 @@ session_start();
                                 <input type="text" name="email" placeholder="Email"><br>
                                 <input type="password" name="pwd" placeholder="Password"><br>
                                 <input type="password" name="pwd2" placeholder="Confirm Password"><br>
-                                <a href="includes/adminrequest.php">Request Administrator Access</a><br><br><br>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
                                 <button type="submit" class="btn btn-primary">Sign up</button>
 
+                            </form>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+
+
+            <br>
+            <br>
+
+            <a data-toggle="modal" data-target="#myModal3">
+                Request Administrator Access
+            </a>
+            <!-- （Modal） -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <?php
+                            $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+                            if (strpos($url,'adminsent') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal3').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    Success, please wait for administrator accept.
+                                </h4>
+                                <?php ;}
+                            if (strpos($url,'error=checa') !==false){
+                                ?>
+                                <script>
+                                    $(function () { $('#myModal3').modal({
+                                        keyboard: true
+                                    })});
+                                </script>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <style>
+                                    </style>
+                                    Sorry, we couldn't verify your account, please try again
+                                </h4>
+                                <?php ;}
+
+
+                            ?>
+                            <form action="includes/adminrequest.php" method="post">
+                                Please enter your email address
+                                <input type="text" name="email" placeholder="Email"><br>
+                                <br>
+                                <button type="submit" class="btn btn-primary" name="forgotPass" value="Request Password">Send message</button> &#160&#160&#160&#160
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
                             </form>
                         </div>
                     </div><!-- /.modal-content -->
