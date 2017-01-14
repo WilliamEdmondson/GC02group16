@@ -147,7 +147,7 @@ unset($_SESSION['current_collection']);
                             <p>Collection name:</p>
                             <input type="text" name="description" style="height: 30px" />
                             <br>
-                            <input type="file" name="fileList[]" value="fileList" id="fileList" webkitdirectory directory multiple>
+                            <input type="file" name="fileList[]" value="fileList" id="fileList" multiple>
                             <button type="submit" style="padding: 5px">Create new form collection</button>
                         </form>
 
@@ -168,6 +168,7 @@ unset($_SESSION['current_collection']);
                                     ?>
                                     <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
                                     <?php
+                                    echo $_POST['collection'];
                                 }
                                 ?>
                             </select>

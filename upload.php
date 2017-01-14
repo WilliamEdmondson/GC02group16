@@ -22,13 +22,15 @@ if(!isset($_POST['collection']))
     if($description = $_POST['description'] == "") {
         $description = 'my_collection_' . $current_cid;
     } else {
-        $description = $description = $_POST['description'];
+        $description = $_POST['description'];
     }
     echo "Collection description : ".$description."<br>";
+    update_collection($current_cid, $vid, $description, $qid);
 
 } else {
     echo $_POST['collection'];
     echo "collection previously set as a post variable<br>";
+    $description = $_POST['collection'];
 
 }
 
@@ -46,7 +48,7 @@ $qid = 1;
 
 
 //update the vid and description in the formcollections table
-update_collection($current_cid, $vid, $description, $qid);
+//update_collection($current_cid, $vid, $description, $qid);
 
 //path for files not uploaded
 $targetpath = "uploads/";

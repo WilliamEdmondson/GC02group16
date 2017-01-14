@@ -100,7 +100,7 @@ unset($_SESSION['current_collection']);
                                     foreach ($cid_arr as $collection)
                                     {
                                         ?>
-                                        <option value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
+                                        <option name="description" value=<?php echo($collection['cid']);?>><?php echo($collection['description']);?></option>
                                         <?php
                                     }
                                     ?>
