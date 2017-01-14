@@ -201,7 +201,7 @@ else {
                                             $rs = $db->GetAll($sql);
 
 //	echo "<div class='col-xs-5 span5' style='margin-left:15px;'>";
-                                            echo "Question $bgid:<br>";
+                                            echo "Question $bgid:";
                                             echo get_question_description($bgid);
                                             echo "<table class='table' style='margin-bottom:50px; margin-top:10px;'>";
                                             echo "<tr>";
@@ -308,7 +308,7 @@ else {
 
 
                                 <!--COMMENTS-->
-                                <div id="div">
+                                <div id="div1">
                                     <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
                                     <script>
                                         function preview(oper)
@@ -382,13 +382,57 @@ else {
                                         ?>
                                     </div>
                                 </div>
+
+
+
+
+
+
+
+
+                                <!DOCTYPE html>
+                                <html>
+
+                                <head>
+                                    <meta charset="utf-8">
+                                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                    <title>html2canvas example</title>
+                                    <script type="text/javascript" src="js/html2canvas.js"></script>
+                                </head>
+                                <script type="text/javascript">
+                                    function ClickComments() {
+                                        console.log('test');
+                                        html2canvas(document.getElementById('div1'), {
+                                            onrendered: function(canvas) {
+                                                document.body.appendChild(canvas);
+                                            },
+                                            // width: 300,
+                                            // height: 300
+                                        });
+                                    }
+
+
+
+
+
+                                </script>
+
+
+
+
+
+
+
+
+
+
                                 <!--endprint2-->
                                 <!--END COMMENTS-->
                                 <script>
                                     function ClickComments() {
 
                                         //1.convert div to svg
-                                        var divContent = document.getElementById("div").innerHTML;
+                                        var divContent = document.getElementById("div1").innerHTML;
                                         var data = "data:image/svg+xml," +
                                             "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
                                             "<foreignObject width='100%' height='100%'>" +
