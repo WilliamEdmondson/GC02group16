@@ -18,7 +18,7 @@
         
             <li id="menu--comunicacao"><a href="dashboard.php"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
 
-			<li id="menu--comunicacao"><a href="sampleprevious.php"><i class="fa fa-pie-chart"></i><span>Previous work</span></a>
+			<li id="menu--comunicacao"><a href="allprevious.php"><i class="fa fa-pie-chart"></i><span>Previous work</span></a>
                 <!--<ul id="menu-academico-sub">
                     <li id="menu-arquivos"><a href="allprevious.php"><i class="fa fa-pie-chart"></i>Previous charts</a></li>
                 </ul>-->
