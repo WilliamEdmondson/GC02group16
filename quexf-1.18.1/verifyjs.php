@@ -259,6 +259,11 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
         $masq = true;
         $masqvid = $_SESSION['masqvid'];
     }
+    $isadmin = false;
+    if(isset($_SESSION['admin'])) {
+        $isadmin = true;
+        $admin = $_SESSION['admin'];
+    }
     $vid = $_SESSION['vid'];
     $uid = $_SESSION['uid'];
     $cid = $_SESSION['current_collection'];
@@ -268,6 +273,9 @@ if (isset($_POST['complete']) && isset($_SESSION['boxes']))
     $_SESSION['current_collection'] = $cid;
     if($masq == true) {
         $_SESSION['masqvid'] = $masqvid;
+    }
+    if($isadmin == true) {
+        $_SESSION['admin'] = $admin;
     }
 
 
@@ -321,6 +329,11 @@ if (isset($_GET['clear']))
         $masq = true;
         $masqvid = $_SESSION['masqvid'];
     }
+    $isadmin = false;
+    if(isset($_SESSION['admin'])) {
+        $isadmin = true;
+        $admin = $_SESSION['admin'];
+    }
     $vid = $_SESSION['vid'];
     $uid = $_SESSION['uid'];
     $cid = $_SESSION['current_collection'];
@@ -330,6 +343,9 @@ if (isset($_GET['clear']))
     $_SESSION['current_collection'] = $cid;
     if($masq == true) {
         $_SESSION['masqvid'] = $masqvid;
+    }
+    if($isadmin == true) {
+        $_SESSION['admin'] = $admin;
     }
 
 }
@@ -342,6 +358,11 @@ if (isset($_POST['assign']))
         $masq = true;
         $masqvid = $_SESSION['masqvid'];
     }
+    $isadmin = false;
+    if(isset($_SESSION['admin'])) {
+        $isadmin = true;
+        $admin = $_SESSION['admin'];
+    }
     $vid = $_SESSION['vid'];
     $uid = $_SESSION['uid'];
     $cid = $_SESSION['current_collection'];
@@ -351,6 +372,9 @@ if (isset($_POST['assign']))
     $_SESSION['current_collection'] = $cid;
     if($masq == true) {
         $_SESSION['masqvid'] = $masqvid;
+    }
+    if($isadmin == true) {
+        $_SESSION['admin'] = $admin;
     }
     $fid = ($vid);
 	if ($fid == false) 
@@ -367,6 +391,11 @@ if (isset($_POST['assign']))
             $masq = true;
             $masqvid = $_SESSION['masqvid'];
         }
+        $isadmin = false;
+        if(isset($_SESSION['admin'])) {
+            $isadmin = true;
+            $admin = $_SESSION['admin'];
+        }
         $vid = $_SESSION['vid'];
         $uid = $_SESSION['uid'];
         $cid = $_SESSION['current_collection'];
@@ -376,6 +405,9 @@ if (isset($_POST['assign']))
         $_SESSION['current_collection'] = $cid;
         if($masq == true) {
             $_SESSION['masqvid'] = $masqvid;
+        }
+        if($isadmin == true) {
+            $_SESSION['admin'] = $admin;
         }
 
         xhtml_foot();
@@ -505,6 +537,11 @@ if (!isset($_SESSION['boxes'])) {
             $masq = true;
             $masqvid = $_SESSION['masqvid'];
         }
+        $isadmin = false;
+        if(isset($_SESSION['admin'])) {
+            $isadmin = true;
+            $admin = $_SESSION['admin'];
+        }
         $vid = $_SESSION['vid'];
         $uid = $_SESSION['uid'];
         $cid = $_SESSION['current_collection'];
@@ -514,6 +551,9 @@ if (!isset($_SESSION['boxes'])) {
         $_SESSION['current_collection'] = $cid;
         if($masq == true) {
             $_SESSION['masqvid'] = $masqvid;
+        }
+        if($isadmin == true) {
+            $_SESSION['admin'] = $admin;
         }
 
         xhtml_foot();

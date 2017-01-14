@@ -20,7 +20,7 @@ if(!$mysqli){
 */
 //query to get data from the table
 
-
+global $db;
 
 $json = array();
 //$_SESSION['collection'] = 2;
@@ -33,11 +33,16 @@ else {
     $vid = $_SESSION['vid'];
 }
 
-for ($i=0; $i < 20; $i++) { 
-	$bgid = $i + 1;
-	$query="SELECT label, COUNT(f.bid) AS total
-	FROM boxes b LEFT JOIN formboxverifychar f ON b.bid = f.bid
-	WHERE b.bgid=$bgid AND vid = $vid
+
+$sql = "SELECT cid FROM formcollections WHERE vid = $vid ORDER BY cid DESC";
+
+$result = $db->getAll($sql);
+
+foreach ($result as $item) {
+    $cid = $item['cid'];
+    $query="SELECT label, COUNT(f.bid) AS total
+	FROM formboxverifychar f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
+	WHERE b.bgid=1 AND vid = $vid AND cid = $cid
 	GROUP BY label
 	ORDER BY b.bid";
 
@@ -46,20 +51,20 @@ for ($i=0; $i < 20; $i++) {
 
 
 //execute query
-$result = $db->query($query);
+    $result = $db->query($query);
 
 //loop through the returned data
-$data = array();
-foreach ($result as $row) {
-	$data[] = $row;
-}
+    $data = array();
+    foreach ($result as $row) {
+        $data[] = $row;
+    }
 
 //free memory associated with result
-$result->close();
+    $result->close();
 
 //now print the data
-$json_string = json_encode($data);
-array_push($json,$json_string);
+    $json_string = json_encode($data);
+    array_push($json,$json_string);
 //echo "<br><br>";
 }
 

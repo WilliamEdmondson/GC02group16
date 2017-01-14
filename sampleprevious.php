@@ -58,7 +58,7 @@ else {
                                         //echo "<div class='col-xs-5 span5'>";
                                         $data = $json_array[$i];//      echo $current_json;
                                         $question = $i+1;
-                                        echo "Question $question:";
+                                        echo "Question $question:<br>";
                                         echo get_question_description($question);
                                         //  echo $data;
                                         echo "<canvas style = 'padding-top:5px; margin-bottom:50px;' id='mycanvas".$i."' style='width:360; height:360'></canvas>";
@@ -106,7 +106,7 @@ else {
                                         //echo "<div class='col-xs-5 span5'>";
                                         $data = $json_array[$j];//		echo $current_json;
                                         $question = $j+1;
-                                        echo "Question $question:";
+                                        echo "Question $question:<br>";
                                         echo get_question_description($question);
                                         $k = $j+100;
                                         echo "<canvas style = 'padding-top:5px; margin-bottom:50px; width:360; height:360;' id='mycanvas".$k."'></canvas>";
@@ -177,7 +177,7 @@ else {
                                 <input type="button" onclick="Click()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
                                 <br><br>
                                 <!--startprint1-->
-                                <div id="div2">
+                                <div id="div">
                                     <div id="align" align="center">
                                         <?php
                                         $bgid;
@@ -201,7 +201,7 @@ else {
                                             $rs = $db->GetAll($sql);
 
 //	echo "<div class='col-xs-5 span5' style='margin-left:15px;'>";
-                                            echo "Question $bgid:";
+                                            echo "Question $bgid:<br>";
                                             echo get_question_description($bgid);
                                             echo "<table class='table' style='margin-bottom:50px; margin-top:10px;'>";
                                             echo "<tr>";
@@ -228,7 +228,7 @@ else {
                                     function Click() {
 
                                         //1.convert div to svg
-                                        var divContent = document.getElementById("div2").innerHTML;
+                                        var divContent = document.getElementById("div").innerHTML;
                                         var data = "data:image/svg+xml," +
                                             "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
                                             "<foreignObject width='100%' height='100%'>" +
@@ -308,6 +308,7 @@ else {
 
 
                                 <!--COMMENTS-->
+                                <div id="div">
                                     <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
                                     <script>
                                         function preview(oper)
@@ -331,26 +332,52 @@ else {
                                     <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
                                     <br><br>
                                     <!--startprint2-->
-                                <div id="div">
                                     <div id="align" align="center">
                                         <?php
                                         global $db;
 
-
-                                        echo "Student General Comments ";
-?><p></p><?php
-                                        echo "Please share below any constructive comments you have on any aspect of the class, i
-                                        ts lecturer(s), or teaching assistant(s)- both your thoughts on strengths and suggestions for improvements are extremely valuable to help faculty members improve the class on its next offering.";
-
+                                        //echo "<h3>Comments</h3>";
+                                        echo get_question_description(21);
+                                        echo "<br><br>";
                                         //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
-                                        $sql = "SELECT val AS text
-                                    FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
-                                    WHERE b.bid = 101 AND c.cid = '$cid' AND vid = '$vid'";
+                                        $sql = "SELECT val AS text 
+                                        FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
+                                        WHERE b.bid = 117 AND c.cid = '$cid' AND vid = '$vid'";
 
                                         $rs = $db->GetAll($sql);
 
                                         foreach ( $rs as $result){
-                                            echo "<p>".$result['text']."</p><br>";
+                                            echo $result['text']."<br>";
+                                        }
+
+                                        echo "<br><br><br><br>";
+
+                                        echo get_question_description(22);
+                                        echo "<br><br>";
+                                        //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
+                                        $sql = "SELECT val AS text 
+                                        FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
+                                        WHERE b.bid = 118 AND c.cid = '$cid' AND vid = '$vid'";
+
+                                        $rs = $db->GetAll($sql);
+
+                                        foreach ( $rs as $result){
+                                            echo $result['text']."<br>";
+                                        }
+
+                                        echo "<br><br><br><br>";
+
+                                        echo get_question_description(23);
+                                        echo "<br><br>";
+                                        //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
+                                        $sql = "SELECT val AS text 
+                                        FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
+                                        WHERE b.bid = 119 AND c.cid = '$cid' AND vid = '$vid'";
+
+                                        $rs = $db->GetAll($sql);
+
+                                        foreach ($rs as $result){
+                                            echo $result['text']."<br>";
                                         }
                                         ?>
                                     </div>
@@ -380,10 +407,8 @@ else {
                                         canvas.width = img.width;
                                         canvas.height = img.height;
 
-                                        var context1 = canvas.getContext('2d');  //
-                                        context1.drawImage(img, 0, 0);
-
-
+                                        var context = canvas.getContext('2d');  //
+                                        context.drawImage(img, 0, 0);
 
 
                                         var a = document.createElement('a');
@@ -435,6 +460,8 @@ else {
                                 </script>
                             </div>
 
+
+                        </div>
 
                         <!-- END CONTENT -->
 
