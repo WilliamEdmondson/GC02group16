@@ -177,7 +177,7 @@ else {
                                 <input type="button" onclick="Click()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
                                 <br><br>
                                 <!--startprint1-->
-                                <div id="div">
+                                <div id="div2">
                                     <div id="align" align="center">
                                         <?php
                                         $bgid;
@@ -228,7 +228,7 @@ else {
                                     function Click() {
 
                                         //1.convert div to svg
-                                        var divContent = document.getElementById("div").innerHTML;
+                                        var divContent = document.getElementById("div2").innerHTML;
                                         var data = "data:image/svg+xml," +
                                             "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
                                             "<foreignObject width='100%' height='100%'>" +
@@ -308,7 +308,6 @@ else {
 
 
                                 <!--COMMENTS-->
-                                <div id="div">
                                     <input id="btnPrint" style="float:right; margin-right:40px; color: #00aced" type="button" value="Print" onclick=preview(2) />
                                     <script>
                                         function preview(oper)
@@ -332,13 +331,17 @@ else {
                                     <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
                                     <br><br>
                                     <!--startprint2-->
+                                <div id="div">
                                     <div id="align" align="center">
                                         <?php
                                         global $db;
 
-                                        //echo "<h3>Comments</h3>";
-                                        echo get_question_description(21);
-                                        echo "<br>";
+
+                                        echo "Student General Comments ";
+?><p></p><?php
+                                        echo "Please share below any constructive comments you have on any aspect of the class, i
+                                        ts lecturer(s), or teaching assistant(s)- both your thoughts on strengths and suggestions for improvements are extremely valuable to help faculty members improve the class on its next offering.";
+
                                         //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                                         $sql = "SELECT val AS text
                                     FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
@@ -377,8 +380,10 @@ else {
                                         canvas.width = img.width;
                                         canvas.height = img.height;
 
-                                        var context = canvas.getContext('2d');  //
-                                        context.drawImage(img, 0, 0);
+                                        var context1 = canvas.getContext('2d');  //
+                                        context1.drawImage(img, 0, 0);
+
+
 
 
                                         var a = document.createElement('a');
@@ -430,8 +435,6 @@ else {
                                 </script>
                             </div>
 
-
-                        </div>
 
                         <!-- END CONTENT -->
 
