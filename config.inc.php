@@ -1,5 +1,5 @@
 <?php  
-$cfg['blowfish_secret'] = 'ba17c1ec07d65003';  // use here a value of your choice  
+$cfg['blowfish_secret'] = 'DFn$risyMgAxC]2xrwYoy-5yIVODZU7JTh%Vbz81s';  // use here a value of your choice  
 $i = 0;  
 /* First server */  
 $i++;  
@@ -10,5 +10,5 @@ $cfg['Servers'][$i]['host'] = 'ustuscan';  // Replace with value from connection
 $cfg['Servers'][$i]['connect_type'] = 'tcp';  
 $cfg['Servers'][$i]['compress'] = false;  
 $cfg['Servers'][$i]['extension'] = 'mysqli';  
-$cfg['Servers'][$i]['AllowNoPassword'] = false;  
+$cfg['Servers'][$i]['AllowNoPassword'] = true;  
 ?>  
