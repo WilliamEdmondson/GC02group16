@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resetpassword.php" afterPath="$PROJECT_DIR$/Resetpassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previousT.php" afterPath="$PROJECT_DIR$/previousT.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sampleprevious.php" afterPath="$PROJECT_DIR$/sampleprevious.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadnew.php" afterPath="$PROJECT_DIR$/uploadnew.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view_upload.php" afterPath="$PROJECT_DIR$/view_upload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="584">
@@ -37,37 +34,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mailtest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mailtest.php">
+      <file leaf-file-name="uploadnew.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uploadnew.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding>
-                <element signature="e#171#257#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masquerade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/masquerade.php">
+      <file leaf-file-name="view_upload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view_upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding>
-                <marker date="1484516052000" expanded="true" signature="1067:1088" ph="SELECT uid F... users" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="masquerade-process.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/masquerade-process.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
               <folding>
-                <marker date="1484516054000" expanded="true" signature="1708:1747" ph="SELECT * FRO... users" />
+                <element signature="e#7#185#0#PHP" expanded="true" />
+                <marker date="1484516053000" expanded="true" signature="3003:3024" ph="..." />
+                <marker date="1484516053000" expanded="true" signature="3121:5180" ph="..." />
+                <marker date="1484516053000" expanded="true" signature="3414:3599" ph="{...}" />
+                <marker date="1484516053000" expanded="true" signature="3777:5117" ph="{&quot;type&quot;: 'pie'...}" />
+                <marker date="1484516053000" expanded="true" signature="3878:4743" ph="{&quot;labels&quot;: label...}" />
+                <marker date="1484516053000" expanded="true" signature="3993:4689" ph="[...]" />
+                <marker date="1484516053000" expanded="true" signature="3994:4631" ph="{&quot;data&quot;: total...}" />
+                <marker date="1484516053000" expanded="true" signature="4806:5081" ph="{...}" />
+                <marker date="1484516053000" expanded="true" signature="4887:4950" ph="{...}" />
+                <marker date="1484516053000" expanded="true" signature="4976:5045" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -229,7 +232,6 @@
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
         <option value="$PROJECT_DIR$/limesurvey/index.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/data.php" />
         <option value="$PROJECT_DIR$/formdata.php" />
         <option value="$PROJECT_DIR$/header.php" />
@@ -245,6 +247,9 @@
         <option value="$PROJECT_DIR$/sampleprevious.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/upload.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/uploadnew.php" />
+        <option value="$PROJECT_DIR$/view_upload.php" />
       </list>
     </option>
   </component>
@@ -287,20 +292,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quexf-1.18.1" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,12 +399,12 @@
       <workItem from="1484055699371" duration="1074000" />
       <workItem from="1484228040094" duration="3209000" />
       <workItem from="1484428146180" duration="448000" />
-      <workItem from="1484515478976" duration="975000" />
+      <workItem from="1484515478976" duration="1193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57671000" />
+    <option name="totallyTimeSpent" value="57889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -468,8 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/htdocs/combined/header.php" />
-    <entry file="file://$PROJECT_DIR$/htdocs/combined/sidebar.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/combined/includes/signup.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/admin/index.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/db.inc.php" />
@@ -757,16 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#185#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
@@ -920,6 +899,42 @@
             <element signature="e#8#169#0#PHP" expanded="true" />
             <marker date="1484517011000" expanded="true" signature="2427:2527" ph="UPDATE forms... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#7#185#0#PHP" expanded="true" />
+            <marker date="1484516053000" expanded="true" signature="3003:3024" ph="..." />
+            <marker date="1484516053000" expanded="true" signature="3121:5180" ph="..." />
+            <marker date="1484516053000" expanded="true" signature="3414:3599" ph="{...}" />
+            <marker date="1484516053000" expanded="true" signature="3777:5117" ph="{&quot;type&quot;: 'pie'...}" />
+            <marker date="1484516053000" expanded="true" signature="3878:4743" ph="{&quot;labels&quot;: label...}" />
+            <marker date="1484516053000" expanded="true" signature="3993:4689" ph="[...]" />
+            <marker date="1484516053000" expanded="true" signature="3994:4631" ph="{&quot;data&quot;: total...}" />
+            <marker date="1484516053000" expanded="true" signature="4806:5081" ph="{...}" />
+            <marker date="1484516053000" expanded="true" signature="4887:4950" ph="{...}" />
+            <marker date="1484516053000" expanded="true" signature="4976:5045" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadnew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view_upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

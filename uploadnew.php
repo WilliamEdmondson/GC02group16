@@ -1,4 +1,14 @@
 <?php
+
+/*
+ *---------------------------------------------------------------
+ * NEW UPLOAD PAGE
+ *---------------------------------------------------------------
+ *
+ *
+ * @ELM
+ */
+
 include 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 
 unset($_SESSION['current_collection']);
