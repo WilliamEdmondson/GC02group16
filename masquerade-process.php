@@ -1,4 +1,14 @@
 <?php
+
+/*
+ *---------------------------------------------------------------
+ * MASQUERADE PROCESS
+ *---------------------------------------------------------------
+ * contains the business logic for the masquerading function
+ *
+ * @WE
+ */
+
 session_start();
 include 'db/dbh.php';
 

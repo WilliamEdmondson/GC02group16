@@ -1,5 +1,13 @@
 <?php
 
+/*
+ *---------------------------------------------------------------
+ * MASQUERADE PAGE
+ *---------------------------------------------------------------
+ *
+ * @WE
+ */
+
 session_start();
 include 'db/dbh.php';
 
@@ -19,15 +27,14 @@ include 'db/dbh.php';
 <div class="page-container">
     <div class="left-content">
         <div class="mother-grid-inner">
-            <!--header start here-->
             <?php include("header.php"); ?>
             <br><br><br>
-            <!--header start here-->
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="span12">
                         <?php
 
+                        //get all users from the database
                         $sql ="SELECT uid FROM users";
                         $result = $conn->query($sql);
 
@@ -39,6 +46,7 @@ include 'db/dbh.php';
                             <select name="users" onchange="this.form.submit()">
                               <option value="" >--Select--</option>
                               <?php
+                              //insert users into a select combo box
                                 while($row = $result->fetch_assoc() or die (mysql_error()))
                                 {
                               ?>

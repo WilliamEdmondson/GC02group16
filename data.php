@@ -1,29 +1,20 @@
 <?php
 include_once 'quexf-1.18.1/functions/functions.database.php'; //includes session start
 
+/*
+ *---------------------------------------------------------------
+ * DATA PAGE
+ *---------------------------------------------------------------
+ *
+ *
+ * @HZ @WE @ELM
+ */
 
-//setting header to json
-//header('Content-Type: application/json');
-
-/*database
-define('DB_HOST', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'quexf');
-
-//get connection
-$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
-if(!$mysqli){
-	die("Connection failed: " . $mysqli->error);
-}
-*/
-//query to get data from the table
 
 global $db;
 
 $json = array();
-//$_SESSION['collection'] = 2;
+
 
 // check if masquerading as another user
 if (isset($_SESSION['masqvid'])) {
@@ -46,10 +37,6 @@ foreach ($result as $item) {
 	GROUP BY label
 	ORDER BY b.bid";
 
-//print question number
-//echo "Question $bgid:<br>";
-
-
 //execute query
     $result = $db->query($query);
 
@@ -65,12 +52,10 @@ foreach ($result as $item) {
 //now print the data
     $json_string = json_encode($data);
     array_push($json,$json_string);
-//echo "<br><br>";
+
 }
 
 $_SESSION['json_array'] = $json;
 
-/*close connection
-$mysqli->close();
-*/
+
 ?>

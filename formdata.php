@@ -1,8 +1,18 @@
 <?php
+
+/*
+ *---------------------------------------------------------------
+ * FORM DATA PAGE
+ *---------------------------------------------------------------
+ *
+ *
+ * @HZ @WE @ELM
+ */
+
 include_once 'quexf-1.18.1/functions/functions.database.php'; //includes session start
 
 $json = array();
-//$_SESSION['collection'] = 2;
+
 $cid = $_SESSION['collectionid'];
 
 if (isset($_SESSION['masqvid'])) {
@@ -20,9 +30,6 @@ for ($i=0; $i < 20; $i++) {
 	GROUP BY label
 	ORDER BY b.bid";
 
-//print question number
-//echo "Question $bgid:<br>";
-
 
 //execute query
 $result = $db->query($query);
@@ -39,12 +46,10 @@ $result->close();
 //now print the data
 $json_string = json_encode($data);
 array_push($json,$json_string);
-//echo "<br><br>";
+
 }
 
 $_SESSION['json_array'] = $json;
 
-/*close connection
-$mysqli->close();
-*/
+
 ?>

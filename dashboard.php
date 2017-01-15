@@ -1,6 +1,15 @@
 <?php
-include 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 
+/*
+ *---------------------------------------------------------------
+ * DASHBOARD PAGE
+ *---------------------------------------------------------------
+ *
+ *
+ * @HZ @WE @ELM
+ */
+
+include 'quexf-1.18.1/functions/functions.database.php'; //session start included in here
 unset($_SESSION['current_collection']);
 
 ?>

@@ -1,3 +1,13 @@
+<?php
+/*
+*---------------------------------------------------------------
+* HEADER
+*---------------------------------------------------------------
+*
+*
+* @HZ @WE @ELM
+*/
+?>
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
