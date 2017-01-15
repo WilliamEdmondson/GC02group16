@@ -233,7 +233,7 @@ else {
                                             "</svg>";
                                         var img = new Image();
                                         img.src = data;
-                                        document.getElementsByTagName('body')[0].appendChild(img);
+//                                        document.getElementsByTagName('body')[0].appendChild(img);
                                         //2.svg to canvas
                                         var canvas = document.createElement('canvas');  //prepare new canvas
                                         canvas.width = img.width;
@@ -307,7 +307,8 @@ else {
                                         }
                                     </script>
 
-                                    <input type="button" onclick="ClickComments()" value="Download" style="float:right; margin-right:10px; color: #00aced" />
+                                    <input type="button" onclick="ClickComments()" value="Generate Picture" style="float:right; margin-right:10px; color: #00aced" />
+
                                     <br><br>
                                     <!--startprint2-->
                                     <div id="align" align="center">
@@ -354,18 +355,23 @@ else {
 
 
 
+                                <script>
 
-                                <script type="text/javascript">
                                     function ClickComments() {
                                         console.log('test');
                                         html2canvas(document.getElementById('div1'), {
-                                            onrendered: function(canvas) {
-//                                                canvas.style.display = 'none';
+                                            onrendered: function (canvas1) {
+                                                var img = canvas1.toDataURL();
+                                                var type = 'png';
+                                                console.log(img);
+                                                document.body.appendChild(canvas1);
 
-                                                document.body.appendChild(canvas);
                                             },
                                         });
+
                                     }
+
+//                                    document.getElementById('ClickComments').addEventListener('click', ClickComments)
                                 </script>
 
 
