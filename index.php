@@ -31,7 +31,7 @@ session_start();
                         <img alt="here is picture 1" src="img/loginucl1.png" width="1356" height="850" />
                         <div class="carousel-caption">
                             <p>
-                                UCL Student Feedback App
+                                UStuScan: UCL Feedback Scanning App
                             </p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ session_start();
                         <img alt="here is picture 2" src="img/loginucl2.png" width="1356" height="850" />
                         <div class="carousel-caption">
                             <p>
-                                ATG Class Student OCR Feedback Scanning App
+                                UStuScan: UCL Feedback Scanning App
                             </p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ session_start();
                         <img alt="here is picture 3" src="img/loginucl3.png" width="1356" height="850" />
                         <div class="carousel-caption">
                             <p>
-                                ATG Class Student OCR Feedback Scanning App
+                                UStuScan: UCL Feedback Scanning App
                             </p>
                         </div>
                     </div>

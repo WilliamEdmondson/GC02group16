@@ -6,10 +6,10 @@ unset($_SESSION['current_collection']);
 ?>
 <html>
 <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
+
 <div id =sidebar class="visible">
     <?php include("sidebar.php"); ?>
 </div>
-
 
 <head>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -21,7 +21,6 @@ unset($_SESSION['current_collection']);
     <link href="css/dropzone.css" rel="stylesheet" type="text/css">
 
 
-
     <script src="scripts/modernizr-chrg.min.js"></script>
     <script src="scripts/imagesloaded.min.js"></script>
     <script src="scripts/masonry.min.js"></script>
@@ -31,6 +30,7 @@ unset($_SESSION['current_collection']);
     <title>Dashboard</title>
 </head>
 <body>
+
 <div class="page-container">
     <div class="left-content">
         <div class="mother-grid-inner">
@@ -42,9 +42,8 @@ unset($_SESSION['current_collection']);
 
             <div class="container-fluid">
                 <div class="row-fluid">
-
-
-                    <div class="col-sm-5 col-md-5">
+                    <div class="row">
+                    <div class="col-sm-6 col-md-6">
                         <?php if(!isset($_SESSION['vid'])){
                             echo "<h3>Please log in <a href='index.php'>here</a></h3>";
                         } else { ?>
@@ -63,7 +62,7 @@ unset($_SESSION['current_collection']);
                                             $label = $collection['description'];
                                             $json_array = $_SESSION['json_array'];
                                             ?>
-                                            <div class="col-sm-6 col-md-6" align="center"><?php
+                                            <div class="col-sm-8 col-md-6" align="center"><?php
                                             $data = $json_array[$i];
                                             echo $label;
                                             echo "<a href='sampleprevious.php?collection=$cid'><canvas id='mycanvas" . $i . "' style='width:200; height:200'></canvas></a>";
@@ -115,7 +114,7 @@ unset($_SESSION['current_collection']);
                             <p><a href="allprevious.php">View all previous work</a></p>
                         </div>
                     </div>
-                    <div class="col-sm-5 col-md-5">
+                    <div class="col-sm-5 col-md-5 col-lg-5">
                         <h3>Upload</h3>
                         <br><br><br>
 
@@ -135,7 +134,7 @@ unset($_SESSION['current_collection']);
                             <p>Collection name:</p>
                             <input type="text" name="description" style="height: 30px" />
                             <br>
-                            <input type="file" name="fileList[]" value="fileList" id="fileList" multiple>
+                            <input type="file" name="fileList[]" value="fileList" id="fileList" multiple />
                             <button type="submit" style="padding: 5px">Create new form collection</button>
                         </form>
 
@@ -168,6 +167,7 @@ unset($_SESSION['current_collection']);
 
 
 
+                    </div>
                     </div>
 
                 </div>

@@ -76,7 +76,12 @@ xhtml_head(T_("queXF Admin Functions"),true,array("../css/admin.css"));
         <li><h3><?php echo T_("System setup"); ?></h3>
             <ul><li><a href="?page=pagesetup.php"><?php echo T_("Page setup"); ?></a></li>
                 <li><a href="?page=testconfig.php"><?php echo T_("Test configuration"); ?></a></li></ul></li>
-        <li><h3><?php echo T_("Main app"); ?></h3>
+    </ul>
+    <h1><?php echo T_("Other Admin Functions"); ?></h1>
+    <ul>
+        <li><h3><?php echo T_("LimeSurvey"); ?></h3>
+            <ul><li><a href="../../limesurvey/index.php/admin" target="_blank"><?php echo T_("LimeSurvey"); ?></a></li></ul></li>
+        <li><h3><?php echo T_("UStuScan"); ?></h3>
             <ul><li><a href="../../dashboard.php"><?php echo T_("Dashboard"); ?></a></li></ul></li>
     </ul>
 </div>
