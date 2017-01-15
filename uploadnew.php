@@ -6,10 +6,10 @@ unset($_SESSION['current_collection']);
 ?>
 <html>
 <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
+
 <div id =sidebar class="visible">
     <?php include("sidebar.php"); ?>
 </div>
-
 
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -17,9 +17,6 @@ unset($_SESSION['current_collection']);
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="js/dropzone.js"></script>
-    <link href="css/dropzone.css" rel="stylesheet" type="text/css">
-
 
 
     <script src="scripts/modernizr-chrg.min.js"></script>
@@ -31,6 +28,7 @@ unset($_SESSION['current_collection']);
     <title>Upload</title>
 </head>
 <body>
+
 <div class="page-container">
     <div class="left-content">
         <div class="mother-grid-inner">
@@ -43,6 +41,7 @@ unset($_SESSION['current_collection']);
             <div class="container-fluid">
 
                 <div class="row-fluid">
+                    <div class="col-sm-12">
                     <h3>Upload</h3>
                     <div id="align" align="center">
                         <!--Script for tooltip-->
@@ -55,20 +54,14 @@ unset($_SESSION['current_collection']);
                         <h5>This only works when each pdf contains a single questionnaire. Please split the pdf before upload. This can be done online <a href="https://www.sejda.com/split-pdf" target="_blank">here</a>.</h5>
                         <br>
 
-                        <form action="parser.php" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                        </form>
-
-
+                        
                         <div class="col-sm-6">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <h3 style="margin-bottom: 20px">Create new form collection<a style="color: #53575e;" href="#" class="tip" data-toggle="tooltip" title="A collection is a group of forms for a class"><sup>?</sup></a></h3>
                                 <p>Collection name:</p>
                                 <input type="text" name="description" style="height: 30px" />
                                 <br>
-                                <input style="margin-left: 75px" type="file" name="fileList[]" value="fileList" id="fileList" multiple>
+                                <input style="margin-left: 75px" type="file" name="fileList[]" value="fileList" id="fileList" multiple />
                                 <button type="submit" style="padding: 5px">Create new form collection</button>
                             </form>
                         </div>
@@ -100,6 +93,7 @@ unset($_SESSION['current_collection']);
 
                     </div>
 
+                </div>
                 </div>
             </div>
         </div>

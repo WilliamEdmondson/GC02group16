@@ -17,8 +17,7 @@ unset($_SESSION['current_collection']);
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="img/ucl-icon.gif" />
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="js/dropzone.js"></script>
-    <link href="css/dropzone.css" rel="stylesheet" type="text/css">
+
 
 
     <script src="scripts/modernizr-chrg.min.js"></script>

@@ -1,7 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="application/x-javascript"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -24,9 +24,9 @@
                 </ul>-->
             </li>
             
-            <li  id="menu--comunicacao"><a href="uploadnew.php"><i class="fa fa-plus"></i><span>Upload</span></a></li>
+            <li  id="menu--comunicacao"><a href="uploadnew.php"><i class="fa fa-upload"></i><span>Upload</span></a></li>
             
-            <li id="menu--comunicacao"><a href="#"><i class="fa fa-user nav_icon"></i><span>My Account</span><span class="fa fa-angle-right" style="float: right"></span></a>         
+            <li id="menu--comunicacao"><a href="#"><i class="fa fa-user nav_icon"></i><span>My Account</span><span class="fa fa-angle-right" style="float: right"></span></a>
                 <ul id="menu-comunicacao-sub">
                     <li id="menu-arquivos"><a href="changepassword.php"><i class="fa fa-refresh"></i>Change password</a></li>
                     <!--<li id="menu-arquivos"><a href="manage.php"><i class="fa fa-table"></i>Manage</a></li>-->
