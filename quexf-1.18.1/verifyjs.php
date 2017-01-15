@@ -1,5 +1,15 @@
 <?php
 
+/*
+*---------------------------------------------------------------
+* VERIFY
+*---------------------------------------------------------------
+* This page contains the logic for the OMR performed by quexf
+* importing functions it has been adapted for our purposes.
+*
+* @WE @ELM
+*/
+
 include_once("config.inc.php");
 include_once("db.inc.php");
 include("functions/functions.image.php");
