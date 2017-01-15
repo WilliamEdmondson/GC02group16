@@ -8,7 +8,6 @@ else {
     $collection = $_GET['collection'];
     $_SESSION['collectionid'] = $collection;
 }
-
 ?>
 
 
@@ -21,6 +20,7 @@ else {
 <head>
     <title>Sample previous work</title>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
     <link href="css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
@@ -145,7 +145,6 @@ else {
                             });
 	                        </script>";
                                     }
-
                                     ?>
                                 </div>
                                 <!--END BAR CHART-->
@@ -163,7 +162,6 @@ else {
                                             sprnstr="<!--startprint"+oper+"-->";
                                             eprnstr="<!--endprint"+oper+"-->";
                                             prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
-
                                             prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
                                             window.document.body.innerHTML=prnhtml;
                                             window.print();
@@ -187,7 +185,6 @@ else {
                                         else {
                                             $vid = $_SESSION['vid'];
                                         }
-
                                         for ($i=0; $i < 20; $i++) {
                                             global $db;
                                             $bgid = $i + 1;
@@ -197,9 +194,7 @@ else {
                                               WHERE b.bgid=$bgid AND c.cid = $cid AND vid = $vid
                                               GROUP BY label
                                               ORDER BY b.bid";
-
                                             $rs = $db->GetAll($sql);
-
 //	echo "<div class='col-xs-5 span5' style='margin-left:15px;'>";
                                             echo "Question $bgid:";
                                             echo get_question_description($bgid);
@@ -226,7 +221,6 @@ else {
 
                                 <script>
                                     function Click() {
-
                                         //1.convert div to svg
                                         var divContent = document.getElementById("div").innerHTML;
                                         var data = "data:image/svg+xml," +
@@ -240,27 +234,19 @@ else {
                                         var img = new Image();
                                         img.src = data;
                                         document.getElementsByTagName('body')[0].appendChild(img);
-
-
                                         //2.svg to canvas
                                         var canvas = document.createElement('canvas');  //prepare new canvas
                                         canvas.width = img.width;
                                         canvas.height = img.height;
-
                                         var context = canvas.getContext('2d');  //
                                         context.drawImage(img, 0, 0);
-
-
                                         var a = document.createElement('a');
 //                                    a.href = canvas.toDataURL('image/png');  //export to png
 //                                    a.download = "TableFigure";  //download name
 //                                    a.click(); //download
-
-
                                         //3. export to png
                                         var type = 'png';
                                         var imgData = canvas.toDataURL(type);
-
                                         /**
                                          * obtain mimeType
                                          * @param  {String} type the old mime-type
@@ -271,11 +257,7 @@ else {
                                             var r = type.match(/png|jpeg|bmp|gif/)[0];
                                             return 'image/' + r;
                                         };
-
-
                                         imgData = imgData.replace(_fixType(type), 'image/octet-stream');
-
-
                                         /**
                                          * save in local
                                          * @param  {String} data
@@ -285,17 +267,14 @@ else {
                                             var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
                                             save_link.href = data;
                                             save_link.download = filename;
-
                                             var event = document.createEvent('MouseEvents');
                                             event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
                                             save_link.dispatchEvent(event);
                                         };
-
                                         // Download name
                                         var filename = 'TableFigure' + (new Date()).getTime() + '.' + type;
                                         // download
                                         saveFile(imgData, filename);
-
                                     }
                                 </script>
 
@@ -318,7 +297,6 @@ else {
                                                 sprnstr="<!--startprint"+oper+"-->";
                                                 eprnstr="<!--endprint"+oper+"-->";
                                                 prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
-
                                                 prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
                                                 window.document.body.innerHTML=prnhtml;
                                                 window.print();
@@ -335,7 +313,6 @@ else {
                                     <div id="align" align="center">
                                         <?php
                                         global $db;
-
                                         //echo "<h3>Comments</h3>";
                                         echo get_question_description(21);
                                         echo "<br><br>";
@@ -343,39 +320,29 @@ else {
                                         $sql = "SELECT val AS text 
                                         FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
                                         WHERE b.bid = 117 AND c.cid = '$cid' AND vid = '$vid'";
-
                                         $rs = $db->GetAll($sql);
-
                                         foreach ( $rs as $result){
                                             echo $result['text']."<br>";
                                         }
-
                                         echo "<br><br><br><br>";
-
                                         echo get_question_description(22);
                                         echo "<br><br>";
                                         //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                                         $sql = "SELECT val AS text 
                                         FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
                                         WHERE b.bid = 118 AND c.cid = '$cid' AND vid = '$vid'";
-
                                         $rs = $db->GetAll($sql);
-
                                         foreach ( $rs as $result){
                                             echo $result['text']."<br>";
                                         }
-
                                         echo "<br><br><br><br>";
-
                                         echo get_question_description(23);
                                         echo "<br><br>";
                                         //TODO b.bid is hardcoded to this question here : Change if changing questionnaire
                                         $sql = "SELECT val AS text 
                                         FROM formboxverifytext f RIGHT JOIN boxes b ON b.bid = f.bid JOIN forms c ON f.fid = c.fid
                                         WHERE b.bid = 119 AND c.cid = '$cid' AND vid = '$vid'";
-
                                         $rs = $db->GetAll($sql);
-
                                         foreach ($rs as $result){
                                             echo $result['text']."<br>";
                                         }
@@ -388,35 +355,18 @@ else {
 
 
 
-
-
-                                <!DOCTYPE html>
-                                <html>
-
-                                <head>
-                                    <meta charset="utf-8">
-                                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                                    <title>html2canvas example</title>
-                                    <script type="text/javascript" src="js/html2canvas.js"></script>
-                                </head>
                                 <script type="text/javascript">
                                     function ClickComments() {
                                         console.log('test');
                                         html2canvas(document.getElementById('div1'), {
                                             onrendered: function(canvas) {
+//                                                canvas.style.display = 'none';
+
                                                 document.body.appendChild(canvas);
                                             },
-                                            // width: 300,
-                                            // height: 300
                                         });
                                     }
-
-
-
-
-
                                 </script>
-
 
 
 
@@ -428,80 +378,24 @@ else {
 
                                 <!--endprint2-->
                                 <!--END COMMENTS-->
-                                <script>
-                                    function ClickComments() {
-
-                                        //1.convert div to svg
-                                        var divContent = document.getElementById("div1").innerHTML;
-                                        var data = "data:image/svg+xml," +
-                                            "<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='5500'>" +
-                                            "<foreignObject width='100%' height='100%'>" +
-                                            "<div xmlns='http://www.w3.org/1999/xhtml' style='font-size:16px;background: white;font-family:Helvetica'>" +
-                                            divContent +
-                                            "</div>" +
-                                            "</foreignObject>" +
-                                            "</svg>";
-                                        var img = new Image();
-                                        img.src = data;
-                                        document.getElementsByTagName('body')[0].appendChild(img);
 
 
-                                        //2.svg to canvas
-                                        var canvas = document.createElement('canvas');  //prepare new canvas
-                                        canvas.width = img.width;
-                                        canvas.height = img.height;
-
-                                        var context = canvas.getContext('2d');  //
-                                        context.drawImage(img, 0, 0);
 
 
-                                        var a = document.createElement('a');
-//                                    a.href = canvas.toDataURL('image/png');  //export to png
-//                                    a.download = "TableFigure";  //download name
-//                                    a.click(); //download
 
 
-                                        //3. export to png
-                                        var type = 'png';
-                                        var imgData = canvas.toDataURL(type);
-
-                                        /**
-                                         * obtain mimeType
-                                         * @param  {String} type the old mime-type
-                                         * @return the new mime-type
-                                         */
-                                        var _fixType = function (type) {
-                                            type = type.toLowerCase().replace(/jpg/i, 'jpeg');
-                                            var r = type.match(/png|jpeg|bmp|gif/)[0];
-                                            return 'image/' + r;
-                                        };
 
 
-                                        imgData = imgData.replace(_fixType(type), 'image/octet-stream');
 
 
-                                        /**
-                                         * save in local
-                                         * @param  {String} data
-                                         * @param  {String} filename
-                                         */
-                                        var saveFile = function (data, filename) {
-                                            var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
-                                            save_link.href = data;
-                                            save_link.download = filename;
 
-                                            var event = document.createEvent('MouseEvents');
-                                            event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-                                            save_link.dispatchEvent(event);
-                                        };
 
-                                        // Download name
-                                        var filename = 'TableFigure' + (new Date()).getTime() + '.' + type;
-                                        // download
-                                        saveFile(imgData, filename);
 
-                                    }
-                                </script>
+
+
+
+
+
                             </div>
 
 
