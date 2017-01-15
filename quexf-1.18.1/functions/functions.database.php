@@ -173,7 +173,7 @@ function update_collection($cid, $vid, $description, $qid)
 
 }
 
-//Gets the number of multiple choice/array box groups for a given quesitonnaire
+//Gets the number of multiple choice/array box groups for a given questionnaire
 function get_bgid_max(){
 
     global $db;

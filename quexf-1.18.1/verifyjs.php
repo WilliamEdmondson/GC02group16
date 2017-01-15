@@ -376,8 +376,9 @@ if (isset($_POST['assign']))
     if($isadmin == true) {
         $_SESSION['admin'] = $admin;
     }
-    $fid = ($vid);
-	if ($fid == false) 
+    $fid = assign_to($vid);
+    //$fid = ($vid);
+	if ($fid == false)
 	{
     xhtml_head(T_("Verify: No more work"),true,false,false,"onload='document.form1.assign.focus();'");
 		print "<p>" . T_("NO MORE WORK") . "</p>";
