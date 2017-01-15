@@ -382,6 +382,7 @@ if (isset($_POST['assign']))
 	{
     xhtml_head(T_("Verify: No more work"),true,false,false,"onload='document.form1.assign.focus();'");
 		print "<p>" . T_("NO MORE WORK") . "</p>";
+        echo "<h1><a href=\"../sampleprevious.php\">Proceed to analysis</a></h1>";
 		print "<form name=\"form1\" action=\"" . $_SERVER['PHP_SELF'] . "\" method=\"post\"><input type=\"submit\" name=\"assign\" value=\"" . T_("Check for more work") . "\"/></form>";
 		unset($_SESSION['boxgroups']);
 		unset($_SESSION['boxes']);
@@ -527,6 +528,7 @@ if (!isset($_SESSION['boxes'])) {
 	{
     xhtml_head(T_("Verify: No more work"),true,false,false,"onload='document.form1.assign.focus();'");
 		print "<p>" . T_("NO MORE WORK") . "</p>";
+
 		print "<form name=\"form1\" action=\"" . $_SERVER['PHP_SELF'] . "\" method=\"post\"><input type=\"submit\" name=\"assign\" value=\"" . T_("Check for more work") . "\"/></form>";
 		//print "<p><a href=\"" . $_SERVER['PHP_SELF'] . "?assign=assign\">" . T_("Check for more work") . "</a></p>";
 		unset($_SESSION['boxgroups']);
