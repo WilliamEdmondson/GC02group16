@@ -22,8 +22,12 @@ if(!isset($_POST['collection']))
     if($description = $_POST['description'] == "") {
         $description = 'my_collection_' . $current_cid;
     } else {
-        $description = $_POST['description'];
+        $description = $description = $_POST['description'];
     }
+    $current_cid = $_POST['collection'];
+    $_SESSION['current_collection']=$current_cid;
+    $vid = get_vid();
+    $qid = 1;
     echo "Collection description : ".$description."<br>";
     update_collection($current_cid, $vid, $description, $qid);
 
