@@ -10,19 +10,6 @@ unset($_SESSION['current_collection']);
     <?php include("sidebar.php"); ?>
 </div>
 
-<script>
-    $(document).ready(function() {
-        var navoffeset=$(".sidebar-menu").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar-menu").addClass("fixed");
-            }else{
-                $(".sidebar-menu").removeClass("fixed");
-            }
-        });
-    });
-</script>
 
 <head>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -56,7 +43,8 @@ unset($_SESSION['current_collection']);
             <div class="container-fluid">
                 <div class="row-fluid">
 
-                    <div class="col-sm-6 col-md-6">
+
+                    <div class="col-sm-5 col-md-5">
                         <?php if(!isset($_SESSION['vid'])){
                             echo "<h3>Please log in <a href='index.php'>here</a></h3>";
                         } else { ?>
@@ -127,7 +115,7 @@ unset($_SESSION['current_collection']);
                             <p><a href="allprevious.php">View all previous work</a></p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-5 col-md-5">
                         <h3>Upload</h3>
                         <br><br><br>
 

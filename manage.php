@@ -7,20 +7,6 @@ session_start();
     <?php include("sidebar.php"); ?>
 </div>
 
-<script>
-    $(document).ready(function() {
-        var navoffeset=$(".sidebar-menu").offset().top;
-        $(window).scroll(function(){
-            var scrollpos=$(window).scrollTop();
-            if(scrollpos >=navoffeset){
-                $(".sidebar-menu").addClass("fixed");
-            }else{
-                $(".sidebar-menu").removeClass("fixed");
-            }
-        });
-
-    });
-</script>
 
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>

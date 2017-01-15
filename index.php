@@ -61,7 +61,7 @@ session_start();
 
 
 
-                <div class="hex" style="width: 18vw; height: 18vw;font-size:19px;background-color: #5763ff; color: white;  line-height: 15vw;  text-align: center;">UCL Student OCR Feedback Web App</div>
+                <div class="hex" style="width: 18vw; height: 18vw;font-size:19px;background-color: #5763ff; color: white;  line-height: 15vw;  text-align: center;"><img src="img/logobig.png" width="387" height="160"></div>
 
             </section>
             <script src="js/anime.js"></script>
