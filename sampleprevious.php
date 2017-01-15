@@ -1,4 +1,14 @@
 <?php
+
+/*
+ *---------------------------------------------------------------
+ * SAMPLE PREVIOUS
+ *---------------------------------------------------------------
+ *
+ *
+ * @HZ @WE @ELM
+ */
+
 include 'quexf-1.18.1/functions/functions.database.php'; //includes session start
 if (isset($_SESSION['current_collection'])) {
     $_SESSION['collectionid'] = $_SESSION['current_collection'];

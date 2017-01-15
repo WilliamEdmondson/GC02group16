@@ -1,9 +1,23 @@
-<h1>Upload stage</h1>
+
 <?php
+
+/*
+ *---------------------------------------------------------------
+ * UPLOAD
+ *---------------------------------------------------------------
+ *
+ *
+ * @WE
+ */
+
+
+
 include 'quexf-1.18.1/functions/functions.import.php';
-include 'quexf-1.18.1/functions/functions.database.php'; //session_start included in here
+include 'quexf-1.18.1/functions/functions.database.php'; //session_start included
 include("quexf-1.18.1/functions/functions.xhtml.php");
 include("quexf-1.18.1/functions/functions.process.php");
+
+echo "<h1>Upload stage</h1>";
 
 //test that there are files to be uploaded
 if(!isset($_FILES['fileList']['name'][0]))
@@ -13,8 +27,7 @@ if(!isset($_FILES['fileList']['name'][0]))
 
 if(!isset($_POST['collection']))
 {
-        //increment collections database
-
+    //increment collections database
     new_collection();
     echo "new collection created<br>";
 
@@ -29,9 +42,13 @@ if(!isset($_POST['collection']))
     $vid = get_vid();
     $qid = 1;
     echo "Collection description : ".$description."<br>";
+
+    //update the collection in 'formcollections' table in db
     update_collection($current_cid, $vid, $description, $qid);
 
 } else {
+
+    //when adding to a collecition
     echo $_POST['collection'];
     echo "collection previously set as a post variable<br>";
     $description = $_POST['collection'];
@@ -46,13 +63,13 @@ $_SESSION['current_collection']=$current_cid;
 
 $vid = get_vid();
 
-//TODO ability to change the qid HARDCODED HERE
+/*
+ * This is the point in which the qid is hard coded.
+ * The application will only verify forms with a
+ * qid of 1, the first questionnaire in the database.
+ *
+ */
 $qid = 1;
-
-
-
-//update the vid and description in the formcollections table
-//update_collection($current_cid, $vid, $description, $qid);
 
 //path for files not uploaded
 $targetpath = "uploads/";
@@ -77,7 +94,6 @@ import_directory($targetpath);
 
 
 //set the verifier to current user and set cid to current cid
-
 $vid = get_vid();
 
 
@@ -96,27 +112,5 @@ else
 }
 
 
-//
+//redirect user to the verification
 header("Location: quexf-1.18.1/verifyjs.php");
-
-/*
-//import the target directory using the import_directory function functions.database
-import_directory($targetpath);
-
-//assign the form to the current user TODO vid
-assign_to($vid);
-
-//set the veriferquestionaire variables TODO find the function 'set_vq'
-
-//update the vid and description in the formcollections table
-//update_collection($cid, $vid, $description, $qid);
-
-echo "<br><br>form has been assigned to the current user";
-
-//TODO write a SQL query which sets the fid to the current users vid therefore allowing them access
-?>
-<br><br>
-<form action="quexf-1.18.1/verifyjs.php">
-    <input type='submit' value='proceed to verification'/>
-</form>
-*/

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa1cdf59-6bcd-40c4-b04b-8fa56d32a788" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/1-submittedtestforms.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/4-submittedtestforms.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.php" afterPath="$PROJECT_DIR$/data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formdata.php" afterPath="$PROJECT_DIR$/formdata.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mailtest.php" afterPath="$PROJECT_DIR$/mailtest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.php" afterPath="$PROJECT_DIR$/manage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/masquerade-process.php" afterPath="$PROJECT_DIR$/masquerade-process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/masquerade.php" afterPath="$PROJECT_DIR$/masquerade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser.php" afterPath="$PROJECT_DIR$/parser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previous.php" afterPath="$PROJECT_DIR$/previous.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resetpassword.php" afterPath="$PROJECT_DIR$/Resetpassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previousT.php" afterPath="$PROJECT_DIR$/previousT.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sampleprevious.php" afterPath="$PROJECT_DIR$/sampleprevious.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,47 +24,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="data.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.php">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="584">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
-                <marker date="1484516054000" expanded="true" signature="1128:1161" ph="..." />
+                <element signature="e#8#169#0#PHP" expanded="true" />
+                <marker date="1484517011000" expanded="true" signature="2427:2527" ph="UPDATE forms... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formdata.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/formdata.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#185#0#PHP" expanded="true" />
-                <marker date="1484516053000" expanded="true" signature="492:703" ph="SELECT label... formboxverifychar" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="previous.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="previous.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/previous.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -146,11 +105,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.php">
+      <file leaf-file-name="previousT.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/previousT.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding>
+                <marker date="1484517012000" expanded="true" signature="3037:3185" ph="SELECT label... boxes" />
+                <marker date="1484517012000" expanded="true" signature="3268:3301" ph="..." />
+                <marker date="1484517012000" expanded="true" signature="3342:3376" ph="..." />
+                <marker date="1484517012000" expanded="true" signature="3413:3447" ph="..." />
+                <marker date="1484517012000" expanded="true" signature="3560:3572" ph="..." />
+                <marker date="1484517012000" expanded="true" signature="3622:3634" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resetpassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resetpassword.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <marker date="1484517011000" expanded="true" signature="394:453" ph="SELECT * FRO... users" />
+                <marker date="1484517011000" expanded="true" signature="721:784" ph="UPDATE users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sampleprevious.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sampleprevious.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -167,7 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cid</find>
       <find>header</find>
       <find>function import</find>
       <find>$fid</find>
@@ -197,6 +195,7 @@
       <find>ENABLED</find>
       <find>get_qid_description</find>
       <find>head</find>
+      <find>echo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,12 +224,9 @@
         <option value="$PROJECT_DIR$/htdocs/Backend/quexf-1.18.1/verifyjs.php" />
         <option value="$PROJECT_DIR$/includes/signup.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/config.inc.php" />
-        <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/includes/loginverify.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/functions/functions.import.php" />
-        <option value="$PROJECT_DIR$/sampleprevious.php" />
-        <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/quexf-1.18.1/verifyjs.php" />
         <option value="$PROJECT_DIR$/limesurvey/index.php" />
         <option value="$PROJECT_DIR$/dashboard.php" />
@@ -244,6 +240,11 @@
         <option value="$PROJECT_DIR$/masquerade-process.php" />
         <option value="$PROJECT_DIR$/parser.php" />
         <option value="$PROJECT_DIR$/previous.php" />
+        <option value="$PROJECT_DIR$/previousT.php" />
+        <option value="$PROJECT_DIR$/Resetpassword.php" />
+        <option value="$PROJECT_DIR$/sampleprevious.php" />
+        <option value="$PROJECT_DIR$/sidebar.php" />
+        <option value="$PROJECT_DIR$/upload.php" />
       </list>
     </option>
   </component>
@@ -407,12 +408,12 @@
       <workItem from="1484055699371" duration="1074000" />
       <workItem from="1484228040094" duration="3209000" />
       <workItem from="1484428146180" duration="448000" />
-      <workItem from="1484515478976" duration="496000" />
+      <workItem from="1484515478976" duration="975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57192000" />
+    <option name="totallyTimeSpent" value="57671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -467,8 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/htdocs/combined/db/dbh.php" />
-    <entry file="file://$PROJECT_DIR$/htdocs/combined/sampleprevious.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/combined/header.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/combined/sidebar.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/combined/includes/signup.php" />
@@ -508,14 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/config.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -551,14 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampleprevious.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="339" column="59" lean-forward="false" selection-start-line="339" selection-start-column="59" selection-end-line="339" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quexf-1.18.1/functions/functions.database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8835">
@@ -589,16 +572,6 @@
             <marker date="1484443376000" expanded="true" signature="10155:10198" ph="SELECT vid F... worklog" />
             <marker date="1484443376000" expanded="true" signature="10356:10766" ph="SELECT b.bid... boxes" />
             <marker date="1484443376000" expanded="true" signature="10943:11002" ph="SELECT qid,d... forms" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <marker date="1484442391000" expanded="true" signature="2175:2275" ph="UPDATE forms... " />
           </folding>
         </state>
       </provider>
@@ -809,7 +782,7 @@
         <state relative-caret-position="540">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#7#185#0#PHP" expanded="true" />
+            <element signature="e#7#185#0#PHP" expanded="false" />
             <marker date="1484516053000" expanded="true" signature="492:703" ph="SELECT label... formboxverifychar" />
           </folding>
         </state>
@@ -893,6 +866,59 @@
             <marker date="1484516054000" expanded="true" signature="3744:3973" ph="[...]" />
             <marker date="1484516054000" expanded="true" signature="3745:3972" ph="{...}" />
             <marker date="1484516054000" expanded="true" signature="3799:3922" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/previousT.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <marker date="1484517012000" expanded="true" signature="3037:3185" ph="SELECT label... boxes" />
+            <marker date="1484517012000" expanded="true" signature="3268:3301" ph="..." />
+            <marker date="1484517012000" expanded="true" signature="3342:3376" ph="..." />
+            <marker date="1484517012000" expanded="true" signature="3413:3447" ph="..." />
+            <marker date="1484517012000" expanded="true" signature="3560:3572" ph="..." />
+            <marker date="1484517012000" expanded="true" signature="3622:3634" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resetpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <marker date="1484517011000" expanded="true" signature="394:453" ph="SELECT * FRO... users" />
+            <marker date="1484517011000" expanded="true" signature="721:784" ph="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleprevious.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#8#169#0#PHP" expanded="true" />
+            <marker date="1484517011000" expanded="true" signature="2427:2527" ph="UPDATE forms... " />
           </folding>
         </state>
       </provider>
