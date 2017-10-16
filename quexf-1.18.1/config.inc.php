@@ -56,7 +56,7 @@ if($os === "Windows")
 {
 	$location = "/gs9.20/bin/gswin32c.exe";
 }
-elseif($os === "Mac")
+elseif($os === "Linux")
 {
 	$location = "/gs9.20/bin/gs";
 }
